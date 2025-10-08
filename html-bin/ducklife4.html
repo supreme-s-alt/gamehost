@@ -8,7 +8,7 @@
   <title>Duck life 4</title>
   <body>
       <!-- Navigation Bar -->
-    <nav>
+      <nav id="main-nav">
       <div class="dropdown">
         <button class="dropbtn" link="images/dropdown.png"></button>
         <div class="dropdown-content">
@@ -34,6 +34,8 @@
           <a id="gamesug">Suggestions</a>
         </div>
     </nav>
+        <!-- Nav toggle button -->
+        <button id="nav-toggle" class="nav-toggle"><img src="../images/navbutton.png" alt="nav-toggle"></button>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
       <div>
           <object id="player" type= "application/x-shockwave-flash" width="900" height="500">
@@ -42,9 +44,10 @@
               </embed>
           </object>
       </div>
-      <button id="fullscreen" style="position: absolute; right: 10%">
-        Fullscreen
-      </button>
+      <div class="controls">
+        <button id="fullscreen">Fullscreen</button>
+        <button id="maximize">Maximize</button>
+      </div>
     <script src="../script.js"></script>
   </body>
 </html>

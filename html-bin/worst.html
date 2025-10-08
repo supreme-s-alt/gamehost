@@ -8,7 +8,7 @@
   <title>Worst Time Simulator</title>
   <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav id="main-nav">
       <div class="dropdown">
         <button class="dropbtn" link="images/dropdown.png"></button>
         <div class="dropdown-content">
@@ -31,6 +31,11 @@
         <a id="gamesug">Suggestions</a>
       </div>
     </nav>
+    <!-- Nav toggle button -->
+    <button id="nav-toggle" class="nav-toggle">
+      <img src="../images/navbutton.png" alt="nav-toggle" />
+    </button>
+    <div>The easiest Undertale fangame</div>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <iframe
       id="player"
@@ -43,9 +48,9 @@
       scrolling="auto"
     ></iframe>
     <div>
-      <button id="fullscreen" style="position: absolute; right: 10%">
-        Fullscreen
-      </button>
+      <div class="controls">
+        <button id="fullscreen">Fullscreen</button>
+        <button id="maximize">Maximize</button>
     </div>
     <script src="../script.js"></script>
   </body>

@@ -70,6 +70,7 @@ body {
 #LTF3,
 #level,
 #mario,
+#maximize,
 #meat,
 #mike,
 #moto,
@@ -180,6 +181,7 @@ body {
 #LTF3:hover,
 #level:hover,
 #mario:hover,
+#maximize:hover,
 #meat:hover,
 #mike:hover,
 #moto:hover,
@@ -256,13 +258,14 @@ nav {
   gap: 10px; /* space between dropdown and home */
 }
 
-/* RIGHT SIDE BUTTONS */
 .nav-buttons {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
+  gap: 10px; /* keep spacing the same */
 
+  /* Shift left */
+  margin-right: 50px; /* decrease distance from right edge */
+}
 /* Home Button */
 #home {
   gap: 50px;
@@ -337,6 +340,8 @@ nav {
 #about,
 #uplog,
 #gamesug {
+  position: relative;
+  left: -20px; /* negative value moves them left */
   padding: 10px 20px;
   font-size: 14px;
   background-color: #111;
@@ -436,4 +441,81 @@ nav {
 .game-btn:hover {
   transform: scale(1.15);
   background-color: #333333;
+}
+
+.nav-toggle {
+  position: fixed; /* stays in place on screen */
+  top: 15px; /* adjust vertical position */
+  right: 10px; /* adjust horizontal position */
+  z-index: 9999 !important; /* always on top */
+  background-color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.2s;
+}
+
+.nav-toggle img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none; /* ensures clicks go to button, not image */
+}
+#main-nav {
+  max-height: 200px; /* adjust based on nav height */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.nav-hidden #main-nav {
+  max-height: 0;
+}
+
+/* Keep nav visible by default, allow smooth collapse */
+#main-nav {
+  max-height: 240px; /* tweak if your nav is taller */
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  opacity: 1;
+}
+
+/* Hidden state: collapse nav and rotate toggle */
+body.nav-hidden #main-nav {
+  max-height: 0;
+  opacity: 0;
+}
+body.nav-hidden .nav-toggle {
+  transform: rotate(180deg);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#fullscreen {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* bottom-left corner */
+}
+
+#maximize {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* bottom-right corner */
+}
+.controls {
+  text-align: center;
+  margin-top: 10px;
+}
+.player-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  min-height: 80vh; /* optional – centers vertically in view */
+}
+
+#player {
+  width: 960px; /* set a fixed width or responsive one */
+  height: 540px;
 }
