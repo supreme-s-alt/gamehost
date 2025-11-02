@@ -69,6 +69,7 @@ body {
 #LTF2,
 #LTF3,
 #level,
+#madness,
 #mario,
 #maximize,
 #meat,
@@ -444,7 +445,7 @@ nav {
 }
 
 .nav-toggle {
-  position: fixed; /* stays in place on screen */
+  position: relative;
   top: 15px; /* adjust vertical position */
   right: 10px; /* adjust horizontal position */
   z-index: 9999 !important; /* always on top */

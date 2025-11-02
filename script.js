@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const LTF1 = document.getElementById("LTF1");
   const LTF2 = document.getElementById("LTF2");
   const LTF3 = document.getElementById("LTF3");
+  const Madness = document.getElementById("madness");
   const Mario = document.getElementById("mario");
   const Meat = document.getElementById("meat");
   const Mike = document.getElementById("mike");
@@ -110,6 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const CSB3040 = document.getElementById("3040");
   const CSB50000 = document.getElementById("50000");
   const LME = document.getElementById("LME");
+  const Max = document.getElementById("nav-toggle");
+
+  // Other varibles
+  const maxMode = false;
   // Front pages
   // *Crickets*
 
@@ -260,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (FNFMods) {
     FNFMods.addEventListener("click", function () {
-      window.location.href = "../html-bin/construction.html";
+      window.location.href = "../html-bin/fnfmods.html";
     });
   }
   if (GKnight) {
@@ -351,6 +356,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (LTF3) {
     LTF3.addEventListener("click", function () {
       window.location.href = "../html-bin/LTF3.html"; //change to LTF3 later
+    });
+  }
+  if (Madness) {
+    Madness.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-madness.html";
     });
   }
   if (Mario) {
@@ -682,3 +692,22 @@ document.addEventListener("DOMContentLoaded", () => {
     setup();
   }
 })();
+
+if (Max) {
+  Max.addEventListener("click", function () {
+    var Player = document.getElementById("player");
+    var nav = document.getElementById("nav");
+    maxMode != maxMode;
+    if (maxMode == true) {
+      Player.style.width = "100vw";
+      Player.style.height = "100vh";
+      Player.style.margin = "0";
+      nav.style.display = "none";
+    } else if (maxMode == true) {
+      Player.style.width = "960px";
+      Player.style.height = "540px";
+      Player.style.margin = "initial";
+      nav.style.display = "none";
+    }
+  });
+}
