@@ -699,8 +699,8 @@ if (Max) {
     var nav = document.getElementById("nav");
     maxMode != maxMode;
     if (maxMode == true) {
-      Player.style.width = "100vw";
-      Player.style.height = "100vh";
+      Player.style.width = "97vw";
+      Player.style.height = "97vh";
       Player.style.margin = "0";
       nav.style.display = "none";
     } else if (maxMode == true) {

@@ -445,18 +445,16 @@ nav {
 }
 
 .nav-toggle {
-  position: relative;
-  top: 15px; /* adjust vertical position */
-  right: 10px; /* adjust horizontal position */
-  z-index: 9999 !important; /* always on top */
+  position: fixed;
+  z-index: 999 !important; /* always on top */
   background-color: #111;
   border: none;
   border-radius: 6px;
   padding: 6px;
   cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  justify-content: flex-end;
   transition: transform 0.3s ease, background 0.2s;
 }
 
