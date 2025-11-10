@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Moto = document.getElementById("moto");
   const Moto2 = document.getElementById("moto2");
   const MVSL = document.getElementById("MVSL");
+  const Neo = document.getElementById("neo");
   const Osu = document.getElementById("osu");
   const Paburg = document.getElementById("paburg");
   const Padog = document.getElementById("padog");
@@ -391,6 +392,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (MVSL) {
     MVSL.addEventListener("click", function () {
       window.location.href = "../html-bin/MVSL.html";
+    });
+  }
+  if (Neo) {
+    Neo.addEventListener("click", function () {
+      window.location.href = "../html-bin/neo.html";
     });
   }
   if (Osu) {
