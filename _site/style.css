@@ -1,0 +1,522 @@
+body {
+  padding-top: 60px; /* Space for the navbar */
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  text-wrap: balanced;
+  overflow-wrap: break-word;
+  background-color: #000000;
+  font-family: Helvetica, Arial, sans-serif; /* Updated to use Helvetica */
+  color: white;
+  text-align: center;
+}
+
+#Thumbnails {
+  padding-top: 8px;
+  position: inherit;
+  align-self: center;
+  border-radius: 40px;
+  margin: 1000;
+}
+
+#achievement,
+#achievement2,
+#arcane,
+#aow,
+#aow2,
+#balls,
+#balls2,
+#bics,
+#bic,
+#bic2,
+#bic3,
+#bob,
+#btds,
+#btd1,
+#btd2,
+#btd5,
+#bts,
+#burrito,
+#chibi,
+#cookie,
+#doodle,
+#dls,
+#dl1,
+#dl2,
+#dl3,
+#dl4,
+#electric,
+#fancy,
+#fullscreen,
+#fnf,
+#fnfmods,
+#gknight,
+#hard,
+#hss,
+#hsbtb,
+#hsetp,
+#hsftc,
+#hsita,
+#hsstd,
+#imposs,
+#indie,
+#knight,
+#kitty,
+#jack,
+#last,
+#LTFS,
+#LTF1,
+#LTF2,
+#LTF3,
+#level,
+#madness,
+#mario,
+#maximize,
+#meat,
+#mike,
+#moto,
+#moto2,
+#MVSL,
+#neo,
+#osu,
+#paburg,
+#padog,
+#pafree,
+#palu,
+#papan,
+#papiz,
+#pat,
+#pizza,
+#pizzaq,
+#pizzatut,
+#pls,
+#rss,
+#rs1,
+#rs2,
+#rs3,
+#rs4,
+#rs5,
+#rt1,
+#rt2,
+#scratch,
+#shell,
+#skitty,
+#skitty2,
+#skittyl,
+#skittyls,
+#sm63,
+#sm64,
+#smash,
+#smash2,
+#sonic,
+#souls,
+#submit,
+#toss,
+#tricky,
+#underfell,
+#undertale,
+#undyne,
+#w1,
+#w2,
+#w3,
+#worst,
+#g2048 {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#achievement:hover,
+#achievement2:hover,
+#arcane:hover,
+#aow:hover,
+#aow2:hover,
+#balls:hover,
+#balls2:hover,
+#bics:hover,
+#bic:hover,
+#bic2:hover,
+#bic3:hover,
+#bob:hover,
+#btds:hover,
+#btd1:hover,
+#btd2:hover,
+#btd5:hover,
+#bts:hover,
+#burrito:hover,
+#chibi:hover,
+#cookie:hover,
+#doodle:hover,
+#dls:hover,
+#dl1:hover,
+#dl2:hover,
+#dl3:hover,
+#dl4:hover,
+#electric:hover,
+#fancy:hover,
+#fullscreen:hover,
+#fnf:hover,
+#fnfmods:hover,
+#gknight:hover,
+#hard:hover,
+#hss:hover,
+#hsbtb:hover,
+#hsetp:hover,
+#hsftc:hover,
+#hsita:hover,
+#hsstd:hover,
+#imposs:hover,
+#indie:hover,
+#knight:hover,
+#kitty:hover,
+#jack:hover,
+#last:hover,
+#LTFS:hover,
+#LTF1:hover,
+#LTF2:hover,
+#LTF3:hover,
+#level:hover,
+#mario:hover,
+#maximize:hover,
+#meat:hover,
+#mike:hover,
+#moto:hover,
+#moto2:hover,
+#MVSL:hover,
+#neo:hover,
+#osu:hover,
+#paburg:hover,
+#padog:hover,
+#pafree:hover,
+#palu:hover,
+#papan:hover,
+#papiz:hover,
+#pat:hover,
+#pizza:hover,
+#pizzaq:hover,
+#pizzatut:hover,
+#pls:hover,
+#rss:hover,
+#rs1:hover,
+#rs2:hover,
+#rs3:hover,
+#rs4:hover,
+#rs5:hover,
+#rt1:hover,
+#rt2:hover,
+#scratch:hover,
+#shell:hover,
+#skitty:hover,
+#skitty2:hover,
+#skittyl:hover,
+#skittyls:hover,
+#sm63:hover,
+#sm64:hover,
+#smash:hover,
+#smash2:hover,
+#sonic:hover,
+#souls:hover,
+#submit:hover,
+#toss:hover,
+#tricky:hover,
+#underfell:hover,
+#undertale:hover,
+#undyne:hover,
+#w1:hover,
+#w2:hover,
+#w3:hover,
+#worst:hover,
+#g2048:hover {
+  background-color: #333333;
+  transform: scale(1.15);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between left and right sides */
+  padding: 0 20px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between dropdown and home */
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* keep spacing the same */
+
+  /* Shift left */
+  margin-right: 50px; /* decrease distance from right edge */
+}
+/* Home Button */
+#home {
+  gap: 50px;
+  margin-left: 75px;
+  padding: 10px 20px;
+  position: absolute;
+  font-size: 18px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#home:hover {
+  background-color: #333333;
+  transform: scale(1.15);
+}
+
+/* Dropbtn & Dropdown */
+.dropbtn {
+  background-color: #111;
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: inherit;
+  background-image: url("images/dropdown.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #333333;
+}
+
+/* Nav bar buttons on right */
+#credits,
+#about,
+#uplog,
+#gamesug {
+  position: relative;
+  left: -20px; /* negative value moves them left */
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+#credits:hover,
+#about:hover,
+#uplog:hover,
+#gamesug:hover,
+#render:hover,
+#github:hover,
+#3000:hover,
+#3040:hover,
+#50000:hover,
+#LME:hover {
+  background-color: #333333;
+  transform: scale(1.15);
+}
+
+#feedback {
+  resize: none;
+  min-width: 50px;
+  width: 60%;
+  min-height: 40px;
+  margin: 1000;
+  background-color: #ffffff;
+  border-color: #555;
+  border-width: 4px;
+  border-radius: 4px;
+  align-self: auto;
+}
+
+#render,
+#github,
+#3000,
+#3040,
+#50000,
+#LME {
+  font-size: 12px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+/* ======================= */
+/* Game Buttons   */
+/* ======================= */
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.game-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin: 10px;
+  padding: 0;
+  background-color: #111;
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.game-btn .img-wrap {
+  width: 100%;
+}
+
+.game-btn .img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto; /* variable height, keeps aspect ratio */
+  object-fit: contain;
+}
+
+.game-btn span {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.game-btn:hover {
+  transform: scale(1.15);
+  background-color: #333333;
+}
+
+.nav-toggle {
+  position: fixed;
+  z-index: 999 !important; /* always on top */
+  background-color: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  transition: transform 0.3s ease, background 0.2s;
+}
+
+.nav-toggle img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none; /* ensures clicks go to button, not image */
+}
+#main-nav {
+  max-height: 200px; /* adjust based on nav height */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.nav-hidden #main-nav {
+  max-height: 0;
+}
+
+/* Keep nav visible by default, allow smooth collapse */
+#main-nav {
+  max-height: 240px; /* tweak if your nav is taller */
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  opacity: 1;
+}
+
+/* Hidden state: collapse nav and rotate toggle */
+body.nav-hidden #main-nav {
+  max-height: 0;
+  opacity: 0;
+}
+body.nav-hidden .nav-toggle {
+  transform: rotate(180deg);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#fullscreen {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* bottom-left corner */
+}
+
+#maximize {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* bottom-right corner */
+}
+.controls {
+  text-align: center;
+  margin-top: 10px;
+}
+.player-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  min-height: 80vh; /* optional – centers vertically in view */
+}
+
+#player {
+  width: 960px; /* set a fixed width or responsive one */
+  height: 540px;
+}
