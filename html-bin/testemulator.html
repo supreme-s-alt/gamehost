@@ -72,9 +72,13 @@
           container.innerHTML = ""; // Clear any existing content
           container.appendChild(player);
 
-          player.load("../temporarygames/factoryballs2.swf").then(() => {
-            window.parent.postMessage({ type: "ruffleready" }, "*");
-          });
+          player
+            .load(
+              "https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/factoryballs2.swf"
+            )
+            .then(() => {
+              window.parent.postMessage({ type: "ruffleready" }, "*");
+            });
         }
 
         play();

@@ -78,7 +78,7 @@
           container.innerHTML = ""; // Clear any existing content
           container.appendChild(player);
 
-          player.load("../temporarygames/swordssouls.swf").then(() => {
+          player.load("https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/swordssouls.swf").then(() => {
             window.parent.postMessage({ type: "ruffleready" }, "*");
           });
         }
