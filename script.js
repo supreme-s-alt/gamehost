@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (GKnight) {
     GKnight.addEventListener("click", function () {
-      window.location.href = "../html-bin/construction.html";
+      window.location.href = "../html-bin/gunknight.html";
     });
   }
   if (Hard) {

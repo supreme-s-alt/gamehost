@@ -517,6 +517,7 @@ body.nav-hidden .nav-toggle {
 }
 
 #player {
+  border: none;
   width: 960px; /* set a fixed width or responsive one */
   height: 540px;
 }
