@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Balls2) {
     Balls2.addEventListener("click", function () {
-      window.location.href = "../html-bin/balls2.html";
+      window.location.href = "../html-bin/balls3.html";
     });
   }
   if (Bics) {
