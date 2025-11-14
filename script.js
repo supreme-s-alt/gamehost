@@ -17,20 +17,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const BTD5 = document.getElementById("btd5");
   const BTS = document.getElementById("bts");
   const Burrito = document.getElementById("burrito");
+  const Cat = document.getElementById("cat");
   const Chibi = document.getElementById("chibi");
   const Cookie = document.getElementById("cookie");
-  const Doodle = document.getElementById("doodle");
+  const Dig = document.getElementById("dig");
   const DLS = document.getElementById("dls");
   const DL1 = document.getElementById("dl1");
   const DL2 = document.getElementById("dl2");
   const DL3 = document.getElementById("dl3");
   const DL4 = document.getElementById("dl4");
+  const Doodle = document.getElementById("doodle");
   const Electric = document.getElementById("electric");
   const Fancy = document.getElementById("fancy");
   const FNF = document.getElementById("fnf");
   const FNFMods = document.getElementById("fnfmods");
   const Flash = document.getElementById("flash");
+  const Galaxy = document.getElementById("galaxy");
   const GKnight = document.getElementById("gknight");
+  const Gooped = document.getElementById("gooped");
   const Hard = document.getElementById("hard");
   const HSBTB = document.getElementById("hsbtb");
   const HSETP = document.getElementById("hsetp");
@@ -40,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const HSSTD = document.getElementById("hsstd");
   const IMP = document.getElementById("imposs");
   const Indie = document.getElementById("indie");
+  const IReady = document.getElementById("iready");
   const Kitty = document.getElementById("kitty");
   const Knight = document.getElementById("knight");
   const Jack = document.getElementById("jack");
@@ -65,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Papiz = document.getElementById("papiz");
   const Palu = document.getElementById("palu");
   const Pat = document.getElementById("pat");
+  const Path = document.getElementById("path");
   const Pizza = document.getElementById("pizza");
   const PizzaQ = document.getElementById("pizzaq");
   const PizzaTut = document.getElementById("pizzatut");
@@ -97,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const W1 = document.getElementById("w1");
   const W2 = document.getElementById("w2");
   const W3 = document.getElementById("w3");
+  const Wizard = document.getElementById("wizard");
   const Worst = document.getElementById("worst");
   const G2048 = document.getElementById("g2048");
 
@@ -209,6 +216,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/burrito.html";
     });
   }
+  if (Cat) {
+    Cat.addEventListener("click", function () {
+      window.location.href = "../html-bin/cat.html";
+    });
+  }
   if (Chibi) {
     Chibi.addEventListener("click", function () {
       window.location.href = "../html-bin/chibi.html";
@@ -219,9 +231,9 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/cookie.html";
     });
   }
-  if (Doodle) {
-    Doodle.addEventListener("click", function () {
-      window.location.href = "../html-bin/doodlejump.html";
+  if (Dig) {
+    Dig.addEventListener("click", function () {
+      window.location.href = "../html-bin/dig.html";
     });
   }
   if (DLS) {
@@ -249,6 +261,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/ducklife4.html";
     });
   }
+  if (Doodle) {
+    Doodle.addEventListener("click", function () {
+      window.location.href = "../html-bin/doodlejump.html";
+    });
+  }
   if (Electric) {
     Electric.addEventListener("click", function () {
       window.location.href = "../html-bin/electricman2.html";
@@ -269,9 +286,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/fnfmods.html";
     });
   }
+  if (Galaxy) {
+    Galaxy.addEventListener("click", function () {
+      window.location.href = "../html-bin/galaxy.html";
+    });
+  }
   if (GKnight) {
     GKnight.addEventListener("click", function () {
       window.location.href = "../html-bin/gunknight.html";
+    });
+  }
+  if (Gooped) {
+    Gooped.addEventListener("click", function () {
+      window.location.href = "../html-bin/gooped.html";
     });
   }
   if (Hard) {
@@ -317,6 +344,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Indie) {
     Indie.addEventListener("click", function () {
       window.location.href = "../html-bin/indie.html";
+    });
+  }
+  if (IReady) {
+    IReady.addEventListener("click", function () {
+      window.location.href = "../html-bin/iready.html";
     });
   }
   if (Kitty) {
@@ -396,7 +428,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Neo) {
     Neo.addEventListener("click", function () {
-      window.location.href = "../html-bin/neo.html";
+      window.location.href = "../html-bin/fnf-neo.html";
     });
   }
   if (Osu) {
@@ -437,6 +469,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Pat) {
     Pat.addEventListener("click", function () {
       window.location.href = "../html-bin/pat.html";
+    });
+  }
+  if (Path) {
+    Path.addEventListener("click", function () {
+      window.location.href = "../html-bin/path.html";
     });
   }
   if (Pizza) {
@@ -597,6 +634,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (W3) {
     W3.addEventListener("click", function () {
       window.location.href = "../html-bin/w3.html";
+    });
+  }
+  if (Wizard) {
+    Wizard.addEventListener("click", function () {
+      window.location.href = "../html-bin/wizard.html";
     });
   }
   if (Worst) {
