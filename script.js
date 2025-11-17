@@ -116,13 +116,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const render = document.getElementById("render");
   const github = document.getElementById("github");
   const CSB3000 = document.getElementById("3000");
-  const CSB3040 = document.getElementById("3040");
   const CSB50000 = document.getElementById("50000");
   const LME = document.getElementById("LME");
-  const Max = document.getElementById("nav-toggle");
 
-  // Other varibles
-  const maxMode = false;
+  // Other variblaes
+  const Max = document.getElementById("nav-toggle");
+  var maxMode = false;
   // Front pages
   // *Crickets*
 
@@ -348,7 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (IReady) {
     IReady.addEventListener("click", function () {
-      window.location.href = "../html-bin/iready.html";
+      window.location.href = "../html-bin/construction.html";
     });
   }
   if (Kitty) {
@@ -711,9 +710,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (fullscreenBtn) {
       fullscreenBtn.addEventListener("click", function (event) {
         event.preventDefault();
+        // Check for either 'container' or 'player' element
         const gameWrapperElem =
           document.getElementById("container") ||
           document.getElementById("player");
+        // Request fullscreen if element exists and API is supported
         if (gameWrapperElem && gameWrapperElem.requestFullscreen) {
           gameWrapperElem
             .requestFullscreen()
@@ -723,17 +724,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-
-    // Nav toggle using event delegation.
-    // Works even if #nav-toggle isn't present at script run time.
-    document.addEventListener("click", (e) => {
-      const btn = e.target.closest("#nav-toggle, .nav-toggle");
-      if (btn) {
-        document.body.classList.toggle("nav-hidden");
-      }
-    });
+    // The nav toggle logic and event delegation have been safely removed.
+    // The fullscreen logic remains intact.
   }
-
+  // Ensure 'setup' runs when the DOM is ready
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", setup);
   } else {
@@ -755,7 +749,7 @@ if (Max) {
       Player.style.width = "960px";
       Player.style.height = "540px";
       Player.style.margin = "initial";
-      nav.style.display = "none";
+      nav.style.display = "flex";
     }
   });
 }
