@@ -120,8 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const LME = document.getElementById("LME");
 
   // Other variblaes
-  const Max = document.getElementById("nav-toggle");
-  var maxMode = false;
   // Front pages
   // *Crickets*
 
@@ -704,17 +702,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 (function () {
+  const Max = document.getElementById("nav-toggle");
+  let maxMode = false;
   function setup() {
-    // Safe fullscreen handler (no crash if element missing)
     const fullscreenBtn = document.getElementById("fullscreen");
     if (fullscreenBtn) {
-      fullscreenBtn.addEventListener("click", function (event) {
+      fullscreenBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        // Check for either 'container' or 'player' element
         const gameWrapperElem =
           document.getElementById("container") ||
           document.getElementById("player");
-        // Request fullscreen if element exists and API is supported
         if (gameWrapperElem && gameWrapperElem.requestFullscreen) {
           gameWrapperElem
             .requestFullscreen()
@@ -724,32 +721,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-    // The nav toggle logic and event delegation have been safely removed.
-    // The fullscreen logic remains intact.
   }
-  // Ensure 'setup' runs when the DOM is ready
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", setup);
   } else {
     setup();
   }
 })();
-
-if (Max) {
-  Max.addEventListener("click", function () {
-    var Player = document.getElementById("player");
-    var nav = document.getElementById("nav");
-    maxMode != maxMode;
-    if (maxMode == true) {
-      Player.style.width = "97vw";
-      Player.style.height = "97vh";
-      Player.style.margin = "0";
-      nav.style.display = "none";
-    } else if (maxMode == true) {
-      Player.style.width = "960px";
-      Player.style.height = "540px";
-      Player.style.margin = "initial";
-      nav.style.display = "flex";
-    }
-  });
-}
