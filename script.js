@@ -728,3 +728,15 @@ document.addEventListener("DOMContentLoaded", () => {
     setup();
   }
 })();
+(function () {
+  const dropdown = document.querySelector(".dropdown-content"); // select the dropdown
+  const body = document.body; // use body directly
+
+  dropdown.addEventListener("mouseenter", () => {
+    body.style.overflow = "hidden"; // disable page scroll
+  });
+
+  dropdown.addEventListener("mouseleave", () => {
+    body.style.overflow = "auto"; // restore page scroll
+  });
+})();

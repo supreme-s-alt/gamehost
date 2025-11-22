@@ -10,7 +10,12 @@ body {
   color: white;
   text-align: center;
 }
-
+#DoNotDelete {
+  text-wrap: nowrap;
+  overflow-wrap: normal;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 #Thumbnails {
   padding-top: 8px;
   position: inherit;
@@ -322,15 +327,16 @@ nav {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 9999 !important;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
+  max-width: 12vw;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
 .dropdown-content a {
