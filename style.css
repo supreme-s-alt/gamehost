@@ -272,7 +272,7 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-family: inherit;
-  transition: 0.6s, transform 0.6s ease, opacity 0.6s ease;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 
 /* LEFT SIDE */
@@ -314,6 +314,7 @@ nav {
 /* Dropbtn & Dropdown */
 .dropbtn {
   background-color: #111;
+  background: opacity 100%;
   color: white;
   padding: 25px;
   font-size: 16px;
@@ -384,11 +385,9 @@ nav {
 #gamesug:hover,
 #render:hover,
 #github:hover,
-#3000:hover,
-#3040:hover,
-#50000:hover,
+#g3000:hover,
+#g50000:hover,
 #LME:hover {
-  background-color: #333333;
   transform: scale(1.15);
   filter: brightness(1.5);
 }
@@ -409,9 +408,8 @@ nav {
 
 #render,
 #github,
-#3000,
-#3040,
-#50000,
+#g3000,
+#g50000,
 #LME {
   font-size: 12px;
   background-color: #111;
@@ -547,28 +545,27 @@ body.nav-hidden .nav-toggle {
 }
 
 #right-switch {
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  position: absolute;
-  top: 80px;
-  right: 10px;
-  transform: scaleX(-1); /* flip horizontally */
-  transform: rotate(90);
+  position: initial;
+  transform: rotate(90deg), scaleX(-1);
   cursor: pointer;
+  right: 30vw;
+  size-adjust: 5vi;
 }
 #left-switch {
-  position: absolute;
-  top: 80px;
-  right: 10px;
-  transform: scaleX(1); /* flip horizontally */
-  transform: rotate(90);
+  position: initial;
+  transform: rotate(90deg), scaleX(1);
   cursor: pointer;
+  left: 30vw;
+  size-adjust: 5vi;
 }
 #page-header {
-  position: relative;
+  position: initial;
 }
 hr {
+  color: white;
+  background-color: white;
   transition: transform 0.6s ease, opacity 0.6s ease;
   border: 0;
-  height: 1px;
+  height: 3px;
   margin: 20px 0;
 }

@@ -754,7 +754,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let rightSwitch = document.getElementById("right-switch");
   let pageHeader = document.getElementById("page-header");
   let body = document.body;
-  let nav = document.nav;
+  let nav = document.getElementById("nav-main");
+  let home = document.getElementById("home");
+  let about = document.getElementById("about");
+  let credits = document.getElementById("credits");
+  let gamesug = document.getElementById("gamesug");
+  let uplog = document.getElementById("uplog");
+  let navButtons = [home, about, credits, gamesug, uplog];
   
 
   leftSwitch.addEventListener("click", () => {
@@ -768,27 +774,23 @@ document.addEventListener("DOMContentLoaded", () => {
     if (state) {
       body.style.backgroundColor = "#0d001a";
       nav.style.backgroundColor = "#1a0030";
+      navButtons.forEach((button) => {
+        if (button && button.style) button.style.backgroundColor = "#1a0030";
+      });
     } else {
-      body.style.backgroundColor = "#1a1a1a";
-      nav.style.backgroundColor = "#333333";
+      body.style.backgroundColor = "#000000";
+      nav.style.backgroundColor = "#111";
+      navButtons.forEach((button) => {
+        if (button && button.style) button.style.backgroundColor = "#111";
+      });
     }
   }
 
   function switchContent() {
     state = !state;
-    if (state) {
-      pageHeader.textContent = "Media"
-      colorSwap();
-    } else {
-      pageHeader.textContent = "Games"
-      colorSwap();
+    if (pageHeader) {
+      pageHeader.textContent = state ? "Media" : "Games";
     }
-    /*
-    
-    */
-
-    setTimeout(() => {
-      // Change content AFTER fly-out
-    }, 600); // Match CSS transition duration
+    colorSwap();
   }
 })();
