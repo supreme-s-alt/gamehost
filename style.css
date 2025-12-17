@@ -5,6 +5,7 @@ body {
   text-align: center;
   text-wrap: balanced;
   overflow-wrap: break-word;
+  overflow-x: hidden;
   background-color: #000000;
   font-family: Helvetica, Arial, sans-serif; /* Updated to use Helvetica */
   color: white;
@@ -301,7 +302,7 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  transition:   background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
   font-family: inherit;
 }
@@ -387,7 +388,8 @@ nav {
 #github:hover,
 #g3000:hover,
 #g50000:hover,
-#LME:hover {
+#LME:hover,
+#static:hover {
   transform: scale(1.15);
   filter: brightness(1.5);
 }
@@ -410,8 +412,9 @@ nav {
 #github,
 #g3000,
 #g50000,
-#LME {
-  font-size: 12px;
+#LME,
+#static {
+  font-size: 15px;
   background-color: #111;
   color: #ffffff;
   border: none;
@@ -545,21 +548,32 @@ body.nav-hidden .nav-toggle {
 }
 
 #right-switch {
-  position: initial;
-  transform: rotate(90deg), scaleX(-1);
+  display: inline;
+  position: relative;
+  transform: rotate(270deg);
   cursor: pointer;
-  right: 30vw;
-  size-adjust: 5vi;
+  right: -5vw;
+  max-width: 6vw;
+  max-height: auto;
 }
 #left-switch {
-  position: initial;
-  transform: rotate(90deg), scaleX(1);
+  display: inline;
+  position: relative;
+  transform: rotate(90deg);
   cursor: pointer;
-  left: 30vw;
-  size-adjust: 5vi;
+  left: -5vw;
+  max-width: 6vw;
+  max-height: auto;
 }
 #page-header {
-  position: initial;
+  display: inline;
+  position: relative;
+  transition: transform 0.6s ease;
+  font-size: 6vi;
+}
+#left-switch:hover,
+#right-switch:hover {
+  transform: scale(1.15), rotate(inherit);
 }
 hr {
   color: white;
@@ -568,4 +582,14 @@ hr {
   border: 0;
   height: 3px;
   margin: 20px 0;
+}
+#main-nav {
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+#index-box {
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+#media-box {
+  transform: translateX(200%);
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }

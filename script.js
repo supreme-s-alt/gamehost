@@ -749,48 +749,130 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
 (function () {
+  let body = document.body;
   let state = false;
+  let direction = "huh";
+  let media = document.getElementById("media-box");
+  let index = document.getElementById("index-box");
   let leftSwitch = document.getElementById("left-switch");
   let rightSwitch = document.getElementById("right-switch");
   let pageHeader = document.getElementById("page-header");
-  let body = document.body;
-  let nav = document.getElementById("nav-main");
+  let nav = document.getElementById("main-nav");
   let home = document.getElementById("home");
   let about = document.getElementById("about");
   let credits = document.getElementById("credits");
   let gamesug = document.getElementById("gamesug");
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
-  
 
-  leftSwitch.addEventListener("click", () => {
-    switchContent();
-  });
-  rightSwitch.addEventListener("click", () => {
-    switchContent();
-  });
+  /*
+  function timeOut() {
+    timeoutId = setTimeout(() => {
+      if (state) {
 
+        if (state) {
+          index.style.display = "none";
+        } else {
+
+        }
+        
+        index.style.display = "none";
+      } else {
+        
+        if (state) {
+          
+        } else {
+
+        }
+        
+        media.style.display = "none";
+      }
+    }, 600);
+  }
+  */
   function colorSwap() {
     if (state) {
       body.style.backgroundColor = "#0d001a";
       nav.style.backgroundColor = "#1a0030";
       navButtons.forEach((button) => {
-        if (button && button.style) button.style.backgroundColor = "#1a0030";
+        button.style.backgroundColor = "#1a0030";
       });
     } else {
       body.style.backgroundColor = "#000000";
       nav.style.backgroundColor = "#111";
       navButtons.forEach((button) => {
-        if (button && button.style) button.style.backgroundColor = "#111";
+        button.style.backgroundColor = "#111";
       });
+    }
+  }
+
+  function pageSwitch() {
+    if (direction === "R") {
+      if (state) {
+        /*
+        media.style.visibility = "hidden";
+        media.style.transform = "translate(-200%)";
+
+        void media.offsetHeight;
+
+        media.style.visibility = "visible";
+        */
+        index.style.transform = "translate(200%)";
+        media.style.transform = "translate(0%)";
+      } else {
+        /*
+        index.style.visibility = "hidden";
+        index.style.transform = "translate(-200%)";
+
+        void index.offsetHeight;
+
+        index.style.visibility = "visible";
+        */
+        index.style.transform = "translate(0%)";
+        media.style.transform = "translate(200%)";
+      }
+    } else if (direction === "L") {
+      if (state) {
+        /*
+        media.style.visibility = "hidden";
+        media.style.transform = "translate(200%)";
+
+        void media.offsetHeight;
+
+        media.style.visibility = "visible";
+        */
+        index.style.transform = "translate(-200%)";
+        media.style.transform = "translate(0%)";
+      } else {
+        /*
+        index.style.visibility = "hidden";
+        index.style.transform = "translate(200%)";
+
+        void index.offsetHeight;
+
+        index.style.visibility = "visible";
+        */
+        index.style.transform = "translate(0%)";
+        media.style.transform = "translate(-200%)";
+
+        // make a 6 second timer that uses hide and scroll lock
+      }
     }
   }
 
   function switchContent() {
     state = !state;
-    if (pageHeader) {
-      pageHeader.textContent = state ? "Media" : "Games";
-    }
+    pageHeader.textContent = state ? "Media" : "Games";
     colorSwap();
+    pageSwitch();
   }
+
+  leftSwitch.addEventListener("click", () => {
+    direction = "L";
+    switchContent();
+  });
+  rightSwitch.addEventListener("click", () => {
+    direction = "R";
+    switchContent();
+  });
 })();
