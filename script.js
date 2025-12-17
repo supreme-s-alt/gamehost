@@ -751,7 +751,7 @@ document.addEventListener("DOMContentLoaded", () => {
 (function () {
   let body = document.body;
   let state = false;
-  let direction = "huh";
+  let direction = "box";
   let media = document.getElementById("media-box");
   let index = document.getElementById("index-box");
   let leftSwitch = document.getElementById("left-switch");
@@ -817,8 +817,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         media.style.visibility = "visible";
         */
-        index.style.transform = "translate(200%)";
-        media.style.transform = "translate(0%)";
+        index.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(-200%)";
       } else {
         /*
         index.style.visibility = "hidden";
@@ -828,8 +828,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         index.style.visibility = "visible";
         */
-        index.style.transform = "translate(0%)";
-        media.style.transform = "translate(200%)";
+        index.style.transform = "translateX(0)";
+        media.style.transform = "translateX(200%)";
       }
     } else if (direction === "L") {
       if (state) {
@@ -841,8 +841,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         media.style.visibility = "visible";
         */
-        index.style.transform = "translate(-200%)";
-        media.style.transform = "translate(0%)";
+        index.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(200%)";
       } else {
         /*
         index.style.visibility = "hidden";
@@ -852,8 +852,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         index.style.visibility = "visible";
         */
-        index.style.transform = "translate(0%)";
-        media.style.transform = "translate(-200%)";
+        index.style.transform = "translateX(0%)";
+        media.style.transform = "translateX(-200%)";
 
         // make a 6 second timer that uses hide and scroll lock
       }
