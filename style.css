@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, Arial, sans-serif; /* Updated to use Helvetica */
   color: white;
   text-align: center;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 #DoNotDelete {
   text-wrap: nowrap;
@@ -141,7 +142,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 40px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.6s, transform 0.3s ease, opacity 0.6s ease;
 }
 
 #achievement:hover,
@@ -252,7 +253,7 @@ body {
 #wizard:hover,
 #worst:hover,
 #g2048:hover {
-  background-color: #333333;
+  filter: brightness(1.5);
   transform: scale(1.15);
 }
 
@@ -271,6 +272,7 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-family: inherit;
+  transition: 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 
 /* LEFT SIDE */
@@ -299,13 +301,13 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition:   background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
   font-family: inherit;
 }
 
 #home:hover {
-  background-color: #333333;
+  filter: brightness(1.5);
   transform: scale(1.15);
 }
 
@@ -322,6 +324,7 @@ nav {
   background-image: url("images/dropdown.png");
   background-size: 100% 100%;
   cursor: pointer;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 
 .dropdown {
@@ -355,7 +358,7 @@ nav {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #333333;
+  filter: brightness(1.5);
 }
 
 /* Nav bar buttons on right */
@@ -371,7 +374,7 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
 }
 
@@ -387,9 +390,11 @@ nav {
 #LME:hover {
   background-color: #333333;
   transform: scale(1.15);
+  filter: brightness(1.5);
 }
 
 #feedback {
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   resize: none;
   min-width: 50px;
   width: 60%;
@@ -413,7 +418,7 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
 }
 
@@ -539,4 +544,31 @@ body.nav-hidden .nav-toggle {
   border: none;
   width: 960px; /* set a fixed width or responsive one */
   height: 540px;
+}
+
+#right-switch {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  transform: scaleX(-1); /* flip horizontally */
+  transform: rotate(90);
+  cursor: pointer;
+}
+#left-switch {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  transform: scaleX(1); /* flip horizontally */
+  transform: rotate(90);
+  cursor: pointer;
+}
+#page-header {
+  position: relative;
+}
+hr {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
 }

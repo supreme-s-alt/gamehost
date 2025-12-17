@@ -1,3 +1,6 @@
+//Put global variables and functions here
+
+//Links function
 document.addEventListener("DOMContentLoaded", () => {
   const Achievement = document.getElementById("achievement");
   const Achievement2 = document.getElementById("achievement2");
@@ -701,6 +704,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+//fullscreen function
 (function () {
   const Max = document.getElementById("nav-toggle");
   let maxMode = false;
@@ -728,6 +733,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setup();
   }
 })();
+
+//dropdown scroll lock
 (function () {
   const dropdown = document.querySelector(".dropdown-content"); // select the dropdown
   const body = document.body; // use body directly
@@ -739,4 +746,49 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdown.addEventListener("mouseleave", () => {
     body.style.overflow = "auto"; // restore page scroll
   });
+})();
+
+(function () {
+  let state = false;
+  let leftSwitch = document.getElementById("left-switch");
+  let rightSwitch = document.getElementById("right-switch");
+  let pageHeader = document.getElementById("page-header");
+  let body = document.body;
+  let nav = document.nav;
+  
+
+  leftSwitch.addEventListener("click", () => {
+    switchContent();
+  });
+  rightSwitch.addEventListener("click", () => {
+    switchContent();
+  });
+
+  function colorSwap() {
+    if (state) {
+      body.style.backgroundColor = "#0d001a";
+      nav.style.backgroundColor = "#1a0030";
+    } else {
+      body.style.backgroundColor = "#1a1a1a";
+      nav.style.backgroundColor = "#333333";
+    }
+  }
+
+  function switchContent() {
+    state = !state;
+    if (state) {
+      pageHeader.textContent = "Media"
+      colorSwap();
+    } else {
+      pageHeader.textContent = "Games"
+      colorSwap();
+    }
+    /*
+    
+    */
+
+    setTimeout(() => {
+      // Change content AFTER fly-out
+    }, 600); // Match CSS transition duration
+  }
 })();
