@@ -4,53 +4,83 @@
 document.addEventListener("DOMContentLoaded", () => {
   const Achievement = document.getElementById("achievement");
   const Achievement2 = document.getElementById("achievement2");
+  const Amanda = document.getElementById("amanda");
+  const Apple = document.getElementById("apple");
   const Arcane = document.getElementById("arcane");
   const Aow = document.getElementById("aow");
   const Aow2 = document.getElementById("aow2");
+  const Balatro = document.getElementById("balatro");
+  const Baldyc = document.getElementById("baldyc");
+  const Baldyplus = document.getElementById("baldyplus");
   const Balls = document.getElementById("balls");
   const Balls2 = document.getElementById("balls2");
-  const Bics = document.getElementById("bics");
+  const Bendy = document.getElementById("bendy");
   const Bic = document.getElementById("bic");
   const Bic2 = document.getElementById("bic2");
   const Bic3 = document.getElementById("bic3");
+  const Bics = document.getElementById("bics");
+  const Block = document.getElementById("block");
   const Bob = document.getElementById("bob");
-  const BTDS = document.getElementById("btds");
   const BTD1 = document.getElementById("btd1");
   const BTD2 = document.getElementById("btd2");
   const BTD5 = document.getElementById("btd5");
+  const BTDS = document.getElementById("btds");
   const BTS = document.getElementById("bts");
   const Burrito = document.getElementById("burrito");
   const Cat = document.getElementById("cat");
+  const Celeste = document.getElementById("celeste");
   const Chibi = document.getElementById("chibi");
+  const Class = document.getElementById("class");
   const Cookie = document.getElementById("cookie");
+  const Cross = document.getElementById("cross");
+  const Cuphead = document.getElementById("cuphead");
+  const Deadseat = document.getElementById("deadseat");
+  const Deltarune = document.getElementById("deltarune");
+  const Deltatraveler = document.getElementById("deltatraveler");
   const Dig = document.getElementById("dig");
-  const DLS = document.getElementById("dls");
   const DL1 = document.getElementById("dl1");
   const DL2 = document.getElementById("dl2");
   const DL3 = document.getElementById("dl3");
   const DL4 = document.getElementById("dl4");
+  const DLS = document.getElementById("dls");
   const Doodle = document.getElementById("doodle");
   const Electric = document.getElementById("electric");
   const Fancy = document.getElementById("fancy");
+  const Fathom = document.getElementById("fathom");
+  const Flash = document.getElementById("flash");
+  const FNAF1 = document.getElementById("FNAF1");
+  const FNAF2 = document.getElementById("FNAF2");
+  const FNAF3 = document.getElementById("FNAF3");
+  const FNAF4 = document.getElementById("FNAF4");
+  const FNAFPS = document.getElementById("FNAFPS");
+  const FNAFSL = document.getElementById("FNAFSL");
+  const FNAFW = document.getElementById("FNAFW");
   const FNF = document.getElementById("fnf");
   const FNFMods = document.getElementById("fnfmods");
-  const Flash = document.getElementById("flash");
   const Galaxy = document.getElementById("galaxy");
+  const G2048 = document.getElementById("g2048");
   const GKnight = document.getElementById("gknight");
+  const GOI = document.getElementById("GOI");
   const Gooped = document.getElementById("gooped");
   const Hard = document.getElementById("hard");
   const HSBTB = document.getElementById("hsbtb");
   const HSETP = document.getElementById("hsetp");
   const HSFTC = document.getElementById("hsftc");
   const HSITA = document.getElementById("hsita");
+  const Hollow = document.getElementById("hollow");
   const HSS = document.getElementById("hss");
   const HSSTD = document.getElementById("hsstd");
   const IMP = document.getElementById("imposs");
   const Indie = document.getElementById("indie");
   const IReady = document.getElementById("iready");
+  const Jack = document.getElementById("jack");
+  const Joyride = document.getElementById("joyride");
+  const Karlson = document.getElementById("karlson");
+  const Kindergarden = document.getElementById("kindergarden");
+  const Kindergarden2 = document.getElementById("kindergarden2");
+  const Kindergarden3 = document.getElementById("kindergarden3");
   const Kitty = document.getElementById("kitty");
   const Knight = document.getElementById("knight");
-  const Jack = document.getElementById("jack");
   const Last = document.getElementById("last");
   const Level = document.getElementById("level");
   const LTFS = document.getElementById("LTFS");
@@ -61,29 +91,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const Mario = document.getElementById("mario");
   const Meat = document.getElementById("meat");
   const Mike = document.getElementById("mike");
+  const Money = document.getElementById("money");
   const Moto = document.getElementById("moto");
   const Moto2 = document.getElementById("moto2");
   const MVSL = document.getElementById("MVSL");
+  const Neon = document.getElementById("neon");
   const Neo = document.getElementById("neo");
+  const Omori = document.getElementById("omori");
   const Osu = document.getElementById("osu");
   const Paburg = document.getElementById("paburg");
   const Padog = document.getElementById("padog");
   const Pafree = document.getElementById("pafree");
+  const Palu = document.getElementById("palu");
   const Papan = document.getElementById("papan");
   const Papiz = document.getElementById("papiz");
-  const Palu = document.getElementById("palu");
   const Pat = document.getElementById("pat");
   const Path = document.getElementById("path");
   const Pizza = document.getElementById("pizza");
   const PizzaQ = document.getElementById("pizzaq");
   const PizzaTut = document.getElementById("pizzatut");
+  const PizzaTower = document.getElementById("pizza-tower");
   const Pls = document.getElementById("pls");
-  const Rss = document.getElementById("rss");
+  const Raft = document.getElementById("raft");
+  const Repo = document.getElementById("repo");
+  const Roulette = document.getElementById("roulette");
   const Rs1 = document.getElementById("rs1");
   const Rs2 = document.getElementById("rs2");
   const Rs3 = document.getElementById("rs3");
   const Rs4 = document.getElementById("rs4");
   const Rs5 = document.getElementById("rs5");
+  const Rss = document.getElementById("rss");
+  const Runaway = document.getElementById("runaway");
   const Rt1 = document.getElementById("rt1");
   const Rt2 = document.getElementById("rt2");
   const Scratch = document.getElementById("scratch");
@@ -91,24 +129,35 @@ document.addEventListener("DOMContentLoaded", () => {
   const SKitty2 = document.getElementById("skitty2");
   const SKittyL = document.getElementById("skittyl");
   const SKittyLS = document.getElementById("skittyls");
-  const SM63 = document.getElementById("sm63");
-  const SM64 = document.getElementById("sm64");
+  const Slender = document.getElementById("slender");
+  const Slime = document.getElementById("slime");
+  const Smario = document.getElementById("smario");
   const Smash = document.getElementById("smash");
   const Smash2 = document.getElementById("smash2");
-  const Sonic = document.getElementById("sonic");
-  const Soul = document.getElementById("souls");
   const Shell = document.getElementById("shell");
+  const Sonic = document.getElementById("sonic");
+  const SonicExe = document.getElementById("sonic-exe");
+  const Soul = document.getElementById("souls");
+  const SWI = document.getElementById("SWI");
+  const Tattletail = document.getElementById("tattletail");
+  const Terraria = document.getElementById("terraria");
+  const TLOZMM = document.getElementById("TLOZMM");
+  const TLOZOT = document.getElementById("TLOZOT");
+  const TMITW = document.getElementById("TMITW");
+  const TNMN = document.getElementById("TNMN");
   const Toss = document.getElementById("toss");
   const Tricky = document.getElementById("tricky");
+  const Ultrakill = document.getElementById("ultrakill");
   const Underfell = document.getElementById("underfell");
   const Undertale = document.getElementById("undertale");
+  const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
+  const Webfishing = document.getElementById("webfishing");
   const W1 = document.getElementById("w1");
   const W2 = document.getElementById("w2");
   const W3 = document.getElementById("w3");
   const Wizard = document.getElementById("wizard");
   const Worst = document.getElementById("worst");
-  const G2048 = document.getElementById("g2048");
 
   // Other pages
   const About = document.getElementById("about");
@@ -649,6 +698,263 @@ document.addEventListener("DOMContentLoaded", () => {
   if (G2048) {
     G2048.addEventListener("click", function () {
       window.location.href = "../html-bin/2048.html";
+    });
+  }
+
+  // New game click handlers (added, alphabetical)
+  if (Amanda) {
+    Amanda.addEventListener("click", function () {
+      window.location.href = "../html-bin/amanda.html";
+    });
+  }
+  if (Apple) {
+    Apple.addEventListener("click", function () {
+      window.location.href = "../html-bin/apple.html";
+    });
+  }
+  if (Balatro) {
+    Balatro.addEventListener("click", function () {
+      window.location.href = "../html-bin/balatro.html";
+    });
+  }
+  if (Baldyc) {
+    Baldyc.addEventListener("click", function () {
+      window.location.href = "../html-bin/baldyc.html";
+    });
+  }
+  if (Baldyplus) {
+    Baldyplus.addEventListener("click", function () {
+      window.location.href = "../html-bin/baldyplus.html";
+    });
+  }
+  if (Bendy) {
+    Bendy.addEventListener("click", function () {
+      window.location.href = "../html-bin/bendy.html";
+    });
+  }
+  if (Block) {
+    Block.addEventListener("click", function () {
+      window.location.href = "../html-bin/block.html";
+    });
+  }
+  if (Celeste) {
+    Celeste.addEventListener("click", function () {
+      window.location.href = "../html-bin/celeste.html";
+    });
+  }
+  if (Class) {
+    Class.addEventListener("click", function () {
+      window.location.href = "../html-bin/class.html";
+    });
+  }
+  if (Cross) {
+    Cross.addEventListener("click", function () {
+      window.location.href = "../html-bin/cross.html";
+    });
+  }
+  if (Cuphead) {
+    Cuphead.addEventListener("click", function () {
+      window.location.href = "../html-bin/cuphead.html";
+    });
+  }
+  if (Deadseat) {
+    Deadseat.addEventListener("click", function () {
+      window.location.href = "../html-bin/deadseat.html";
+    });
+  }
+  if (Deltarune) {
+    Deltarune.addEventListener("click", function () {
+      window.location.href = "../html-bin/deltarune.html";
+    });
+  }
+  if (Deltatraveler) {
+    Deltatraveler.addEventListener("click", function () {
+      window.location.href = "../html-bin/deltatraveler.html";
+    });
+  }
+  if (Fathom) {
+    Fathom.addEventListener("click", function () {
+      window.location.href = "../html-bin/fathom.html";
+    });
+  }
+  if (FNAF1) {
+    FNAF1.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnaf1.html";
+    });
+  }
+  if (FNAF2) {
+    FNAF2.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnaf2.html";
+    });
+  }
+  if (FNAF3) {
+    FNAF3.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnaf3.html";
+    });
+  }
+  if (FNAF4) {
+    FNAF4.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnaf4.html";
+    });
+  }
+  if (FNAFPS) {
+    FNAFPS.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnafps.html";
+    });
+  }
+  if (FNAFSL) {
+    FNAFSL.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnafsl.html";
+    });
+  }
+  if (FNAFW) {
+    FNAFW.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnafw.html";
+    });
+  }
+  if (GOI) {
+    GOI.addEventListener("click", function () {
+      window.location.href = "../html-bin/goi.html";
+    });
+  }
+  if (Hollow) {
+    Hollow.addEventListener("click", function () {
+      window.location.href = "../html-bin/hollow.html";
+    });
+  }
+  if (Joyride) {
+    Joyride.addEventListener("click", function () {
+      window.location.href = "../html-bin/joyride.html";
+    });
+  }
+  if (Karlson) {
+    Karlson.addEventListener("click", function () {
+      window.location.href = "../html-bin/karlson.html";
+    });
+  }
+  if (Kindergarden) {
+    Kindergarden.addEventListener("click", function () {
+      window.location.href = "../html-bin/kindergarden.html";
+    });
+  }
+  if (Kindergarden2) {
+    Kindergarden2.addEventListener("click", function () {
+      window.location.href = "../html-bin/kindergarden2.html";
+    });
+  }
+  if (Kindergarden3) {
+    Kindergarden3.addEventListener("click", function () {
+      window.location.href = "../html-bin/kindergarden3.html";
+    });
+  }
+  if (Money) {
+    Money.addEventListener("click", function () {
+      window.location.href = "../html-bin/money.html";
+    });
+  }
+  if (Neon) {
+    Neon.addEventListener("click", function () {
+      window.location.href = "../html-bin/neon.html";
+    });
+  }
+  if (Omori) {
+    Omori.addEventListener("click", function () {
+      window.location.href = "../html-bin/omori.html";
+    });
+  }
+  if (PizzaTower) {
+    PizzaTower.addEventListener("click", function () {
+      window.location.href = "../html-bin/pizza-tower.html";
+    });
+  }
+  if (Raft) {
+    Raft.addEventListener("click", function () {
+      window.location.href = "../html-bin/raft.html";
+    });
+  }
+  if (Repo) {
+    Repo.addEventListener("click", function () {
+      window.location.href = "../html-bin/repo.html";
+    });
+  }
+  if (Roulette) {
+    Roulette.addEventListener("click", function () {
+      window.location.href = "../html-bin/roulette.html";
+    });
+  }
+  if (Runaway) {
+    Runaway.addEventListener("click", function () {
+      window.location.href = "../html-bin/runaway.html";
+    });
+  }
+  if (Slender) {
+    Slender.addEventListener("click", function () {
+      window.location.href = "../html-bin/slender.html";
+    });
+  }
+  if (Slime) {
+    Slime.addEventListener("click", function () {
+      window.location.href = "../html-bin/slime.html";
+    });
+  }
+  if (Smario) {
+    Smario.addEventListener("click", function () {
+      window.location.href = "../html-bin/smario.html";
+    });
+  }
+  if (SonicExe) {
+    SonicExe.addEventListener("click", function () {
+      window.location.href = "../html-bin/sonic-exe.html";
+    });
+  }
+  if (SWI) {
+    SWI.addEventListener("click", function () {
+      window.location.href = "../html-bin/swi.html";
+    });
+  }
+  if (Tattletail) {
+    Tattletail.addEventListener("click", function () {
+      window.location.href = "../html-bin/tattletail.html";
+    });
+  }
+  if (Terraria) {
+    Terraria.addEventListener("click", function () {
+      window.location.href = "../html-bin/terraria.html";
+    });
+  }
+  if (TLOZMM) {
+    TLOZMM.addEventListener("click", function () {
+      window.location.href = "../html-bin/tlozmm.html";
+    });
+  }
+  if (TLOZOT) {
+    TLOZOT.addEventListener("click", function () {
+      window.location.href = "../html-bin/tlozot.html";
+    });
+  }
+  if (TMITW) {
+    TMITW.addEventListener("click", function () {
+      window.location.href = "../html-bin/tmitw.html";
+    });
+  }
+  if (TNMN) {
+    TNMN.addEventListener("click", function () {
+      window.location.href = "../html-bin/tnmn.html";
+    });
+  }
+  if (Ultrakill) {
+    Ultrakill.addEventListener("click", function () {
+      window.location.href = "../html-bin/ultrakill.html";
+    });
+  }
+  if (Undertaley) {
+    Undertaley.addEventListener("click", function () {
+      window.location.href = "../html-bin/undertaley.html";
+    });
+  }
+  if (Webfishing) {
+    Webfishing.addEventListener("click", function () {
+      window.location.href = "../html-bin/webfishing.html";
     });
   }
 

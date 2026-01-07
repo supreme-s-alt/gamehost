@@ -20,76 +20,113 @@ body {
 }
 #Thumbnails {
   padding-top: 8px;
-  position: inherit;
+  position: relative;
   align-self: center;
   border-radius: 40px;
-  margin: 1000;
+  margin: 10px auto; /* remove huge margin */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #achievement,
 #achievement2,
+#amanda,
+#apple,
 #arcane,
 #aow,
 #aow2,
+#balatro,
+#baldyc,
+#baldyplus,
 #balls,
 #balls2,
-#bics,
+#bendy,
 #bic,
 #bic2,
 #bic3,
+#bics,
+#block,
 #bob,
-#btds,
 #btd1,
 #btd2,
 #btd5,
+#btds,
 #bts,
 #burrito,
 #cat,
+#celeste,
 #chibi,
+#class,
 #cookie,
+#cross,
+#cuphead,
+#deadseat,
+#deltarune,
+#deltatraveler,
 #dig,
-#dls,
 #dl1,
 #dl2,
 #dl3,
 #dl4,
+#dls,
 #doodle,
 #electric,
 #fancy,
-#fullscreen,
+#fathom,
+#FNAF1,
+#FNAF2,
+#FNAF3,
+#FNAF4,
+#FNAFPS,
+#FNAFSL,
+#FNAFW,
 #fnf,
 #fnfmods,
+#fullscreen,
 #galaxy,
+#g2048,
 #gknight,
+#GOI,
 #gooped,
 #hard,
-#hss,
+#hollow,
 #hsbtb,
 #hsetp,
 #hsftc,
 #hsita,
+#hss,
 #hsstd,
 #imposs,
 #indie,
 #iready,
+#jack,
+#joyride,
+#karlson,
+#kindergarden,
+#kindergarden2,
+#kindergarden3,
 #knight,
 #kitty,
-#jack,
 #last,
-#LTFS,
-#LTF1,
-#LTF2,
-#LTF3,
 #level,
+#ltf1,
+#ltf2,
+#ltf3,
+#ltfs,
 #madness,
 #mario,
 #maximize,
 #meat,
+#media-button,
 #mike,
+#money,
 #moto,
 #moto2,
-#MVSL,
+#mvsl,
 #neo,
+#neon,
+#omori,
 #osu,
 #paburg,
 #padog,
@@ -101,41 +138,58 @@ body {
 #path,
 #pizza,
 #pizzaq,
+#pizzatower,
 #pizzatut,
 #pls,
-#rss,
+#raft,
+#repo,
+#roulette,
 #rs1,
 #rs2,
 #rs3,
 #rs4,
 #rs5,
+#rss,
 #rt1,
 #rt2,
+#runaway,
 #scratch,
 #shell,
 #skitty,
 #skitty2,
 #skittyl,
 #skittyls,
+#slender,
+#slime,
 #sm63,
 #sm64,
+#smario,
 #smash,
 #smash2,
 #sonic,
+#sonic-exe,
 #souls,
 #submit,
+#SWI,
+#tattletail,
+#terraria,
+#TLOZMM,
+#TLOZOT,
+#TMITW,
+#TNMN,
 #toss,
 #tricky,
+#ultrakill,
 #underfell,
 #undertale,
+#undertaley,
 #undyne,
+#webfishing,
 #w1,
 #w2,
 #w3,
 #wizard,
-#worst,
-#g2048,
-#media-button {
+#worst {
   padding: 10px 20px;
   font-size: 18px;
   margin: 10px;
@@ -149,67 +203,102 @@ body {
 
 #achievement:hover,
 #achievement2:hover,
+#amanda:hover,
+#apple:hover,
 #arcane:hover,
 #aow:hover,
 #aow2:hover,
+#balatro:hover,
+#baldyc:hover,
+#baldyplus:hover,
 #balls:hover,
 #balls2:hover,
-#bics:hover,
+#bendy:hover,
 #bic:hover,
 #bic2:hover,
 #bic3:hover,
+#bics:hover,
+#block:hover,
 #bob:hover,
-#btds:hover,
 #btd1:hover,
 #btd2:hover,
 #btd5:hover,
+#btds:hover,
 #bts:hover,
 #burrito:hover,
 #cat:hover,
+#celeste:hover,
 #chibi:hover,
+#class:hover,
 #cookie:hover,
+#cross:hover,
+#cuphead:hover,
+#deadseat:hover,
+#deltarune:hover,
+#deltatraveler:hover,
 #dig:hover,
-#dls:hover,
 #dl1:hover,
 #dl2:hover,
 #dl3:hover,
 #dl4:hover,
+#dls:hover,
 #doodle:hover,
 #electric:hover,
 #fancy:hover,
-#fullscreen:hover,
+#fathom:hover,
+#FNAF1:hover,
+#FNAF2:hover,
+#FNAF3:hover,
+#FNAF4:hover,
+#FNAFPS:hover,
+#FNAFSL:hover,
+#FNAFW:hover,
 #fnf:hover,
 #fnfmods:hover,
+#fullscreen:hover,
 #galaxy:hover,
+#g2048:hover,
 #gknight:hover,
+#GOI:hover,
 #gooped:hover,
 #hard:hover,
-#hss:hover,
+#hollow:hover,
 #hsbtb:hover,
 #hsetp:hover,
 #hsftc:hover,
 #hsita:hover,
+#hss:hover,
 #hsstd:hover,
 #imposs:hover,
 #indie:hover,
 #iready:hover,
+#jack:hover,
+#joyride:hover,
+#karlson:hover,
+#kindergarden:hover,
+#kindergarden2:hover,
+#kindergarden3:hover,
 #knight:hover,
 #kitty:hover,
-#jack:hover,
 #last:hover,
-#LTFS:hover,
-#LTF1:hover,
-#LTF2:hover,
-#LTF3:hover,
 #level:hover,
+#ltf1:hover,
+#ltf2:hover,
+#ltf3:hover,
+#ltfs:hover,
+#madness:hover,
 #mario:hover,
 #maximize:hover,
 #meat:hover,
+#media-button:hover,
 #mike:hover,
+#money:hover,
 #moto:hover,
 #moto2:hover,
-#MVSL:hover,
+#mvsl:hover,
 #neo:hover,
+#neon:hover,
+#omori:hover,
 #osu:hover,
 #paburg:hover,
 #padog:hover,
@@ -221,42 +310,59 @@ body {
 #path:hover,
 #pizza:hover,
 #pizzaq:hover,
+#pizzatower:hover,
 #pizzatut:hover,
 #pls:hover,
-#rss:hover,
+#raft:hover,
+#repo:hover,
+#roulette:hover,
 #rs1:hover,
 #rs2:hover,
 #rs3:hover,
 #rs4:hover,
 #rs5:hover,
+#rss:hover,
 #rt1:hover,
 #rt2:hover,
+#runaway:hover,
 #scratch:hover,
 #shell:hover,
 #skitty:hover,
 #skitty2:hover,
 #skittyl:hover,
 #skittyls:hover,
+#slender:hover,
+#slime:hover,
 #sm63:hover,
 #sm64:hover,
+#smario:hover,
 #smash:hover,
 #smash2:hover,
 #sonic:hover,
+#sonic-exe:hover,
 #souls:hover,
 #submit:hover,
+#swi:hover,
+#tattletail:hover,
+#terraria:hover,
+#TLOZMM:hover,
+#TLOZOT:hover,
+#TMITW:hover,
+#TNMN:hover,
 #toss:hover,
 #tricky:hover,
+#ultrakill:hover,
 #underfell:hover,
 #undertale:hover,
+#undertaley:hover,
 #undyne:hover,
+#webfishing:hover,
 #w1:hover,
 #w2:hover,
 #w3:hover,
 #wizard:hover,
-#worst:hover,
-#g2048:hover,
-#media-button:hover {
-  filter: brightness(1.5);
+#worst:hover {
+  background-color: #333333;
   transform: scale(1.15);
 }
 
@@ -432,14 +538,19 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .game-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   margin: 10px;
   padding: 0;
   background-color: #111;
@@ -554,7 +665,7 @@ body.nav-hidden .nav-toggle {
   position: relative;
   transform: rotate(270deg);
   cursor: pointer;
-  right: -5vw;
+  right: -2vw; /* instead of -5vw */
   max-width: 6vw;
   max-height: auto;
 }
@@ -563,15 +674,20 @@ body.nav-hidden .nav-toggle {
   position: relative;
   transform: rotate(90deg);
   cursor: pointer;
-  left: -5vw;
+  left: -2vw;  /* instead of -5vw */
   max-width: 6vw;
   max-height: auto;
 }
 #page-header {
-  display: inline;
+  display: inline-block;
   position: relative;
   transition: transform 0.6s ease;
-  font-size: 6vi;
+  font-size: 6vh;
+  font-family: inherit;
+  color: #ffffff;
+  text-align: center;
+  text-wrap: balanced;
+  text-wrap: nowrap;
 }
 #left-switch:hover,
 #right-switch:hover {
@@ -589,11 +705,24 @@ hr {
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 #index-box {
-  position: absolute;
+  transform: translateX(0);
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+  position: relative;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 #media-box {
+  padding-left: 40px;
+  padding-right: 40px;
   top: 2vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: center;
   position: absolute;
   transform: translateX(200%);
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
