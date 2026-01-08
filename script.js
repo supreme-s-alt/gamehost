@@ -1056,8 +1056,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 (function () {
   let body = document.body;
-  let state = false;
+  let state = 0; //0 is index, 1 is media, 2 is indie
   let direction = "box";
+  let indie = document.getElementById("indie-box");
   let media = document.getElementById("media-box");
   let index = document.getElementById("index-box");
   let leftSwitch = document.getElementById("left-switch");
@@ -1071,104 +1072,87 @@ document.addEventListener("DOMContentLoaded", () => {
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
 
-  /*
-  function timeOut() {
-    timeoutId = setTimeout(() => {
-      if (state) {
-
-        if (state) {
-          index.style.display = "none";
-        } else {
-
-        }
-        
-        index.style.display = "none";
-      } else {
-        
-        if (state) {
-          
-        } else {
-
-        }
-        
-        media.style.display = "none";
-      }
-    }, 600);
-  }
-  */
   function colorSwap() {
-    if (state) {
+    if (state === 0) {
+      // Games
+      body.style.backgroundColor = "#000000";
+      nav.style.backgroundColor = "#111";
+      navButtons.forEach((button) => {
+        button.style.backgroundColor = "#111";
+      });
+    } else if (state === 1) {
+      // Media
       body.style.backgroundColor = "#0d001a";
       nav.style.backgroundColor = "#1a0030";
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#1a0030";
       });
-    } else {
-      body.style.backgroundColor = "#000000";
-      nav.style.backgroundColor = "#111";
+    } else if (state === 2) {
+      // Indie
+      body.style.backgroundColor = "#01001a";
+      nav.style.backgroundColor = "#050030";
       navButtons.forEach((button) => {
-        button.style.backgroundColor = "#111";
+        button.style.backgroundColor = "#050030";
       });
     }
   }
 
   function pageSwitch() {
     if (direction === "R") {
-      if (state) {
-        /*
-        media.style.visibility = "hidden";
-        media.style.transform = "translate(-200%)";
-
-        void media.offsetHeight;
-
-        media.style.visibility = "visible";
-        */
-        index.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(-200%)";
-      } else {
-        /*
+      if (state === 1) {
         index.style.visibility = "hidden";
-        index.style.transform = "translate(-200%)";
-
-        void index.offsetHeight;
-
+        media.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(0)";
+      } else if (state === 0){
         index.style.visibility = "visible";
-        */
+        indie.style.visibility = "hidden";
         index.style.transform = "translateX(0)";
+        indie.style.transform = "translateX(-200%)";
         media.style.transform = "translateX(200%)";
+      } else if (state === 2) {
+        media.style.visibility = "hidden";
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(0%)";
+        media.style.transform = "translateX(-200%)";
       }
     } else if (direction === "L") {
-      if (state) {
-        /*
-        media.style.visibility = "hidden";
-        media.style.transform = "translate(200%)";
-
-        void media.offsetHeight;
-
+      if (state === 1) {
+        indie.style.visibility = "hidden";
         media.style.visibility = "visible";
-        */
-        index.style.transform = "translateX(-200%)";
-        media.style.transform = "translateX(200%)";
-      } else {
-        /*
-        index.style.visibility = "hidden";
-        index.style.transform = "translate(200%)";
-
-        void index.offsetHeight;
-
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(0)";
+      } else if (state === 0){
         index.style.visibility = "visible";
-        */
-        index.style.transform = "translateX(0%)";
+        media.style.visibility = "hidden";
+        index.style.transform = "translateX(0)";
+        indie.style.transform = "translateX(200%)";
         media.style.transform = "translateX(-200%)";
-
-        // make a 6 second timer that uses hide and scroll lock
+      } else if (state === 2) {
+        index.style.visibility = "hidden";
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(0%)";
+        media.style.transform = "translateX(200%)";
       }
     }
   }
 
+  function toggleState() {
+    if (direction === "R") {
+      state = (state + 2) % 3;
+    } else if (direction === "L") {
+      // decrement with wrap-around
+      state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
+    }
+  }
+
   function switchContent() {
-    state = !state;
-    pageHeader.textContent = state ? "Media" : "Games";
+    toggleState();
+    pageHeader.textContent = state === 0 ? "Games" : state === 1 ? "Media" : "Indie";
     colorSwap();
     pageSwitch();
   }

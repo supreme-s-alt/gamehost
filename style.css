@@ -542,7 +542,6 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .game-btn {
@@ -716,14 +715,28 @@ hr {
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 #media-box {
-  padding-left: 40px;
-  padding-right: 40px;
-  top: 2vh;
+  visibility: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 45vh;
   left: 0;
   right: 0;
   text-align: center;
   align-self: center;
   position: absolute;
   transform: translateX(200%);
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+#indie-box {
+  visibility: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 45vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  transform: translateX(-200%);
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
