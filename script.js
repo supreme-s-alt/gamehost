@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const Aow = document.getElementById("aow");
   const Aow2 = document.getElementById("aow2");
   const Balatro = document.getElementById("balatro");
-  const Baldyc = document.getElementById("baldyc");
-  const Baldyplus = document.getElementById("baldyplus");
+  const Baldic = document.getElementById("baldic");
+  const Baldiplus = document.getElementById("baldiplus");
   const Balls = document.getElementById("balls");
   const Balls2 = document.getElementById("balls2");
   const Bendy = document.getElementById("bendy");
@@ -141,8 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const SWI = document.getElementById("SWI");
   const Tattletail = document.getElementById("tattletail");
   const Terraria = document.getElementById("terraria");
-  const TLOZMM = document.getElementById("TLOZMM");
-  const TLOZOT = document.getElementById("TLOZOT");
   const TMITW = document.getElementById("TMITW");
   const TNMN = document.getElementById("TNMN");
   const Toss = document.getElementById("toss");
@@ -193,6 +191,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Aow2) {
     Aow2.addEventListener("click", function () {
       window.location.href = "../html-bin/aow2.html";
+    });
+  }
+  if (Apple) {
+    Apple.addEventListener("click", function () {
+      window.location.href = "../html-bin/apple.html";
     });
   }
   if (Arcane) {
@@ -480,6 +483,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/fnf-neo.html";
     });
   }
+  if (Neon) {
+    Neon.addEventListener("click", function () {
+      window.location.href = "../html-bin/neon.html";
+    });
+  }
   if (Osu) {
     Osu.addEventListener("click", function () {
       window.location.href = "../html-bin/osu.html";
@@ -717,14 +725,14 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/balatro.html";
     });
   }
-  if (Baldyc) {
-    Baldyc.addEventListener("click", function () {
-      window.location.href = "../html-bin/baldyc.html";
+  if (Baldic) {
+    Baldic.addEventListener("click", function () {
+      window.location.href = "../html-bin/baldic.html";
     });
   }
-  if (Baldyplus) {
-    Baldyplus.addEventListener("click", function () {
-      window.location.href = "../html-bin/baldyplus.html";
+  if (Baldiplus) {
+    Baldiplus.addEventListener("click", function () {
+      window.location.href = "../html-bin/baldiplus.html";
     });
   }
   if (Bendy) {
@@ -922,16 +930,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/terraria.html";
     });
   }
-  if (TLOZMM) {
-    TLOZMM.addEventListener("click", function () {
-      window.location.href = "../html-bin/tlozmm.html";
-    });
-  }
-  if (TLOZOT) {
-    TLOZOT.addEventListener("click", function () {
-      window.location.href = "../html-bin/tlozot.html";
-    });
-  }
   if (TMITW) {
     TMITW.addEventListener("click", function () {
       window.location.href = "../html-bin/tmitw.html";
@@ -1060,6 +1058,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let direction = "box";
   let media = document.getElementById("media-box");
   let index = document.getElementById("index-box");
+  let indie = domcument.getElementById("indie-box");
   let leftSwitch = document.getElementById("left-switch");
   let rightSwitch = document.getElementById("right-switch");
   let pageHeader = document.getElementById("page-header");
@@ -1071,31 +1070,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
 
-  /*
-  function timeOut() {
-    timeoutId = setTimeout(() => {
-      if (state) {
-
-        if (state) {
-          index.style.display = "none";
-        } else {
-
-        }
-        
-        index.style.display = "none";
-      } else {
-        
-        if (state) {
-          
-        } else {
-
-        }
-        
-        media.style.display = "none";
-      }
-    }, 600);
-  }
-  */
   function colorSwap() {
     if (state) {
       body.style.backgroundColor = "#0d001a";
@@ -1124,7 +1098,7 @@ document.addEventListener("DOMContentLoaded", () => {
         media.style.visibility = "visible";
         */
         index.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(0%)";
       } else {
         /*
         index.style.visibility = "hidden";

@@ -113,7 +113,7 @@ body {
 #ltf1,
 #ltf2,
 #ltf3,
-#ltfs,
+#LTFS,
 #madness,
 #mario,
 #maximize,
@@ -123,7 +123,7 @@ body {
 #money,
 #moto,
 #moto2,
-#mvsl,
+#MVSL,
 #neo,
 #neon,
 #omori,
@@ -285,7 +285,7 @@ body {
 #ltf1:hover,
 #ltf2:hover,
 #ltf3:hover,
-#ltfs:hover,
+#LTFS:hover,
 #madness:hover,
 #mario:hover,
 #maximize:hover,
@@ -295,7 +295,7 @@ body {
 #money:hover,
 #moto:hover,
 #moto2:hover,
-#mvsl:hover,
+#MVSL:hover,
 #neo:hover,
 #neon:hover,
 #omori:hover,
@@ -674,7 +674,7 @@ body.nav-hidden .nav-toggle {
   position: relative;
   transform: rotate(90deg);
   cursor: pointer;
-  left: -2vw;  /* instead of -5vw */
+  left: -2vw; /* instead of -5vw */
   max-width: 6vw;
   max-height: auto;
 }
@@ -716,6 +716,18 @@ hr {
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 #media-box {
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 2vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  transform: translateX(200%);
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+#indie-box {
   padding-left: 40px;
   padding-right: 40px;
   top: 2vh;
