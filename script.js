@@ -1133,23 +1133,24 @@ document.addEventListener("DOMContentLoaded", () => {
       if (state === 1) {
         indie.style.visibility = "hidden";
         media.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
-        indie.style.transform = "translateX(-200%)";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(200%)";
         media.style.transform = "translateX(0)";
       } else if (state === 0){
         index.style.visibility = "visible";
         media.style.visibility = "hidden";
         index.style.transform = "translateX(0)";
-        indie.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(200%)";
       } else if (state === 2) {
         index.style.visibility = "hidden";
         indie.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
+        index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
-        media.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(-200%)";
       }
     }
+    //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
   }
 
   function toggleState() {
