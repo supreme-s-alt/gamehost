@@ -2,6 +2,7 @@ body {
   padding-top: 60px; /* Space for the navbar */
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   text-align: center;
   text-wrap: balanced;
   overflow-wrap: break-word;
@@ -29,6 +30,7 @@ body {
   height: auto;
 }
 
+/*
 #achievement,
 #achievement2,
 #amanda,
@@ -201,6 +203,7 @@ body {
   transition: background-color 0.6s, transform 0.3s ease, opacity 0.6s ease;
 }
 
+
 #achievement:hover,
 #achievement2:hover,
 #amanda:hover,
@@ -365,7 +368,7 @@ body {
   background-color: #333333;
   transform: scale(1.15);
 }
-
+*/
 nav {
   position: fixed;
   top: 0;
@@ -538,9 +541,10 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -550,15 +554,19 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 220px;
-  margin: 10px;
+  margin: 6px;
   padding: 0;
   background-color: #111;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  border-radius: 12px;
+  border-radius: 40px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
+}
+.game-btn:hover {
+  transform: scale(1.15);
+  background-color: #333333;
 }
 
 .game-btn .img-wrap {
@@ -579,9 +587,46 @@ nav {
   width: 100%;
 }
 
-.game-btn:hover {
+.indie-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+  margin: 10px;
+  padding: 0;
+  background-color: #050030;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+.indie-btn:hover {
   transform: scale(1.15);
-  background-color: #333333;
+  background-color: #030033;
+}
+
+.media-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+  margin: 10px;
+  padding: 0;
+  background-color: #1a0030;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+.media-btn:hover {
+  transform: scale(1.15);
+  background-color: #200033;
 }
 
 .nav-toggle {
