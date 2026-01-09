@@ -1176,4 +1176,8 @@ document.addEventListener("DOMContentLoaded", () => {
     direction = "R";
     switchContent();
   });
-})();
+})();*/
+      }
+    }
+  }
+});
