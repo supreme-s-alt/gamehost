@@ -9,7 +9,7 @@ body {
   background-color: #000000;
   font-family: Helvetica, Arial, sans-serif; /* Updated to use Helvetica */
   color: white;
-  text-align: ;
+  text-align: center;
   transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 #DoNotDelete {
@@ -28,7 +28,7 @@ body {
   max-width: 100%;
   height: auto;
 }
-
+/*
 #achievement,
 #achievement2,
 #amanda,
@@ -103,9 +103,9 @@ body {
 #jack,
 #joyride,
 #karlson,
-#kindergarden,
-#kindergarden2,
-#kindergarden3,
+#kindergarten,
+#kindergarten2,
+#kindergarten3,
 #knight,
 #kitty,
 #last,
@@ -128,6 +128,7 @@ body {
 #neon,
 #omori,
 #osu,
+#osum,
 #paburg,
 #padog,
 #pafree,
@@ -170,7 +171,7 @@ body {
 #sonic-exe,
 #souls,
 #submit,
-#SWI,
+#swi,
 #tattletail,
 #terraria,
 #TLOZMM,
@@ -275,9 +276,9 @@ body {
 #jack:hover,
 #joyride:hover,
 #karlson:hover,
-#kindergarden:hover,
-#kindergarden2:hover,
-#kindergarden3:hover,
+#kindergarten:hover,
+#kindergarten2:hover,
+#kindergarten3:hover,
 #knight:hover,
 #kitty:hover,
 #last:hover,
@@ -300,6 +301,7 @@ body {
 #neon:hover,
 #omori:hover,
 #osu:hover,
+#osum:hover,
 #paburg:hover,
 #padog:hover,
 #pafree:hover,
@@ -365,7 +367,7 @@ body {
   background-color: #333333;
   transform: scale(1.15);
 }
-
+*/
 nav {
   position: fixed;
   top: 0;
@@ -423,7 +425,6 @@ nav {
 /* Dropbtn & Dropdown */
 .dropbtn {
   background-color: #111;
-  background: opacity 100%;
   color: white;
   padding: 25px;
   font-size: 16px;
@@ -475,12 +476,19 @@ nav {
 #credits,
 #about,
 #uplog,
-#gamesug {
+#gamesug,
+#render,
+#github,
+#g3000,
+#LME,
+#static,
+#fullscreen {
   position: relative;
   left: -20px; /* negative value moves them left */
   padding: 10px 20px;
   font-size: 14px;
   background-color: #111;
+  max-width: 200px;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -508,7 +516,7 @@ nav {
   min-width: 50px;
   width: 60%;
   min-height: 40px;
-  margin: 1000;
+  margin: 1000px;
   background-color: #ffffff;
   border-color: #555;
   border-width: 4px;
@@ -539,49 +547,89 @@ nav {
   flex-wrap: wrap;
   gap: 12px;
   justify-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
 .game-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 220px;
-  margin: 10px;
-  padding: 0;
-  background-color: #111;
-  color: #000000;
-  border: none;
-  border-radius: 12px;
+  max-width: 230px;
   overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.6s;
 }
-
 .game-btn .img-wrap {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
 .game-btn .img-wrap img {
+  width: 100%;
+  height: auto;
   display: block;
-  width: 100%;
-  height: auto; /* variable height, keeps aspect ratio */
-  object-fit: contain;
 }
-
-.game-btn span {
-  padding: 10px;
-  font-size: 16px;
-  text-align: center;
-  width: 100%;
-}
-
 .game-btn:hover {
   transform: scale(1.15);
   background-color: #333333;
+}
+
+.indie-btn {
+  /*padding: 10px 20px;*/
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #050030;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  max-width: 240px;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.6s;
+}
+.indie-btn:hover {
+  transform: scale(1.15);
+  background-color: #070043;
+}
+
+.media-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #1a0030;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  max-width: 230px;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.6s;
+}
+.media-btn:hover {
+  transform: scale(1.15);
+  background-color: #22003d;
 }
 
 .nav-toggle {
@@ -634,13 +682,13 @@ body.nav-hidden .nav-toggle {
 #fullscreen {
   position: fixed;
   bottom: 20px;
-  left: 20px; /* bottom-left corner */
+  right: 20px; /* bottom-left corner */
 }
 
 #maximize {
   position: fixed;
   bottom: 20px;
-  right: 20px; /* bottom-right corner */
+  left: 20px; /* bottom-right corner */
 }
 .controls {
   text-align: center;
@@ -712,6 +760,7 @@ hr {
   align-self: center;
   margin: 0 auto;
   position: relative;
+  mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 #media-box {
@@ -725,5 +774,21 @@ hr {
   align-self: center;
   position: absolute;
   transform: translateX(200%);
+  mask-composite: add;
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+
+#indie-box {
+  visibility: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 45vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  transform: translateX(-200%);
+  mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Cat = document.getElementById("cat");
   const Celeste = document.getElementById("celeste");
   const Chibi = document.getElementById("chibi");
-  const Class = document.getElementById("class");
+  const Class09 = document.getElementById("class09");
   const Cookie = document.getElementById("cookie");
   const Cross = document.getElementById("cross");
   const Cuphead = document.getElementById("cuphead");
@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Fancy = document.getElementById("fancy");
   const Fathom = document.getElementById("fathom");
   const Flash = document.getElementById("flash");
+  const FNAF = document.getElementById("FNAF");
   const FNAF1 = document.getElementById("FNAF1");
   const FNAF2 = document.getElementById("FNAF2");
   const FNAF3 = document.getElementById("FNAF3");
@@ -76,9 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const Jack = document.getElementById("jack");
   const Joyride = document.getElementById("joyride");
   const Karlson = document.getElementById("karlson");
-  const Kindergarden = document.getElementById("kindergarden");
-  const Kindergarden2 = document.getElementById("kindergarden2");
-  const Kindergarden3 = document.getElementById("kindergarden3");
+  const Kindergarten = document.getElementById("kindergarten");
+  const Kindergarten1 = document.getElementById("kindergarten1");
+  const Kindergarten2 = document.getElementById("kindergarten2");
+  const Kindergarten3 = document.getElementById("kindergarten3");
   const Kitty = document.getElementById("kitty");
   const Knight = document.getElementById("knight");
   const Last = document.getElementById("last");
@@ -99,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Neo = document.getElementById("neo");
   const Omori = document.getElementById("omori");
   const Osu = document.getElementById("osu");
+  const OsuM = document.getElementById("osum");
   const Paburg = document.getElementById("paburg");
   const Padog = document.getElementById("padog");
   const Pafree = document.getElementById("pafree");
@@ -108,9 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const Pat = document.getElementById("pat");
   const Path = document.getElementById("path");
   const Pizza = document.getElementById("pizza");
-  const PizzaQ = document.getElementById("pizzaq");
-  const PizzaTut = document.getElementById("pizzatut");
-  const PizzaTower = document.getElementById("pizza-tower");
   const Pls = document.getElementById("pls");
   const Raft = document.getElementById("raft");
   const Repo = document.getElementById("repo");
@@ -131,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const SKittyLS = document.getElementById("skittyls");
   const Slender = document.getElementById("slender");
   const Slime = document.getElementById("slime");
+  const SM63 = document.getElementById("sm63");
+  const SM64 = document.getElementById("sm64");
   const Smario = document.getElementById("smario");
   const Smash = document.getElementById("smash");
   const Smash2 = document.getElementById("smash2");
@@ -148,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Ultrakill = document.getElementById("ultrakill");
   const Underfell = document.getElementById("underfell");
   const Undertale = document.getElementById("undertale");
+  const UndertaleMods = document.getElementById("undertalemods");
   const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
   const Webfishing = document.getElementById("webfishing");
@@ -191,11 +194,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Aow2) {
     Aow2.addEventListener("click", function () {
       window.location.href = "../html-bin/aow2.html";
-    });
-  }
-  if (Apple) {
-    Apple.addEventListener("click", function () {
-      window.location.href = "../html-bin/apple.html";
     });
   }
   if (Arcane) {
@@ -483,14 +481,14 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/fnf-neo.html";
     });
   }
-  if (Neon) {
-    Neon.addEventListener("click", function () {
-      window.location.href = "../html-bin/neon.html";
-    });
-  }
   if (Osu) {
     Osu.addEventListener("click", function () {
-      window.location.href = "../html-bin/osu.html";
+      window.location.href = "../html-bin/osu!.html";
+    });
+  }
+  if (OsuM) {
+    OsuM.addEventListener("click", function () {
+      window.location.href = "../html-bin/osu!mania.html";
     });
   }
   if (Paburg) {
@@ -533,21 +531,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/path.html";
     });
   }
-  if (Pizza) {
-    Pizza.addEventListener("click", function () {
-      window.location.href = "../html-bin/pizza.html";
-    });
-  }
-  if (PizzaQ) {
-    PizzaQ.addEventListener("click", function () {
-      window.location.href = "../html-bin/pizzaq.html";
-    });
-  }
-  if (PizzaTut) {
-    PizzaTut.addEventListener("click", function () {
-      window.location.href = "../html-bin/pizzatut.html";
-    });
-  }
+
   if (Pls) {
     Pls.addEventListener("click", function () {
       window.location.href = "../html-bin/pls.html";
@@ -670,7 +654,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Undertale) {
     Undertale.addEventListener("click", function () {
-      window.location.href = "../html-bin/undertale.html";
+      window.location.href = "../indie-bin/undertale.html";
+    });
+  }
+  if (UndertaleMods) {
+    UndertaleMods.addEventListener("click", function () {
+      window.location.href = "../html-bin/undertalemods.html";
     });
   }
   if (Undyne) {
@@ -712,247 +701,257 @@ document.addEventListener("DOMContentLoaded", () => {
   // New game click handlers (added, alphabetical)
   if (Amanda) {
     Amanda.addEventListener("click", function () {
-      window.location.href = "../html-bin/amanda.html";
+      window.location.href = "../indie-bin/amanda.html";
     });
   }
   if (Apple) {
     Apple.addEventListener("click", function () {
-      window.location.href = "../html-bin/apple.html";
+      window.location.href = "../indie-bin/apple.html";
     });
   }
   if (Balatro) {
     Balatro.addEventListener("click", function () {
-      window.location.href = "../html-bin/balatro.html";
+      window.location.href = "../indie-bin/balatro.html";
     });
   }
   if (Baldic) {
     Baldic.addEventListener("click", function () {
-      window.location.href = "../html-bin/baldic.html";
+      window.location.href = "../indie-bin/baldic.html";
     });
   }
   if (Baldiplus) {
     Baldiplus.addEventListener("click", function () {
-      window.location.href = "../html-bin/baldiplus.html";
+      window.location.href = "../indie-bin/baldiplus.html";
     });
   }
   if (Bendy) {
     Bendy.addEventListener("click", function () {
-      window.location.href = "../html-bin/bendy.html";
+      window.location.href = "../indie-bin/bendy.html";
     });
   }
   if (Block) {
     Block.addEventListener("click", function () {
-      window.location.href = "../html-bin/block.html";
+      window.location.href = "../indie-bin/block.html";
     });
   }
   if (Celeste) {
     Celeste.addEventListener("click", function () {
-      window.location.href = "../html-bin/celeste.html";
+      window.location.href = "../indie-bin/celeste.html";
     });
   }
-  if (Class) {
-    Class.addEventListener("click", function () {
-      window.location.href = "../html-bin/class.html";
+  if (Class09) {
+    Class09.addEventListener("click", function () {
+      window.location.href = "../indie-bin/class09.html";
     });
   }
   if (Cross) {
     Cross.addEventListener("click", function () {
-      window.location.href = "../html-bin/cross.html";
+      window.location.href = "../indie-bin/cross.html";
     });
   }
   if (Cuphead) {
     Cuphead.addEventListener("click", function () {
-      window.location.href = "../html-bin/cuphead.html";
+      window.location.href = "../indie-bin/cuphead.html";
     });
   }
   if (Deadseat) {
     Deadseat.addEventListener("click", function () {
-      window.location.href = "../html-bin/deadseat.html";
+      window.location.href = "../indie-bin/deadseat.html";
     });
   }
   if (Deltarune) {
     Deltarune.addEventListener("click", function () {
-      window.location.href = "../html-bin/deltarune.html";
+      window.location.href = "../indie-bin/deltarune.html";
     });
   }
   if (Deltatraveler) {
     Deltatraveler.addEventListener("click", function () {
-      window.location.href = "../html-bin/deltatraveler.html";
+      window.location.href = "../indie-bin/deltatraveler.html";
     });
   }
   if (Fathom) {
     Fathom.addEventListener("click", function () {
-      window.location.href = "../html-bin/fathom.html";
+      window.location.href = "../indie-bin/fathom.html";
+    });
+  }
+  if (FNAF) {
+    FNAF.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnaf.html";
     });
   }
   if (FNAF1) {
     FNAF1.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnaf1.html";
+      window.location.href = "../indie-bin/fnaf1.html";
     });
   }
   if (FNAF2) {
     FNAF2.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnaf2.html";
+      window.location.href = "../indie-bin/fnaf2.html";
     });
   }
   if (FNAF3) {
     FNAF3.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnaf3.html";
+      window.location.href = "../indie-bin/fnaf3.html";
     });
   }
   if (FNAF4) {
     FNAF4.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnaf4.html";
+      window.location.href = "../indie-bin/fnaf4.html";
     });
   }
   if (FNAFPS) {
     FNAFPS.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnafps.html";
+      window.location.href = "../indie-bin/fnafps.html";
     });
   }
   if (FNAFSL) {
     FNAFSL.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnafsl.html";
+      window.location.href = "../indie-bin/fnafsl.html";
     });
   }
   if (FNAFW) {
     FNAFW.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnafw.html";
+      window.location.href = "../indie-bin/fnafw.html";
     });
   }
   if (GOI) {
     GOI.addEventListener("click", function () {
-      window.location.href = "../html-bin/goi.html";
+      window.location.href = "../indie-bin/goi.html";
     });
   }
   if (Hollow) {
     Hollow.addEventListener("click", function () {
-      window.location.href = "../html-bin/hollow.html";
+      window.location.href = "../indie-bin/hollow.html";
     });
   }
   if (Joyride) {
     Joyride.addEventListener("click", function () {
-      window.location.href = "../html-bin/joyride.html";
+      window.location.href = "../indie-bin/joyride.html";
     });
   }
   if (Karlson) {
     Karlson.addEventListener("click", function () {
-      window.location.href = "../html-bin/karlson.html";
+      window.location.href = "../indie-bin/karlson.html";
     });
   }
-  if (Kindergarden) {
-    Kindergarden.addEventListener("click", function () {
-      window.location.href = "../html-bin/kindergarden.html";
+  if (Kindergarten) {
+    Kindergarten.addEventListener("click", function () {
+      window.location.href = "../indie-bin/kindergarten.html";
     });
   }
-  if (Kindergarden2) {
-    Kindergarden2.addEventListener("click", function () {
-      window.location.href = "../html-bin/kindergarden2.html";
+  if (Kindergarten1) {
+    Kindergarten1.addEventListener("click", function () {
+      window.location.href = "../indie-bin/kindergarten1.html";
     });
   }
-  if (Kindergarden3) {
-    Kindergarden3.addEventListener("click", function () {
-      window.location.href = "../html-bin/kindergarden3.html";
+  if (Kindergarten2) {
+    Kindergarten2.addEventListener("click", function () {
+      window.location.href = "../indie-bin/kindergarten2.html";
+    });
+  }
+  if (Kindergarten3) {
+    Kindergarten3.addEventListener("click", function () {
+      window.location.href = "../indie-bin/kindergarten3.html";
     });
   }
   if (Money) {
     Money.addEventListener("click", function () {
-      window.location.href = "../html-bin/money.html";
+      window.location.href = "../indie-bin/money.html";
     });
   }
   if (Neon) {
     Neon.addEventListener("click", function () {
-      window.location.href = "../html-bin/neon.html";
+      window.location.href = "../indie-bin/neon.html";
     });
   }
   if (Omori) {
     Omori.addEventListener("click", function () {
-      window.location.href = "../html-bin/omori.html";
+      window.location.href = "../indie-bin/omori.html";
     });
   }
-  if (PizzaTower) {
-    PizzaTower.addEventListener("click", function () {
-      window.location.href = "../html-bin/pizza-tower.html";
+  if (Pizza) {
+    Pizza.addEventListener("click", function () {
+      window.location.href = "../indie-bin/pizza.html";
     });
   }
   if (Raft) {
     Raft.addEventListener("click", function () {
-      window.location.href = "../html-bin/raft.html";
+      window.location.href = "../indie-bin/raft.html";
     });
   }
   if (Repo) {
     Repo.addEventListener("click", function () {
-      window.location.href = "../html-bin/repo.html";
+      window.location.href = "../indie-bin/repo.html";
     });
   }
   if (Roulette) {
     Roulette.addEventListener("click", function () {
-      window.location.href = "../html-bin/roulette.html";
+      window.location.href = "../indie-bin/roulette.html";
     });
   }
   if (Runaway) {
     Runaway.addEventListener("click", function () {
-      window.location.href = "../html-bin/runaway.html";
+      window.location.href = "../indie-bin/runaway.html";
     });
   }
   if (Slender) {
     Slender.addEventListener("click", function () {
-      window.location.href = "../html-bin/slender.html";
+      window.location.href = "../indie-bin/slender.html";
     });
   }
   if (Slime) {
     Slime.addEventListener("click", function () {
-      window.location.href = "../html-bin/slime.html";
+      window.location.href = "../indie-bin/slime.html";
     });
   }
   if (Smario) {
     Smario.addEventListener("click", function () {
-      window.location.href = "../html-bin/smario.html";
+      window.location.href = "../indie-bin/smario.html";
     });
   }
   if (SonicExe) {
     SonicExe.addEventListener("click", function () {
-      window.location.href = "../html-bin/sonic-exe.html";
+      window.location.href = "../indie-bin/sonic-exe.html";
     });
   }
   if (SWI) {
     SWI.addEventListener("click", function () {
-      window.location.href = "../html-bin/swi.html";
+      window.location.href = "../indie-bin/swi.html";
     });
   }
   if (Tattletail) {
     Tattletail.addEventListener("click", function () {
-      window.location.href = "../html-bin/tattletail.html";
+      window.location.href = "../indie-bin/tattletail.html";
     });
   }
   if (Terraria) {
     Terraria.addEventListener("click", function () {
-      window.location.href = "../html-bin/terraria.html";
+      window.location.href = "../indie-bin/terraria.html";
     });
   }
   if (TMITW) {
     TMITW.addEventListener("click", function () {
-      window.location.href = "../html-bin/tmitw.html";
+      window.location.href = "../indie-bin/tmitw.html";
     });
   }
   if (TNMN) {
     TNMN.addEventListener("click", function () {
-      window.location.href = "../html-bin/tnmn.html";
+      window.location.href = "../indie-bin/tnmn.html";
     });
   }
   if (Ultrakill) {
     Ultrakill.addEventListener("click", function () {
-      window.location.href = "../html-bin/ultrakill.html";
+      window.location.href = "../indie-bin/ultrakill.html";
     });
   }
   if (Undertaley) {
     Undertaley.addEventListener("click", function () {
-      window.location.href = "../html-bin/undertaley.html";
+      window.location.href = "../indie-bin/undertaley.html";
     });
   }
   if (Webfishing) {
     Webfishing.addEventListener("click", function () {
-      window.location.href = "../html-bin/webfishing.html";
+      window.location.href = "../indie-bin/webfishing.html";
     });
   }
 
@@ -1059,7 +1058,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let indie = document.getElementById("indie-box");
   let media = document.getElementById("media-box");
   let index = document.getElementById("index-box");
-  let indie = domcument.getElementById("indie-box");
   let leftSwitch = document.getElementById("left-switch");
   let rightSwitch = document.getElementById("right-switch");
   let pageHeader = document.getElementById("page-header");
@@ -1098,32 +1096,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function pageSwitch() {
     if (direction === "R") {
-      if (state) {
-        /*
-        media.style.visibility = "hidden";
-        media.style.transform = "translate(-200%)";
-
-        void media.offsetHeight;
-
-        media.style.visibility = "visible";
-        */
-        index.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(-200%)";
-      } else {
-        /*
+      if (state === 1) {
         index.style.visibility = "hidden";
+        media.style.visibility = "visible";
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(0)";
+      } else if (state === 0) {
+        index.style.visibility = "visible";
+        indie.style.visibility = "hidden";
+        index.style.transform = "translateX(0)";
+        indie.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(-200%)";
+      } else if (state === 2) {
+        media.style.visibility = "hidden";
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(0%)";
+        media.style.transform = "translateX(-200%)";
+      }
+      if (state === 1) {
+        indie.style.visibility = "hidden";
         media.style.visibility = "visible";
         index.style.transform = "translateX(-200%)";
         indie.style.transform = "translateX(200%)";
         media.style.transform = "translateX(0)";
-      } else if (state === 0){
+      } else if (state === 0) {
         index.style.visibility = "visible";
-        indie.style.visibility = "hidden";
+        media.style.visibility = "hidden";
         index.style.transform = "translateX(0)";
         indie.style.transform = "translateX(-200%)";
         media.style.transform = "translateX(200%)";
       } else if (state === 2) {
-        media.style.visibility = "hidden";
+        index.style.visibility = "hidden";
         indie.style.visibility = "visible";
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
@@ -1131,26 +1136,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else if (direction === "L") {
       if (state === 1) {
-        indie.style.visibility = "hidden";
+        index.style.visibility = "hidden";
         media.style.visibility = "visible";
         index.style.transform = "translateX(-200%)";
         indie.style.transform = "translateX(200%)";
         media.style.transform = "translateX(0)";
-      } else if (state === 0){
+      } else if (state === 0) {
         index.style.visibility = "visible";
-        media.style.visibility = "hidden";
+        indie.style.visibility = "hidden";
         index.style.transform = "translateX(0)";
         indie.style.transform = "translateX(-200%)";
         media.style.transform = "translateX(200%)";
       } else if (state === 2) {
-        index.style.visibility = "hidden";
+        media.style.visibility = "hidden";
         indie.style.visibility = "visible";
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
         media.style.transform = "translateX(-200%)";
       }
     }
-    //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
+    walert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
   }
 
   function toggleState() {
@@ -1164,7 +1169,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function switchContent() {
     toggleState();
-    pageHeader.textContent = state === 0 ? "Games" : state === 1 ? "Media" : "Indie";
+    pageHeader.textContent =
+      state === 0 ? "Games" : state === 1 ? "Media" : "Indie";
     colorSwap();
     pageSwitch();
   }
@@ -1177,8 +1183,4 @@ document.addEventListener("DOMContentLoaded", () => {
     direction = "R";
     switchContent();
   });
-})();*/
-      }
-    }
-  }
-});
+})();
