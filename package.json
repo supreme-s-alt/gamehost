@@ -1,5 +1,5 @@
 {
-    "name": "Gamehost",
+    "name": "flash-gamehost",
     "version": "1.0.0",
     "description": "A unblocked website for people to play in their free time",
     "main": "server.js",
