@@ -1,7 +1,7 @@
 {
-    "name": "flash-server",
+    "name": "Gamehost",
     "version": "1.0.0",
-    "description": "Server for Flash game launcher with HTML and CSS support",
+    "description": "A unblocked website for people to play in their free time",
     "main": "server.js",
     "type":"module",
     "scripts": {
