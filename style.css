@@ -200,8 +200,8 @@ body {
   border: none;
   border-radius: 40px;
   transition: background-color 0.6s, transform 0.3s ease, opacity 0.6s ease;
-}
-
+}*/
+/*
 #achievement:hover,
 #achievement2:hover,
 #amanda:hover,
@@ -554,6 +554,7 @@ nav {
 }
 
 .game-btn {
+  /*
   padding: 10px 20px;
   font-size: 18px;
   margin: 10px;
@@ -568,8 +569,25 @@ nav {
   width: 100%;
   max-width: 230px;
   overflow: hidden;
-  transition: transform 0.3s, background-color 0.6s;
+  transition: transform 0.3s, background-color 0.6s;*/
+  font-size: 0;
+  line-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin: 10px;
+  padding: 0;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
 }
+/*
 .game-btn .img-wrap {
   width: 100%;
   margin: 0;
@@ -581,6 +599,30 @@ nav {
   height: auto;
   display: block;
 }
+.game-btn:hover {
+  transform: scale(1.15);
+  background-color: #333333;
+}
+*/
+
+.game-btn .img-wrap {
+  width: 100%;
+}
+
+.game-btn .img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto; /* variable height, keeps aspect ratio */
+  object-fit: contain;
+}
+
+.game-btn span {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
 .game-btn:hover {
   transform: scale(1.15);
   background-color: #333333;

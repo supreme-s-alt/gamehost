@@ -746,7 +746,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Cross) {
     Cross.addEventListener("click", function () {
-      window.location.href = "../indie-bin/cross.html";
+      window.location.href = "../html-bin/cross.html";
     });
   }
   if (Cuphead) {
@@ -826,7 +826,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Joyride) {
     Joyride.addEventListener("click", function () {
-      window.location.href = "../indie-bin/joyride.html";
+      window.location.href = "../html-bin/joyride.html";
     });
   }
   if (Karlson) {
@@ -906,7 +906,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Smario) {
     Smario.addEventListener("click", function () {
-      window.location.href = "../indie-bin/smario.html";
+      window.location.href = "../html-bin/smario.html";
     });
   }
   if (SonicExe) {
@@ -1056,7 +1056,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let state = 0; //0 is index, 1 is media, 2 is indie
   let direction = "box";
   let indie = document.getElementById("indie-box");
-  let media = document.getElementById("media-box");
+  let console = document.getElementById("console-box");
   let index = document.getElementById("index-box");
   let leftSwitch = document.getElementById("left-switch");
   let rightSwitch = document.getElementById("right-switch");
@@ -1084,18 +1084,20 @@ document.addEventListener("DOMContentLoaded", () => {
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#1a0030";
       });
+      /*
     } else if (state === 2) {
       // Indie
       body.style.backgroundColor = "#01001a";
       nav.style.backgroundColor = "#050030";
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#050030";
-      });
+      });*/
     }
   }
 
   function pageSwitch() {
     if (direction === "R") {
+      /*
       if (state === 1) {
         index.style.visibility = "hidden";
         media.style.visibility = "visible";
@@ -1114,27 +1116,26 @@ document.addEventListener("DOMContentLoaded", () => {
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
         media.style.transform = "translateX(-200%)";
-      }
+      }*/
       if (state === 1) {
-        indie.style.visibility = "hidden";
-        media.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
-        indie.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(0)";
-      } else if (state === 0) {
-        index.style.visibility = "visible";
-        media.style.visibility = "hidden";
-        index.style.transform = "translateX(0)";
-        indie.style.transform = "translateX(-200%)";
-        media.style.transform = "translateX(200%)";
-      } else if (state === 2) {
-        index.style.visibility = "hidden";
+        if (indie.style.transform === "translateX(200%)") {
+          indie.style.transform = "translateX(-200%)";
+        }
         indie.style.visibility = "visible";
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
-        media.style.transform = "translateX(-200%)";
+        index.style.visibility = "hidden";
+      } else {
+        if (index.style.transform === "translateX(200%)") {
+          index.style.transform = "translateX(-200%)";
+        }
+        index.style.visibility = "visible";
+        index.style.transform = "translateX(0%)";
+        indie.style.transform = "translateX(200%)";
+        indie.style.visibility = "hidden";
       }
     } else if (direction === "L") {
+      /*
       if (state === 1) {
         index.style.visibility = "hidden";
         media.style.visibility = "visible";
@@ -1153,24 +1154,49 @@ document.addEventListener("DOMContentLoaded", () => {
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
         media.style.transform = "translateX(-200%)";
+      }*/
+
+      if (state === 1) {
+        if (indie.style.transform === "translateX(-200%)") {
+          indie.style.transform = "translateX(200%)";
+        }
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(0%)";
+        index.style.visibility = "hidden";
+      } else {
+        if (index.style.transform === "translateX(-200%)") {
+          index.style.transform = "translateX(200%)";
+        }
+        index.style.visibility = "visible";
+        index.style.transform = "translateX(0%)";
+        indie.style.transform = "translateX(-200%)";
+        indie.style.visibility = "hidden";
       }
     }
-    walert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
+    //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
   }
 
   function toggleState() {
+    /*
     if (direction === "R") {
       state = (state + 2) % 3;
     } else if (direction === "L") {
       // decrement with wrap-around
       state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
     }
+    */
+    if (state === 0) {
+      state = 1;
+    } else {
+      state = 0;
+    }
   }
 
   function switchContent() {
     toggleState();
-    pageHeader.textContent =
-      state === 0 ? "Games" : state === 1 ? "Media" : "Indie";
+    //pageHeader.textContent = state === 0 ? "Games" : state === 1 ? "Media" : "console";
+    pageHeader.textContent = state === 0 ? "Games" : "Indie";
     colorSwap();
     pageSwitch();
   }
