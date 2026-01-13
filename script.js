@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const BTS = document.getElementById("bts");
   const Burrito = document.getElementById("burrito");
   const Cat = document.getElementById("cat");
+  const CatM = document.getElementById("catm");
   const Celeste = document.getElementById("celeste");
   const Chibi = document.getElementById("chibi");
   const Class09 = document.getElementById("class09");
@@ -45,8 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const DLS = document.getElementById("dls");
   const Doodle = document.getElementById("doodle");
   const Electric = document.getElementById("electric");
+  const Earn1 = document.getElementById("earn1");
+  const Earn2 = document.getElementById("earn2");
   const Fancy = document.getElementById("fancy");
   const Fathom = document.getElementById("fathom");
+  const Firewater = document.getElementById("firewater");
+  const Firewater1 = document.getElementById("firewater1");
+  const Firewater2 = document.getElementById("firewater2");
+  const Firewater3 = document.getElementById("firewater3");
+  const Firewater4 = document.getElementById("firewater4");
   const Flash = document.getElementById("flash");
   const FNAF = document.getElementById("FNAF");
   const FNAF1 = document.getElementById("FNAF1");
@@ -63,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const GKnight = document.getElementById("gknight");
   const GOI = document.getElementById("GOI");
   const Gooped = document.getElementById("gooped");
+  const Happy = document.getElementById("happy");
   const Hard = document.getElementById("hard");
   const HSBTB = document.getElementById("hsbtb");
   const HSETP = document.getElementById("hsetp");
@@ -74,9 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const IMP = document.getElementById("imposs");
   const Indie = document.getElementById("indie");
   const IReady = document.getElementById("iready");
-  const Jack = document.getElementById("jack");
+  const Jacksmith = document.getElementById("jacksmith");
   const Joyride = document.getElementById("joyride");
   const Karlson = document.getElementById("karlson");
+  const Key1 = document.getElementById("key1");
+  const Key2 = document.getElementById("key2");
   const Kindergarten = document.getElementById("kindergarten");
   const Kindergarten1 = document.getElementById("kindergarten1");
   const Kindergarten2 = document.getElementById("kindergarten2");
@@ -89,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const LTF1 = document.getElementById("LTF1");
   const LTF2 = document.getElementById("LTF2");
   const LTF3 = document.getElementById("LTF3");
+  const Mad = document.getElementById("mad");
   const Madness = document.getElementById("madness");
   const Mario = document.getElementById("mario");
   const Meat = document.getElementById("meat");
@@ -97,8 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const Moto = document.getElementById("moto");
   const Moto2 = document.getElementById("moto2");
   const MVSL = document.getElementById("MVSL");
-  const Neon = document.getElementById("neon");
   const Neo = document.getElementById("neo");
+  const Neon = document.getElementById("neon");
+  const NGon = document.getElementById("ngon");
   const Omori = document.getElementById("omori");
   const Osu = document.getElementById("osu");
   const OsuM = document.getElementById("osum");
@@ -114,6 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const Pls = document.getElementById("pls");
   const Raft = document.getElementById("raft");
   const Repo = document.getElementById("repo");
+  const Rogue1 = document.getElementById("rogue1");
+  const Rogue2 = document.getElementById("rogue2");
   const Roulette = document.getElementById("roulette");
   const Rs1 = document.getElementById("rs1");
   const Rs2 = document.getElementById("rs2");
@@ -124,7 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const Runaway = document.getElementById("runaway");
   const Rt1 = document.getElementById("rt1");
   const Rt2 = document.getElementById("rt2");
+  const Run = document.getElementById("run");
+  const Run1 = document.getElementById("run1");
+  const Run2 = document.getElementById("run2");
+  const Run3 = document.getElementById("run3");
   const Scratch = document.getElementById("scratch");
+  const Second60 = document.getElementById("second60");
   const SKitty = document.getElementById("skitty");
   const SKitty2 = document.getElementById("skitty2");
   const SKittyL = document.getElementById("skittyl");
@@ -153,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const UndertaleMods = document.getElementById("undertalemods");
   const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
+  const Vision = document.getElementById("vision");
   const Webfishing = document.getElementById("webfishing");
   const W1 = document.getElementById("w1");
   const W2 = document.getElementById("w2");
@@ -271,6 +292,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/cat.html";
     });
   }
+  if (CatM) {
+    CatM.addEventListener("click", function () {
+      window.location.href = "../html-bin/catm.html";
+    });
+  }
   if (Chibi) {
     Chibi.addEventListener("click", function () {
       window.location.href = "../html-bin/chibi.html";
@@ -321,9 +347,44 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/electricman2.html";
     });
   }
+  if (Earn1) {
+    Earn1.addEventListener("click", function () {
+      window.location.href = "../html-bin/earn1.html";
+    });
+  }
+  if (Earn2) {
+    Earn2.addEventListener("click", function () {
+      window.location.href = "../html-bin/earn2.html";
+    });
+  }
   if (Fancy) {
     Fancy.addEventListener("click", function () {
       window.location.href = "../html-bin/FPA.html";
+    });
+  }
+  if (Firewater) {
+    Firewater.addEventListener("click", function () {
+      window.location.href = "../html-bin/firewater.html";
+    });
+  }
+  if (Firewater1) {
+    Firewater1.addEventListener("click", function () {
+      window.location.href = "../html-bin/firewater1.html";
+    });
+  }
+  if (Firewater2) {
+    Firewater2.addEventListener("click", function () {
+      window.location.href = "../html-bin/firewater2.html";
+    });
+  }
+  if (Firewater3) {
+    Firewater3.addEventListener("click", function () {
+      window.location.href = "../html-bin/firewater3.html";
+    });
+  }
+  if (Firewater4) {
+    Firewater4.addEventListener("click", function () {
+      window.location.href = "../html-bin/firewater4.html";
     });
   }
   if (FNF) {
@@ -349,6 +410,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Gooped) {
     Gooped.addEventListener("click", function () {
       window.location.href = "../html-bin/gooped.html";
+    });
+  }
+  if (Happy) {
+    Happy.addEventListener("click", function () {
+      window.location.href = "../html-bin/happy.html";
     });
   }
   if (Hard) {
@@ -401,6 +467,16 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/construction.html";
     });
   }
+  if (Key1) {
+    Key1.addEventListener("click", function () {
+      window.location.href = "../html-bin/key1.html";
+    });
+  }
+  if (Key2) {
+    Key2.addEventListener("click", function () {
+      window.location.href = "../html-bin/key2.html";
+    });
+  }
   if (Kitty) {
     Kitty.addEventListener("click", function () {
       window.location.href = "../html-bin/kitty.html"; //Make Knight.html later
@@ -411,8 +487,8 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/knight.html"; //Make Knight.html later
     });
   }
-  if (Jack) {
-    Jack.addEventListener("click", function () {
+  if (Jacksmith) {
+    Jacksmith.addEventListener("click", function () {
       window.location.href = "../html-bin/jacksmith.html"; //Make Knight.html later
     });
   }
@@ -439,6 +515,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (LTF3) {
     LTF3.addEventListener("click", function () {
       window.location.href = "../html-bin/LTF3.html"; //change to LTF3 later
+    });
+  }
+  if (Mad) {
+    Mad.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-mad.html";
     });
   }
   if (Madness) {
@@ -479,6 +560,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Neo) {
     Neo.addEventListener("click", function () {
       window.location.href = "../html-bin/fnf-neo.html";
+    });
+  }
+  if (NGon) {
+    NGon.addEventListener("click", function () {
+      window.location.href = "../html-bin/ngon.html";
     });
   }
   if (Osu) {
@@ -537,6 +623,16 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/pls.html";
     });
   }
+  if (Rogue1) {
+    Rogue1.addEventListener("click", function () {
+      window.location.href = "../html-bin/rogue1.html";
+    });
+  }
+  if (Rogue2) {
+    Rogue2.addEventListener("click", function () {
+      window.location.href = "../html-bin/rogue2.html";
+    });
+  }
   if (Rss) {
     Rss.addEventListener("click", function () {
       window.location.href = "../html-bin/RSS.html";
@@ -577,9 +673,34 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/RT2.html";
     });
   }
+  if (Run) {
+    Run.addEventListener("click", function () {
+      window.location.href = "../html-bin/run.html";
+    });
+  }
+  if (Run1) {
+    Run1.addEventListener("click", function () {
+      window.location.href = "../html-bin/run1.html";
+    });
+  }
+  if (Run2) {
+    Run2.addEventListener("click", function () {
+      window.location.href = "../html-bin/run2.html";
+    });
+  }
+  if (Run3) {
+    Run3.addEventListener("click", function () {
+      window.location.href = "../html-bin/run3.html";
+    });
+  }
   if (Scratch) {
     Scratch.addEventListener("click", function () {
       window.location.href = "../html-bin/gettingoverit.html";
+    });
+  }
+  if (Second60) {
+    Second60.addEventListener("click", function () {
+      window.location.href = "../html-bin/second60.html";
     });
   }
   if (Shell) {
@@ -665,6 +786,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Undyne) {
     Undyne.addEventListener("click", function () {
       window.location.href = "../html-bin/undyne.html";
+    });
+  }
+  if (Vision) {
+    Vision.addEventListener("click", function () {
+      window.location.href = "../html-bin/vision.html";
     });
   }
   if (W1) {
@@ -1077,21 +1203,21 @@ document.addEventListener("DOMContentLoaded", () => {
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#111";
       });
-    } else if (state === 1) {
-      // Media
+    } else if (state === 2) {
+      /*
       body.style.backgroundColor = "#0d001a";
       nav.style.backgroundColor = "#1a0030";
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#1a0030";
       });
-      /*
-    } else if (state === 2) {
+      */
+    } else if (state === 1) {
       // Indie
       body.style.backgroundColor = "#01001a";
       nav.style.backgroundColor = "#050030";
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#050030";
-      });*/
+      });
     }
   }
 
