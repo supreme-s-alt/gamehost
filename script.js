@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const UndertaleMods = document.getElementById("undertalemods");
   const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
+  const Unfair = document.getElementById("unfair");
   const Vision = document.getElementById("vision");
   const Webfishing = document.getElementById("webfishing");
   const W1 = document.getElementById("w1");
@@ -519,7 +520,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Mad) {
     Mad.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-mad.html";
+      window.location.href = "../html-bin/mad.html";
     });
   }
   if (Madness) {
@@ -786,6 +787,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Undyne) {
     Undyne.addEventListener("click", function () {
       window.location.href = "../html-bin/undyne.html";
+    });
+  }
+  if (Unfair) {
+    Unfair.addEventListener("click", function () {
+      window.location.href = "../html-bin/unfair.html";
     });
   }
   if (Vision) {
@@ -1327,12 +1333,25 @@ document.addEventListener("DOMContentLoaded", () => {
     pageSwitch();
   }
 
+  function disableTimer() {
+    setTimeout(() => {
+      leftSwitch.style.pointerEvents = "auto";
+      rightSwitch.style.pointerEvents = "auto";
+    }, 650);
+  }
+
   leftSwitch.addEventListener("click", () => {
     direction = "L";
     switchContent();
+    leftSwitch.style.pointerEvents = "none";
+    rightSwitch.style.pointerEvents = "none";
+    disableTimer();
   });
   rightSwitch.addEventListener("click", () => {
     direction = "R";
     switchContent();
+    leftSwitch.style.pointerEvents = "none";
+    rightSwitch.style.pointerEvents = "none";
+    disableTimer();
   });
 })();

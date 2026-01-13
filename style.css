@@ -1,4 +1,5 @@
 body {
+  user-select: none;
   padding-top: 60px; /* Space for the navbar */
   padding-left: 40px;
   padding-right: 40px;
@@ -19,6 +20,7 @@ body {
   padding-right: 40px;
 }
 #Thumbnails {
+  user-select: none;
   position: relative;
   align-self: center;
   border-radius: 40px;
@@ -29,6 +31,7 @@ body {
   height: auto;
 }
 nav {
+  user-select: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,6 +57,7 @@ nav {
 }
 
 .nav-buttons {
+  user-select: none;
   display: flex;
   align-items: center;
   gap: 10px; /* keep spacing the same */
@@ -63,6 +67,7 @@ nav {
 }
 /* Home Button */
 #home {
+  user-select: none;
   gap: 50px;
   margin-left: 75px;
   padding: 10px 20px;
@@ -142,6 +147,7 @@ nav {
 #g3000,
 #LME,
 #static {
+  user-select: none;
   position: relative;
   left: -20px; /* negative value moves them left */
   padding: 10px 20px;
@@ -170,6 +176,7 @@ nav {
 }
 
 #feedback {
+  user-select: none;
   transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   resize: none;
   min-width: 50px;
@@ -189,6 +196,7 @@ nav {
 #g50000,
 #LME,
 #static {
+  user-select: none;
   font-size: 15px;
   background-color: #111;
   color: #ffffff;
@@ -212,6 +220,7 @@ nav {
 }
 
 .game-btn {
+  user-select: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,6 +259,7 @@ nav {
 }
 
 .indie-btn {
+  user-select: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,6 +281,7 @@ nav {
 }
 
 .media-btn {
+  user-select: none;
   padding: 10px 20px;
   font-size: 18px;
   margin: 10px;
@@ -294,6 +305,7 @@ nav {
 }
 
 .nav-toggle {
+  user-select: none;
   position: fixed;
   background-color: #111;
   border: none;
@@ -341,6 +353,7 @@ body.nav-hidden .nav-toggle {
 }
 
 #fullscreen {
+  user-select: none;
   position: absolute;
   display: flex;
   background-color: #111;
@@ -354,6 +367,7 @@ body.nav-hidden .nav-toggle {
 }
 
 #maximize {
+  user-select: none;
   position: fixed;
   bottom: 20px;
   left: 20px; /* bottom-right corner */
@@ -373,6 +387,7 @@ body.nav-hidden .nav-toggle {
 }
 
 #right-switch {
+  user-select: none;
   display: inline;
   position: relative;
   transform: rotate(270deg);
@@ -382,6 +397,7 @@ body.nav-hidden .nav-toggle {
   max-height: auto;
 }
 #left-switch {
+  user-select: none;
   display: inline;
   position: relative;
   transform: rotate(90deg);
@@ -391,6 +407,7 @@ body.nav-hidden .nav-toggle {
   max-height: auto;
 }
 #page-header {
+  user-select: none;
   display: inline;
   position: relative;
   transition: transform 0.6s ease;
@@ -405,6 +422,8 @@ body.nav-hidden .nav-toggle {
 #left-switch:hover,
 #right-switch:hover {
   transform: scale(1.15), rotate(inherit);
+  height: 100%;
+  width: 100%;
 }
 hr {
   color: white;
@@ -448,7 +467,7 @@ hr {
   visibility: hidden;
   padding-left: 20px;
   padding-right: 20px;
-  top: 45vh;
+  top: 39vh;
   left: 0;
   right: 0;
   text-align: center;
@@ -457,4 +476,10 @@ hr {
   transform: translateX(-200%);
   mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+  scrollbar-color: #000000;
+  scrollbar-width: 0;
 }
