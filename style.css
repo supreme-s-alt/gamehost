@@ -77,7 +77,7 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
+  transition: background-color 0.6s, transform 0.3s ease, opacity 0.6s ease;
   cursor: pointer;
   font-family: inherit;
 }
