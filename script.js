@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const Cuphead = document.getElementById("cuphead");
   const Deadseat = document.getElementById("deadseat");
   const Deltarune = document.getElementById("deltarune");
+  const Deltarune1 = document.getElementById("deltarune1");
+  const Deltarune2 = document.getElementById("deltarune2");
+  const Deltarune3 = document.getElementById("deltarune3");
+  const Deltarune4 = document.getElementById("deltarune4");
   const Deltatraveler = document.getElementById("deltatraveler");
   const Dig = document.getElementById("dig");
   const DL1 = document.getElementById("dl1");
@@ -894,6 +898,26 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Deltarune) {
     Deltarune.addEventListener("click", function () {
       window.location.href = "../indie-bin/deltarune.html";
+    });
+  }
+  if (Deltarune1) {
+    Deltarune1.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltarune-1.html";
+    });
+  }
+  if (Deltarune2) {
+    Deltarune2.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltarune-2.html";
+    });
+  }
+  if (Deltarune3) {
+    Deltarune3.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltarune-3.html";
+    });
+  }
+  if (Deltarune4) {
+    Deltarune4.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltarune-4.html";
     });
   }
   if (Deltatraveler) {
