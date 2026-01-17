@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Aow = document.getElementById("aow");
   const Aow2 = document.getElementById("aow2");
   const Balatro = document.getElementById("balatro");
+  const BalatroMult = document.getElementById("balatromult");
   const Baldic = document.getElementById("baldic");
   const Baldiplus = document.getElementById("baldiplus");
   const Balls = document.getElementById("balls");
@@ -41,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const Deltarune2 = document.getElementById("deltarune2");
   const Deltarune3 = document.getElementById("deltarune3");
   const Deltarune4 = document.getElementById("deltarune4");
+  const DeltaruneBoss = document.getElementById("deltaruneboss");
+  const DeltaruneOST = document.getElementById("deltaruneost");
   const Deltatraveler = document.getElementById("deltatraveler");
   const Dig = document.getElementById("dig");
   const DL1 = document.getElementById("dl1");
@@ -850,6 +853,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/balatro.html";
     });
   }
+  if (BalatroMult) {
+    BalatroMult.addEventListener("click", function () {
+      window.location.href = "../indie-bin/balatromult.html";
+    });
+  }
   if (Baldic) {
     Baldic.addEventListener("click", function () {
       window.location.href = "../indie-bin/baldic.html";
@@ -918,6 +926,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Deltarune4) {
     Deltarune4.addEventListener("click", function () {
       window.location.href = "../indie-bin/deltarune-4.html";
+    });
+  }
+  if (DeltaruneBoss) {
+    DeltaruneBoss.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltaruneboss.html";
+    });
+  }
+  if (DeltaruneOST) {
+    DeltaruneOST.addEventListener("click", function () {
+      window.location.href = "../indie-bin/deltaruneost.html";
     });
   }
   if (Deltatraveler) {
