@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const Bob = document.getElementById("bob");
   const BTD1 = document.getElementById("btd1");
   const BTD2 = document.getElementById("btd2");
+  const BTD3 = document.getElementById("btd3");
+  const BTD4 = document.getElementById("btd4");
   const BTD5 = document.getElementById("btd5");
   const BTDS = document.getElementById("btds");
   const BTS = document.getElementById("bts");
@@ -280,6 +282,16 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/btd2.html";
     });
   }
+  if (BTD3) {
+    BTD3.addEventListener("click", function () {
+      window.location.href = "../html-bin/btd3.html";
+    });
+  }
+  if (BTD4) {
+    BTD4.addEventListener("click", function () {
+      window.location.href = "../html-bin/btd4.html";
+    });
+  }
   if (BTD5) {
     BTD5.addEventListener("click", function () {
       window.location.href = "../html-bin/btd5.html";
@@ -520,6 +532,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/LTF1.html"; //Make Knight.html later
     });
   }
+  if (LTF2) {
+    LTF2.addEventListener("click", function () {
+      window.location.href = "../html-bin/LTF2.html"; //Make Knight.html later
+    });
+  }
   if (LTF3) {
     LTF3.addEventListener("click", function () {
       window.location.href = "../html-bin/LTF3.html"; //change to LTF3 later
@@ -628,7 +645,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (Pls) {
     Pls.addEventListener("click", function () {
-      window.location.href = "../html-bin/pls.html";
+      window.location.href = "../html-bin/pagames.html";
     });
   }
   if (Rogue1) {

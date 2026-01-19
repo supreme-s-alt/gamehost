@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
-  <title>Moto xM3 2</title>
+  <title>Moto X3M 2</title>
   <body>
-      <!-- Navigation Bar -->
-      <nav id="main-nav">
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
       <div class="dropdown">
         <button class="dropbtn" link="images/dropdown.png"></button>
         <div class="dropdown-content">
-          <a href="../html-bin/achievement.html">Achievement Unlocked</a>
           <a href="../html-bin/arcane.html">Arcane Weapon</a>
-          <a href="../html-bin/BTDS.html">Bloons TD Series</a>
-          <a href="../html-bin/burrito.html">Burrito Bison</a>
           <a href="../html-bin/chibi.html">Chibi Knight</a>
-          <a href="../html-bin/doodlejump.html">Doodle Jump</a>
-          <a href="../html-bin/FPA.html">Fancy Pants Series</a> 
+          <a href="../html-bin/birrito.html">Birrito Bison</a>
+          <a href="../html-bin/FPA.html">Fancy Pants Series</a>
           <a href="../html-bin/knight.html">Knightmare Tower</a>
-          <a href="../html-bin/LTF3">Learn to fly 3</a>
+          <a href="../html-bin/LTF3.html">Learn to fly 3</a>
           <a href="../html-bin/MSIPFI.html">Mike Shadow: I Paid for it!</a>
           <a href="../html-bin/Pizza.html">Pizza Tower</a>
           <a href="../html-bin/swords.html">Swords and Souls</a>
         </div>
       </div>
-        <h1 id="home">Radio-A's Unblocked Games</h1>
-        <div class="nav-links">
-          <a id="about">About</a>
-          <a id="credits">Credits</a>
-          <a id="uplog">Updates</a>
-          <a id="gamesug">Suggestions</a>
-        </div>
+      <h1 id="home">Radio-A's Unblocked Games</h1>
+      <div class="nav-links">
+        <a id="about">About</a>
+        <a id="credits">Credits</a>
+        <a id="uplog">Updates</a>
+        <a id="gamesug">Suggestions</a>
+      </div>
     </nav>
-        <!-- Nav toggle button -->
-        <button id="nav-toggle" class="nav-toggle"><img src="../images/navbutton.png" alt="nav-toggle"></button>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-      <div>
-          <object id="player" type= "application/x-shockwave-flash" width="900" height="500">
-              <param name="movie" value="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/moto2.swf">
-              <embed src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/moto2.swf" width="900" height="500">
-              </embed>
-          </object>
-      </div>
-      <div class="controls">
-        <button id="fullscreen">Fullscreen</button>
-  
-      </div>
+    <!-- Nav toggle button -->
+    <button id="nav-toggle" class="nav-toggle">
+      <img src="../images/navbutton.png" alt="nav-toggle" />
+    </button>
+    <div class="player-container">
+      <iframe
+        id="player"
+        src="https://moto-x3m-2.onrender.com"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+
+    <div class="controls">
+      <button id="fullscreen">Fullscreen</button>
+    </div>
     <script src="../script.js"></script>
   </body>
 </html>
