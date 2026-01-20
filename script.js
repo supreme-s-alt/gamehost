@@ -1414,3 +1414,45 @@ document.addEventListener("DOMContentLoaded", () => {
     disableTimer();
   });
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const textarea = document.getElementById("search-box");
+  // Use querySelectorAll to get a static list you can loop through
+  const games = document.querySelectorAll(".search-btn");
+  let results = 0;
+  let search = false;
+  let indie = document.getElementById("indie-box");
+  let console = document.getElementById("console-box");
+  let index = document.getElementById("index-box");
+  let jujule = document.getElementById("search-box");
+
+  textarea.addEventListener("click", function () {
+    search = !search;
+    if (search) {
+      indie.style.display = "none";
+      index.style.display = "none";
+      console.style.display = "none";
+    }
+  });
+
+  textarea.addEventListener("input", function () {
+    const filter = this.value.toLowerCase(); // Convert to lowercase for easier matching
+
+    games.forEach((node) => {
+      // Get the text inside the button (game name)
+      const gameName = node.textContent.toLowerCase();
+
+      if (gameName.includes(filter)) {
+        node.style.display = "block"; // Show match
+        results += 1;
+      } else {
+        node.style.display = "none"; // Hide others
+      }
+      /*
+          if (results === 0) {
+              //display "No results found"
+          };
+          */
+    });
+  });
+});
