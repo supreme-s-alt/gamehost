@@ -4,6 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const Achievement = document.getElementById("achievement");
   const Achievement2 = document.getElementById("achievement2");
+  const Agoti = document.getElementById("agoti");
   const Amanda = document.getElementById("amanda");
   const Apple = document.getElementById("apple");
   const Arcane = document.getElementById("arcane");
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Balls = document.getElementById("balls");
   const Balls2 = document.getElementById("balls2");
   const Bendy = document.getElementById("bendy");
+  const Betrayal = document.getElementById("betrayal");
   const Bic = document.getElementById("bic");
   const Bic2 = document.getElementById("bic2");
   const Bic3 = document.getElementById("bic3");
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const BTDS = document.getElementById("btds");
   const BTS = document.getElementById("bts");
   const Burrito = document.getElementById("burrito");
+  const Camellia = document.getElementById("camellia");
   const Cat = document.getElementById("cat");
   const CatM = document.getElementById("catm");
   const Celeste = document.getElementById("celeste");
@@ -54,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const DL4 = document.getElementById("dl4");
   const DLS = document.getElementById("dls");
   const Doodle = document.getElementById("doodle");
+  const Dusttale = document.getElementById("dusttale");
   const Electric = document.getElementById("electric");
   const Earn1 = document.getElementById("earn1");
   const Earn2 = document.getElementById("earn2");
@@ -75,13 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const FNAFW = document.getElementById("FNAFW");
   const FNF = document.getElementById("fnf");
   const FNFMods = document.getElementById("fnfmods");
+  const FNFSonic = document.getElementById("fnfsonic");
   const Galaxy = document.getElementById("galaxy");
   const G2048 = document.getElementById("g2048");
   const GKnight = document.getElementById("gknight");
   const GOI = document.getElementById("GOI");
   const Gooped = document.getElementById("gooped");
+  const Hank = document.getElementById("hank");
   const Happy = document.getElementById("happy");
   const Hard = document.getElementById("hard");
+  const Hit = document.getElementById("hit");
   const HSBTB = document.getElementById("hsbtb");
   const HSETP = document.getElementById("hsetp");
   const HSFTC = document.getElementById("hsftc");
@@ -89,7 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const Hollow = document.getElementById("hollow");
   const HSS = document.getElementById("hss");
   const HSSTD = document.getElementById("hsstd");
+  const Hypno = document.getElementById("hypno");
   const IMP = document.getElementById("imposs");
+  const Imposter = document.getElementById("imposter");
   const Indie = document.getElementById("indie");
   const IReady = document.getElementById("iready");
   const Jacksmith = document.getElementById("jacksmith");
@@ -132,10 +141,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const Papiz = document.getElementById("papiz");
   const Pat = document.getElementById("pat");
   const Path = document.getElementById("path");
+  const Pibby = document.getElementById("pibby");
   const Pizza = document.getElementById("pizza");
   const Pls = document.getElementById("pls");
   const Raft = document.getElementById("raft");
   const Repo = document.getElementById("repo");
+  const Rewrite = document.getElementById("rewrite");
   const Rogue1 = document.getElementById("rogue1");
   const Rogue2 = document.getElementById("rogue2");
   const Roulette = document.getElementById("roulette");
@@ -165,12 +176,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const Smario = document.getElementById("smario");
   const Smash = document.getElementById("smash");
   const Smash2 = document.getElementById("smash2");
+  const Shaggymatt = document.getElementById("shaggymatt");
+  const Shucks = document.getElementById("shucks");
   const Shell = document.getElementById("shell");
+  const Sky = document.getElementById("sky");
   const Sonic = document.getElementById("sonic");
   const SonicExe = document.getElementById("sonic-exe");
   const Soul = document.getElementById("souls");
+  const Sunday = document.getElementById("sunday");
   const SWI = document.getElementById("SWI");
+  const Tabi = document.getElementById("tabi");
   const Tattletail = document.getElementById("tattletail");
+  const Takeover = document.getElementById("takeover");
   const Terraria = document.getElementById("terraria");
   const TMITW = document.getElementById("TMITW");
   const TNMN = document.getElementById("TNMN");
@@ -184,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Undyne = document.getElementById("undyne");
   const Unfair = document.getElementById("unfair");
   const Vision = document.getElementById("vision");
+  const Vsfancy = document.getElementById("vsfancy");
   const Webfishing = document.getElementById("webfishing");
   const W1 = document.getElementById("w1");
   const W2 = document.getElementById("w2");
@@ -217,6 +235,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/achievement2.html";
     });
   }
+  if (Agoti) {
+    Agoti.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-agoti.html";
+    });
+  }
   if (Aow) {
     Aow.addEventListener("click", function () {
       window.location.href = "../html-bin/aow.html";
@@ -240,6 +263,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Balls2) {
     Balls2.addEventListener("click", function () {
       window.location.href = "../html-bin/balls3.html";
+    });
+  }
+  if (Betrayal) {
+    Betrayal.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-betrayal.html";
     });
   }
   if (Bics) {
@@ -312,6 +340,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/cat.html";
     });
   }
+  if (Camellia) {
+    Camellia.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-camellia.html";
+    });
+  }
   if (CatM) {
     CatM.addEventListener("click", function () {
       window.location.href = "../html-bin/catm.html";
@@ -360,6 +393,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Doodle) {
     Doodle.addEventListener("click", function () {
       window.location.href = "../html-bin/doodlejump.html";
+    });
+  }
+  if (Dusttale) {
+    Dusttale.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-dusttale.html";
     });
   }
   if (Electric) {
@@ -414,7 +452,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (FNFMods) {
     FNFMods.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnfmods.html";
+      window.location.href = "../html-bin/fnf-mods.html";
+    });
+  }
+  if (FNFSonic) {
+    FNFSonic.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-sonic.html";
     });
   }
   if (Galaxy) {
@@ -432,6 +475,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/gooped.html";
     });
   }
+  if (Hank) {
+    Hank.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-hank.html";
+    });
+  }
   if (Happy) {
     Happy.addEventListener("click", function () {
       window.location.href = "../html-bin/happy.html";
@@ -440,6 +488,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Hard) {
     Hard.addEventListener("click", function () {
       window.location.href = "../html-bin/hard.html";
+    });
+  }
+  if (Hit) {
+    Hit.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-hit.html";
     });
   }
   if (HSBTB) {
@@ -472,9 +525,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/HSStD.html";
     });
   }
+  if (Hypno) {
+    Hypno.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-hypno.html";
+    });
+  }
   if (IMP) {
     IMP.addEventListener("click", function () {
       window.location.href = "../html-bin/imposs.html";
+    });
+  }
+  if (Imposter) {
+    Imposter.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-imposter.html";
     });
   }
   if (Indie) {
@@ -642,10 +705,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/path.html";
     });
   }
-
+  if (Pibby) {
+    Pibby.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-pibby.html";
+    });
+  }
   if (Pls) {
     Pls.addEventListener("click", function () {
       window.location.href = "../html-bin/pagames.html";
+    });
+  }
+  if (Rewrite) {
+    Rewrite.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-rewrite.html";
     });
   }
   if (Rogue1) {
@@ -728,9 +800,24 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/second60.html";
     });
   }
+  if (Shaggymatt) {
+    Shaggymatt.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-shaggymatt.html";
+    });
+  }
+  if (Shucks) {
+    Shucks.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-shucks.html";
+    });
+  }
   if (Shell) {
     Shell.addEventListener("click", function () {
       window.location.href = "../html-bin/shellshock.html";
+    });
+  }
+  if (Sky) {
+    Sky.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-sky.html";
     });
   }
   if (SKitty) {
@@ -783,6 +870,21 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/swords.html";
     });
   }
+  if (Sunday) {
+    Sunday.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-sunday.html";
+    });
+  }
+  if (Tabi) {
+    Tabi.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-tabi.html";
+    });
+  }
+  if (Takeover) {
+    Takeover.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-takeover.html";
+    });
+  }
   if (Toss) {
     Toss.addEventListener("click", function () {
       window.location.href = "../html-bin/tossinturt.html";
@@ -821,6 +923,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Vision) {
     Vision.addEventListener("click", function () {
       window.location.href = "../html-bin/vision.html";
+    });
+  }
+  if (Vsfancy) {
+    Vsfancy.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-fancy.html";
     });
   }
   if (W1) {
@@ -1416,43 +1523,83 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const textarea = document.getElementById("search-box");
-  // Use querySelectorAll to get a static list you can loop through
-  const games = document.querySelectorAll(".search-btn");
-  let results = 0;
-  let search = false;
-  let indie = document.getElementById("indie-box");
-  let console = document.getElementById("console-box");
-  let index = document.getElementById("index-box");
-  let jujule = document.getElementById("search-box");
+  const gamelist = document.querySelectorAll(".game-btn");
+  const indielist = document.querySelectorAll(".indie-btn");
+  const consolelist = null;
 
-  textarea.addEventListener("click", function () {
-    search = !search;
+  let search = false;
+  let leftSwitch = document.getElementById("left-switch");
+  let rightSwitch = document.getElementById("right-switch");
+
+  const searchExit = document.getElementById("search-exit");
+  const textarea = document.getElementById("search-space");
+
+  const indieBox = document.getElementById("indie-box");
+  const consoleBox = null;
+  const indexBox = document.getElementById("index-box");
+
+  function searchDisplay() {
     if (search) {
-      indie.style.display = "none";
-      index.style.display = "none";
-      console.style.display = "none";
+      searchExit.display = "inherit";
+    } else {
+      searchExit.display = "none";
+      gamelist.forEach((btn) => (btn.style.display = "initial"));
+      indielist.forEach((btn) => (btn.style.display = "initial"));
+      consolelist.forEach((btn) => (btn.style.display = "initial"));
+    }
+  }
+
+  // Exit search via button
+  searchExit.addEventListener("click", () => {
+    if (search) {
+      search = false;
+      searchDisplay();
+      alert("search has changed to: " + search);
     }
   });
 
+  // Exit search via Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && search) {
+      search = false;
+      searchDisplay();
+      alert("search has changed to: " + search);
+    }
+  });
+
+  // ENTER search when textarea gains focus
+  textarea.addEventListener("focus", () => {
+    if (!search) {
+      search = true;
+      searchDisplay();
+    }
+  });
+
+  // Filter buttons while typing
   textarea.addEventListener("input", function () {
-    const filter = this.value.toLowerCase(); // Convert to lowercase for easier matching
-
-    games.forEach((node) => {
-      // Get the text inside the button (game name)
+    const filter = this.value.toLowerCase();
+    let results = 0;
+    gamelist.forEach((node) => {
       const gameName = node.textContent.toLowerCase();
-
       if (gameName.includes(filter)) {
-        node.style.display = "block"; // Show match
+        node.style.display = "block";
         results += 1;
+      } else if (filter === "") {
+        node.style.display = "block";
       } else {
-        node.style.display = "none"; // Hide others
+        node.style.display = "none";
       }
-      /*
-          if (results === 0) {
-              //display "No results found"
-          };
-          */
+    });
+    indielist.forEach((node) => {
+      const gameName = node.textContent.toLowerCase();
+      if (gameName.includes(filter)) {
+        node.style.display = "block";
+        results += 1;
+      } else if (filter === "") {
+        node.style.display = "block";
+      } else {
+        node.style.display = "none";
+      }
     });
   });
 });
