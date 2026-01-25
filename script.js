@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Agoti = document.getElementById("agoti");
   const Amanda = document.getElementById("amanda");
   const Apple = document.getElementById("apple");
+  const Arcade = document.getElementById("arcade");
   const Arcane = document.getElementById("arcane");
   const Aow = document.getElementById("aow");
   const Aow2 = document.getElementById("aow2");
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Bics = document.getElementById("bics");
   const Block = document.getElementById("block");
   const Bob = document.getElementById("bob");
+  const BobNBosip = document.getElementById("bobnbosip");
   const BTD1 = document.getElementById("btd1");
   const BTD2 = document.getElementById("btd2");
   const BTD3 = document.getElementById("btd3");
@@ -57,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const DL4 = document.getElementById("dl4");
   const DLS = document.getElementById("dls");
   const Doodle = document.getElementById("doodle");
+  const DSides = document.getElementById("dsides");
   const Dusttale = document.getElementById("dusttale");
   const Electric = document.getElementById("electric");
   const Earn1 = document.getElementById("earn1");
@@ -69,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Firewater3 = document.getElementById("firewater3");
   const Firewater4 = document.getElementById("firewater4");
   const Flash = document.getElementById("flash");
+  const Funkadelix = document.getElementById("funkadelix");
   const FNAF = document.getElementById("FNAF");
   const FNAF1 = document.getElementById("FNAF1");
   const FNAF2 = document.getElementById("FNAF2");
@@ -81,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const FNFMods = document.getElementById("fnfmods");
   const FNFSonic = document.getElementById("fnfsonic");
   const Galaxy = document.getElementById("galaxy");
+  const Garcello = document.getElementById("garcello");
   const G2048 = document.getElementById("g2048");
   const GKnight = document.getElementById("gknight");
   const GOI = document.getElementById("GOI");
@@ -121,7 +126,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const Mad = document.getElementById("mad");
   const Madness = document.getElementById("madness");
   const Mario = document.getElementById("mario");
+  const Matt = document.getElementById("matt");
   const Meat = document.getElementById("meat");
+  const MidFight = document.getElementById("midfight");
   const Mike = document.getElementById("mike");
   const Money = document.getElementById("money");
   const Moto = document.getElementById("moto");
@@ -144,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Pibby = document.getElementById("pibby");
   const Pizza = document.getElementById("pizza");
   const Pls = document.getElementById("pls");
+  const QT = document.getElementById("qt");
   const Raft = document.getElementById("raft");
   const Repo = document.getElementById("repo");
   const Rewrite = document.getElementById("rewrite");
@@ -163,8 +171,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const Run1 = document.getElementById("run1");
   const Run2 = document.getElementById("run2");
   const Run3 = document.getElementById("run3");
+  const Salty = document.getElementById("salty");
   const Scratch = document.getElementById("scratch");
   const Second60 = document.getElementById("second60");
+  const Shaggy = document.getElementById("shaggy");
+  const Shaggymatt = document.getElementById("shaggymatt");
+  const Shell = document.getElementById("shell");
+  const SHistory = document.getElementById("shistory");
+  const Sky = document.getElementById("sky");
   const SKitty = document.getElementById("skitty");
   const SKitty2 = document.getElementById("skitty2");
   const SKittyL = document.getElementById("skittyl");
@@ -176,14 +190,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const Smario = document.getElementById("smario");
   const Smash = document.getElementById("smash");
   const Smash2 = document.getElementById("smash2");
-  const Shaggymatt = document.getElementById("shaggymatt");
-  const Shucks = document.getElementById("shucks");
-  const Shell = document.getElementById("shell");
-  const Sky = document.getElementById("sky");
   const Sonic = document.getElementById("sonic");
   const SonicExe = document.getElementById("sonic-exe");
   const Soul = document.getElementById("souls");
   const Sunday = document.getElementById("sunday");
+  const Starlight = document.getElementById("starlight");
   const SWI = document.getElementById("SWI");
   const Tabi = document.getElementById("tabi");
   const Tattletail = document.getElementById("tattletail");
@@ -201,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Undyne = document.getElementById("undyne");
   const Unfair = document.getElementById("unfair");
   const Vision = document.getElementById("vision");
+  const Voiid = document.getElementById("voiid");
   const Vsfancy = document.getElementById("vsfancy");
   const Webfishing = document.getElementById("webfishing");
   const W1 = document.getElementById("w1");
@@ -250,6 +262,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/aow2.html";
     });
   }
+  if (Arcade) {
+    Arcade.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-arcade.html";
+    });
+  }
   if (Arcane) {
     Arcane.addEventListener("click", function () {
       window.location.href = "../html-bin/arcane.html";
@@ -293,6 +310,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Bob) {
     Bob.addEventListener("click", function () {
       window.location.href = "../html-bin/bob.html";
+    });
+  }
+  if (BobNBosip) {
+    BobNBosip.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-bobnbosip.html";
     });
   }
   if (BTDS) {
@@ -395,6 +417,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/doodlejump.html";
     });
   }
+  if (DSides) {
+    DSides.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-dsides.html";
+    });
+  }
   if (Dusttale) {
     Dusttale.addEventListener("click", function () {
       window.location.href = "../html-bin/fnf-dusttale.html";
@@ -452,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (FNFMods) {
     FNFMods.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-mods.html";
+      window.location.href = "../html-bin/fnfmods.html";
     });
   }
   if (FNFSonic) {
@@ -460,9 +487,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/fnf-sonic.html";
     });
   }
+  if (Funkadelix) {
+    Funkadelix.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-funkadelix.html";
+    });
+  }
   if (Galaxy) {
     Galaxy.addEventListener("click", function () {
       window.location.href = "../html-bin/galaxy.html";
+    });
+  }
+  if (Garcello) {
+    Garcello.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-garcello.html";
     });
   }
   if (GKnight) {
@@ -620,9 +657,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/flashmario.html";
     });
   }
+  if (Matt) {
+    Matt.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-matt.html";
+    });
+  }
   if (Meat) {
     Meat.addEventListener("click", function () {
       window.location.href = "../html-bin/meatboy.html";
+    });
+  }
+  if (MidFight) {
+    MidFight.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-midfight.html";
     });
   }
   if (Mike) {
@@ -715,6 +762,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/pagames.html";
     });
   }
+  if (QT) {
+    QT.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-qt.html";
+    });
+  }
   if (Rewrite) {
     Rewrite.addEventListener("click", function () {
       window.location.href = "../html-bin/fnf-rewrite.html";
@@ -790,6 +842,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/run3.html";
     });
   }
+  if (Salty) {
+    Salty.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-salty.html";
+    });
+  }
   if (Scratch) {
     Scratch.addEventListener("click", function () {
       window.location.href = "../html-bin/gettingoverit.html";
@@ -800,19 +857,24 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/second60.html";
     });
   }
+  if (Shaggy) {
+    Shaggy.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-shaggy.html";
+    });
+  }
   if (Shaggymatt) {
     Shaggymatt.addEventListener("click", function () {
       window.location.href = "../html-bin/fnf-shaggymatt.html";
     });
   }
-  if (Shucks) {
-    Shucks.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-shucks.html";
-    });
-  }
   if (Shell) {
     Shell.addEventListener("click", function () {
       window.location.href = "../html-bin/shellshock.html";
+    });
+  }
+  if (SHistory) {
+    SHistory.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-shistory.html";
     });
   }
   if (Sky) {
@@ -875,6 +937,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/fnf-sunday.html";
     });
   }
+  if (Starlight) {
+    Starlight.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-starlight.html";
+    });
+  }
   if (Tabi) {
     Tabi.addEventListener("click", function () {
       window.location.href = "../html-bin/fnf-tabi.html";
@@ -923,6 +990,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Vision) {
     Vision.addEventListener("click", function () {
       window.location.href = "../html-bin/vision.html";
+    });
+  }
+  if (Voiid) {
+    Voiid.addEventListener("click", function () {
+      window.location.href = "../html-bin/fnf-matt-voiid.html";
     });
   }
   if (Vsfancy) {
@@ -1366,7 +1438,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let gamesug = document.getElementById("gamesug");
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
-
+  /*
+    index.style.transform = "translateX(0%)";
+    alert("index's transform value is: " + index.style.transform);
+    if (index.style.transform === "translateX(0%)") {
+      alert("It worked");
+    } else {
+      alert("switch it to '==' maybe?");
+    }
+  */
   function colorSwap() {
     if (state === 0) {
       // Games
@@ -1396,40 +1476,44 @@ document.addEventListener("DOMContentLoaded", () => {
   function pageSwitch() {
     if (direction === "R") {
       /*
-      if (state === 1) {
-        index.style.visibility = "hidden";
-        media.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
-        indie.style.transform = "translateX(-200%)";
-        media.style.transform = "translateX(0)";
-      } else if (state === 0) {
-        index.style.visibility = "visible";
-        indie.style.visibility = "hidden";
-        index.style.transform = "translateX(0)";
-        indie.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(-200%)";
-      } else if (state === 2) {
-        media.style.visibility = "hidden";
-        indie.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
-        indie.style.transform = "translateX(0%)";
-        media.style.transform = "translateX(-200%)";
-      }*/
+        if (state === 1) {
+          index.style.visibility = "hidden";
+          media.style.visibility = "visible";
+          index.style.transform = "translateX(200%)";
+          indie.style.transform = "translateX(-200%)";
+          media.style.transform = "translateX(0)";
+        } else if (state === 0) {
+          index.style.visibility = "visible";
+          indie.style.visibility = "hidden";
+          index.style.transform = "translateX(0)";
+          indie.style.transform = "translateX(200%)";
+          media.style.transform = "translateX(-200%)";
+        } else if (state === 2) {
+          media.style.visibility = "hidden";
+          indie.style.visibility = "visible";
+          index.style.transform = "translateX(200%)";
+          indie.style.transform = "translateX(0%)";
+          media.style.transform = "translateX(-200%)";
+        }
+      */
+
       if (state === 1) {
         if (indie.style.transform === "translateX(200%)") {
           indie.style.transform = "translateX(-200%)";
+          void indie.offsetHeight;
         }
         indie.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
+        index.style.transform = "translateX(-200%)";
         indie.style.transform = "translateX(0%)";
         index.style.visibility = "hidden";
       } else {
         if (index.style.transform === "translateX(200%)") {
           index.style.transform = "translateX(-200%)";
+          void index.offsetHeight;
         }
         index.style.visibility = "visible";
         index.style.transform = "translateX(0%)";
-        indie.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(-200%)";
         indie.style.visibility = "hidden";
       }
     } else if (direction === "L") {
@@ -1457,18 +1541,20 @@ document.addEventListener("DOMContentLoaded", () => {
       if (state === 1) {
         if (indie.style.transform === "translateX(-200%)") {
           indie.style.transform = "translateX(200%)";
+          void indie.offsetHeight;
         }
         indie.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
+        index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
         index.style.visibility = "hidden";
       } else {
         if (index.style.transform === "translateX(-200%)") {
           index.style.transform = "translateX(200%)";
+          void index.offsetHeight;
         }
         index.style.visibility = "visible";
         index.style.transform = "translateX(0%)";
-        indie.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(200%)";
         indie.style.visibility = "hidden";
       }
     }
