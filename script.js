@@ -579,7 +579,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Indie) {
     Indie.addEventListener("click", function () {
-      window.location.href = "../html-bin/indie.html";
+      window.location.href = "../html-bin/fnf-indie.html";
     });
   }
   if (IReady) {
