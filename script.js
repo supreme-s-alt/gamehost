@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Aow = document.getElementById("aow");
   const Aow2 = document.getElementById("aow2");
   const Balatro = document.getElementById("balatro");
-  const BalatroMult = document.getElementById("balatromult");
+  const BalatroHandy = document.getElementById("balatrohandy");
   const Baldic = document.getElementById("baldic");
   const Baldiplus = document.getElementById("baldiplus");
   const Balls = document.getElementById("balls");
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const TNMN = document.getElementById("TNMN");
   const Toss = document.getElementById("toss");
   const Tricky = document.getElementById("tricky");
-  const Ultrakill = document.getElementById("ultrakill");
+  const UltraPlink = document.getElementById("ultraplink");
   const Underfell = document.getElementById("underfell");
   const Undertale = document.getElementById("undertale");
   const UndertaleMods = document.getElementById("undertalemods");
@@ -1049,9 +1049,9 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/balatro.html";
     });
   }
-  if (BalatroMult) {
-    BalatroMult.addEventListener("click", function () {
-      window.location.href = "../indie-bin/balatromult.html";
+  if (BalatroHandy) {
+    BalatroHandy.addEventListener("click", function () {
+      window.location.href = "../indie-bin/balatrohandy.html";
     });
   }
   if (Baldic) {
@@ -1309,9 +1309,9 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/tnmn.html";
     });
   }
-  if (Ultrakill) {
-    Ultrakill.addEventListener("click", function () {
-      window.location.href = "../indie-bin/ultrakill.html";
+  if (UltraPlink) {
+    UltraPlink.addEventListener("click", function () {
+      window.location.href = "../indie-bin/ultraplink.html";
     });
   }
   if (Undertaley) {
