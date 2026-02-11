@@ -216,7 +216,7 @@ nav {
   justify-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1700px;
+  max-width: 88.542vw;
 }
 
 .game-btn {
@@ -224,14 +224,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  width: 14vw;
   margin: 10px;
   padding: 15px;
   font-size: 16px;
   background-color: #1d1c1c;
   color: #ffffff;
   border: none;
-  border-radius: 40px;
+  border-radius: 2.2vw;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
@@ -249,7 +249,7 @@ nav {
 }
 
 .game-btn span {
-  font-size: 15px;
+  font-size: 1vw;
   text-align: center;
   width: 100%;
 }
@@ -264,14 +264,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  width: 14vw;
   margin: 10px;
   padding: 15px;
   font-size: 16px;
   background-color: #070043;
   color: #ffffff;
   border: none;
-  border-radius: 40px;
+  border-radius: 2.1vw;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
@@ -290,13 +290,13 @@ nav {
   background-color: #1a0030;
   color: #ffffff;
   border: none;
-  border-radius: 40px;
+  border-radius: 2.1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   width: 100%;
-  max-width: 230px;
+  max-width: 14vw;
   overflow: hidden;
   transition: transform 0.3s, background-color 0.6s;
 }
