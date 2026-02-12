@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Agoti) {
     Agoti.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-agoti.html";
+      window.location.href = "../indie-bin/fnf-agoti.html";
     });
   }
   if (Aow) {
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Arcade) {
     Arcade.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-arcade.html";
+      window.location.href = "../indie-bin/fnf-arcade.html";
     });
   }
   if (Arcane) {
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Betrayal) {
     Betrayal.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-betrayal.html";
+      window.location.href = "../indie-bin/fnf-betrayal.html";
     });
   }
   if (Bics) {
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (BobNBosip) {
     BobNBosip.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-bobnbosip.html";
+      window.location.href = "../indie-bin/fnf-bobnbosip.html";
     });
   }
   if (BTDS) {
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Camellia) {
     Camellia.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-camellia.html";
+      window.location.href = "../indie-bin/fnf-camellia.html";
     });
   }
   if (CatM) {
@@ -419,12 +419,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (DSides) {
     DSides.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-dsides.html";
+      window.location.href = "../indie-bin/fnf-dsides.html";
     });
   }
   if (Dusttale) {
     Dusttale.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-dusttale.html";
+      window.location.href = "../indie-bin/fnf-dusttale.html";
     });
   }
   if (Electric) {
@@ -474,22 +474,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (FNF) {
     FNF.addEventListener("click", function () {
-      window.location.href = "../html-bin/fridaynightfunkin.html";
+      window.location.href = "../indie-bin/fridaynightfunkin.html";
     });
   }
   if (FNFMods) {
     FNFMods.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnfmods.html";
+      window.location.href = "../indie-bin/fnfmods.html";
     });
   }
   if (FNFSonic) {
     FNFSonic.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-sonic.html";
+      window.location.href = "../indie-bin/fnf-sonic.html";
     });
   }
   if (Funkadelix) {
     Funkadelix.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-funkadelix.html";
+      window.location.href = "../indie-bin/fnf-funkadelix.html";
     });
   }
   if (Galaxy) {
@@ -499,7 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Garcello) {
     Garcello.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-garcello.html";
+      window.location.href = "../indie-bin/fnf-garcello.html";
     });
   }
   if (GKnight) {
@@ -514,7 +514,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Hank) {
     Hank.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-hank.html";
+      window.location.href = "../indie-bin/fnf-hank.html";
     });
   }
   if (Happy) {
@@ -529,7 +529,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Hit) {
     Hit.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-hit.html";
+      window.location.href = "../indie-bin/fnf-hit.html";
     });
   }
   if (HSBTB) {
@@ -564,7 +564,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Hypno) {
     Hypno.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-hypno.html";
+      window.location.href = "../indie-bin/fnf-hypno.html";
     });
   }
   if (IMP) {
@@ -574,12 +574,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Imposter) {
     Imposter.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-imposter.html";
+      window.location.href = "../indie-bin/fnf-imposter.html";
     });
   }
   if (Indie) {
     Indie.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-indie.html";
+      window.location.href = "../indie-bin/fnf-indie.html";
     });
   }
   if (IReady) {
@@ -649,7 +649,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Madness) {
     Madness.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-madness.html";
+      window.location.href = "../indie-bin/fnf-madness.html";
     });
   }
   if (Mario) {
@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Matt) {
     Matt.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-matt.html";
+      window.location.href = "../indie-bin/fnf-matt.html";
     });
   }
   if (Meat) {
@@ -669,7 +669,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (MidFight) {
     MidFight.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-midfight.html";
+      window.location.href = "../indie-bin/fnf-midfight.html";
     });
   }
   if (Mike) {
@@ -694,7 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Neo) {
     Neo.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-neo.html";
+      window.location.href = "../indie-bin/fnf-neo.html";
     });
   }
   if (NGon) {
@@ -754,7 +754,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Pibby) {
     Pibby.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-pibby.html";
+      window.location.href = "../indie-bin/fnf-pibby.html";
     });
   }
   if (Pls) {
@@ -764,12 +764,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (QT) {
     QT.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-qt.html";
+      window.location.href = "../indie-bin/fnf-qt.html";
     });
   }
   if (Rewrite) {
     Rewrite.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-rewrite.html";
+      window.location.href = "../indie-bin/fnf-rewrite.html";
     });
   }
   if (Rogue1) {
@@ -844,7 +844,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Salty) {
     Salty.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-salty.html";
+      window.location.href = "../indie-bin/fnf-salty.html";
     });
   }
   if (Scratch) {
@@ -859,12 +859,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Shaggy) {
     Shaggy.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-shaggy.html";
+      window.location.href = "../indie-bin/fnf-shaggy.html";
     });
   }
   if (Shaggymatt) {
     Shaggymatt.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-shaggymatt.html";
+      window.location.href = "../indie-bin/fnf-shaggymatt.html";
     });
   }
   if (Shell) {
@@ -874,12 +874,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (SHistory) {
     SHistory.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-shistory.html";
+      window.location.href = "../indie-bin/fnf-shistory.html";
     });
   }
   if (Sky) {
     Sky.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-sky.html";
+      window.location.href = "../indie-bin/fnf-sky.html";
     });
   }
   if (SKitty) {
@@ -934,22 +934,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Sunday) {
     Sunday.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-sunday.html";
+      window.location.href = "../indie-bin/fnf-sunday.html";
     });
   }
   if (Starlight) {
     Starlight.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-starlight.html";
+      window.location.href = "../indie-bin/fnf-starlight.html";
     });
   }
   if (Tabi) {
     Tabi.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-tabi.html";
+      window.location.href = "../indie-bin/fnf-tabi.html";
     });
   }
   if (Takeover) {
     Takeover.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-takeover.html";
+      window.location.href = "../indie-bin/fnf-takeover.html";
     });
   }
   if (Toss) {
@@ -994,12 +994,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Voiid) {
     Voiid.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-matt-voiid.html";
+      window.location.href = "../indie-bin/fnf-matt-voiid.html";
     });
   }
   if (Vsfancy) {
     Vsfancy.addEventListener("click", function () {
-      window.location.href = "../html-bin/fnf-fancy.html";
+      window.location.href = "../indie-bin/fnf-fancy.html";
     });
   }
   if (W1) {
