@@ -307,53 +307,49 @@ nav {
   position: fixed;
   background-color: #111;
   color: white;
-  padding: 25px;
+  padding: 0px;
   font-size: 16px;
   border: none;
   background-repeat: no-repeat;
-  background-position: center;
   font-family: inherit;
-  background-image: url("images/navbutton.png");
   background-size: 100% 100%;
+  size-adjust: 100%;
   cursor: pointer;
   transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }*/
 
 .nav-toggle {
+  transform: rotate(0deg);
   user-select: none;
-  position: fixed;
-  background-color: #111;
+  font-family: inherit;
   border: none;
-  border-radius: 6px;
-  padding: 6px;
-  cursor: pointer;
-  display: none;
-  align-items: end;
+  padding: 0px;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 1vw;
+  top: 1vh;
+  z-index: 101;
+  position: fixed;
   justify-content: flex-end;
-  transition: transform 0.3s ease, background 0.2s;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
 
 .nav-toggle img {
-  width: 20px;
-  height: 20px;
+  transform: rotate(0deg);
+  width: 2.5vw;
+  height: auto;
   display: block;
+  cursor: pointer;
   pointer-events: none; /* ensures clicks go to button, not image */
 }
-#main-nav {
-  max-height: 200px; /* adjust based on nav height */
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
 
-.nav-hidden #main-nav {
-  max-height: 0;
-}
 
 /* Keep nav visible by default, allow smooth collapse */
 #main-nav {
-  max-height: 240px; /* tweak if your nav is taller */
+  max-height: 200px; /* tweak if your nav is taller */
   overflow: hidden;
-  transition: max-height 0.35s ease, opacity 0.35s ease;
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
   opacity: 1;
 }
 
@@ -365,6 +361,19 @@ body.nav-hidden #main-nav {
 body.nav-hidden .nav-toggle {
   transform: rotate(180deg);
   background: rgba(0, 0, 0, 0.8);
+}
+
+/* Reclaim top space and expand player when nav is hidden */
+body.nav-hidden {
+  padding-top: 0; /* remove navbar offset */
+}
+body.nav-hidden .player-container {
+  min-height: 95vh; /* let player container fill viewport */
+}
+body.nav-hidden #player {
+  width: 90%;
+  max-width: none;
+  height: calc(95vh - 40px); /* slightly smaller to keep margin */
 }
 
 #fullscreen {
@@ -455,9 +464,7 @@ hr {
   height: 3px;
   margin: 20px 0;
 }
-#main-nav {
-  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
-}
+
 #index-box {
   transform: translateX(0);
   padding-top: 60px;

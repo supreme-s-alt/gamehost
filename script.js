@@ -1383,6 +1383,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fullscreenBtn = document.getElementById("fullscreen");
   const maxBtn = document.getElementById("nav-toggle");
   const nav = document.getElementById("main-nav");
+  const player = document.getElementById("player");
   let maxMode = false;
   function setup() {
     if (fullscreenBtn) {
@@ -1405,10 +1406,13 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         maxMode = !maxMode;
         if (maxMode) {
-          nav.style.display = "none";
-          nav.style.rotate = "180deg";
+          fullscreenBtn.style.display = "none";
+          document.body.classList.add("nav-hidden");
+          maxBtn.style.transform = "rotate(180deg)";
         } else {
-          nav.style.display = "initial";
+          fullscreenBtn.style.display = "flex";
+          document.body.classList.remove("nav-hidden");
+          maxBtn.style.transform = "rotate(0deg)";
         }
       });
     }
