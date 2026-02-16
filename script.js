@@ -1380,10 +1380,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //fullscreen function
 (function () {
-  const Max = document.getElementById("nav-toggle");
+  const fullscreenBtn = document.getElementById("fullscreen");
+  const maxBtn = document.getElementById("nav-toggle");
+  const nav = document.getElementById("main-nav");
   let maxMode = false;
   function setup() {
-    const fullscreenBtn = document.getElementById("fullscreen");
     if (fullscreenBtn) {
       fullscreenBtn.addEventListener("click", (event) => {
         event.preventDefault();
@@ -1399,26 +1400,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
+    if (maxBtn) {
+      maxBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        maxMode = !maxMode;
+        if (maxMode) {
+          nav.style.display = "none";
+          nav.style.rotate = "180deg";
+        } else {
+          nav.style.display = "initial";
+        }
+      });
+    }
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", setup);
   } else {
     setup();
   }
-})();
-
-//dropdown scroll lock
-(function () {
-  const dropdown = document.querySelector(".dropdown-content"); // select the dropdown
-  const body = document.body; // use body directly
-
-  dropdown.addEventListener("mouseenter", () => {
-    body.style.overflow = "hidden"; // disable page scroll
-  });
-
-  dropdown.addEventListener("mouseleave", () => {
-    body.style.overflow = "auto"; // restore page scroll
-  });
 })();
 
 (function () {
