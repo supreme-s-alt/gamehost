@@ -87,8 +87,6 @@ nav {
   transform: scale(1.15);
 }
 
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -134,18 +132,44 @@ nav {
 }
 
 #feedback {
-  user-select: none;
   transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
   resize: none;
   min-width: 50px;
   width: 60%;
   min-height: 40px;
-  margin: 1000px;
+  margin: 10px;
   background-color: #ffffff;
   border-color: #555;
   border-width: 4px;
   border-radius: 4px;
-  align-self: auto;
+  align-content: center;
+  position: relative;
+}
+
+#submit {
+  user-select: none;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  width: 4vw;
+  margin: 10px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #1d1c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+#feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  justify-items: center;
+  justify-content: center;
 }
 
 #render,
@@ -301,7 +325,6 @@ nav {
   width: 100%;
 }
 
-
 /* Dropbtn & Dropdown
 .nav-toggle {
   position: fixed;
@@ -343,7 +366,6 @@ nav {
   cursor: pointer;
   pointer-events: none; /* ensures clicks go to button, not image */
 }
-
 
 /* Keep nav visible by default, allow smooth collapse */
 #main-nav {

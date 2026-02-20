@@ -1,9 +1,10 @@
-import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
+console.log("Script starting...");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,18 +19,18 @@ app.use(express.static(__dirname));
 app.use(express.json());
 
 // Serve index.html at root
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // ** Add this env test route here **
-app.get('/test-env', (req, res) => {
-  const webhook = process.env.DISCORD_WEBHOOK_URL || 'NOT SET';
+app.get("/test-env", (req, res) => {
+  const webhook = process.env.DISCORD_WEBHOOK_URL || "NOT SET";
   res.send(`DISCORD_WEBHOOK_URL is: ${webhook}`);
 });
 
 // Feedback route
-app.post('/submit-feedback', async (req, res) => {
+app.post("/submit-feedback", async (req, res) => {
   const feedback = req.body.feedback;
   const timestamp = new Date().toISOString();
   const message = `**New Feedback Submitted**\n ${feedback}`;
@@ -37,19 +38,19 @@ app.post('/submit-feedback', async (req, res) => {
   try {
     // Use the global fetch provided by Node 18+ instead of node-fetch
     const response = await fetch(DISCORD_WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content: message }),
     });
 
     const result = await response.text();
-    console.log('Discord response:', result);
+    console.log("Discord response:", result);
 
-    if (!response.ok) throw new Error('Discord webhook failed');
+    if (!response.ok) throw new Error("Discord webhook failed");
 
-    res.json({ message: 'Feedback submitted successfully!' });
+    res.json({ message: "Feedback submitted successfully!" });
   } catch (error) {
-    console.error('Error sending to Discord:', error);
+    console.error("Error sending to Discord:", error);
     res.status(500).json({ message: `Failed: ${error.message}` });
   }
 });
