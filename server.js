@@ -1,10 +1,9 @@
-console.log("Script starting...");
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 
-dotenv.config({ path: path.resolve(__dirname, ".env") });
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,12 +20,6 @@ app.use(express.json());
 // Serve index.html at root
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
-});
-
-// ** Add this env test route here **
-app.get("/test-env", (req, res) => {
-  const webhook = process.env.DISCORD_WEBHOOK_URL || "NOT SET";
-  res.send(`DISCORD_WEBHOOK_URL is: ${webhook}`);
 });
 
 // Feedback route
