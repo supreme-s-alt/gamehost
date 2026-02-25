@@ -499,7 +499,7 @@ hr {
   mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
-
+/*
 #media-box {
   visibility: hidden;
   padding-left: 20px;
@@ -509,11 +509,12 @@ hr {
   right: 0;
   text-align: center;
   align-self: center;
+  align-items: center;
   position: absolute;
   transform: translateX(200%);
   mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
-}
+}*/
 
 #indie-box {
   visibility: hidden;
@@ -524,6 +525,7 @@ hr {
   right: 0;
   text-align: center;
   align-self: center;
+  align-items: center;
   position: absolute;
   transform: translateX(-200%);
   mask-composite: add;
