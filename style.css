@@ -434,6 +434,21 @@ body.nav-hidden #player {
   min-height: 80vh; /* optional – centers vertically in view */
 }
 
+#flashplayer {
+  border: none;
+  width: 800px; /* set a fixed width or responsive one */
+  height: 600px;
+}
+#flashplayer#2 {
+  border: none;
+  width: 720px; /* set a fixed width or responsive one */
+  height: 480px;
+}
+#flashplayer#3 {
+  border: none;
+  width: 800px; /* set a fixed width or responsive one */
+  height: 500px;
+}
 #player {
   border: none;
   width: 960px; /* set a fixed width or responsive one */
