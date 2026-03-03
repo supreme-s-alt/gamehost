@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
+  <title>Tanuki Sunset</title>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
+      <div class="dropdown">
+        <button class="nav-toggle"><link src="../images/navbutton.png"></link></button>
+      </div>
+      <h1 id="home">Radio-A's Unblocked Games</h1>
+      <div class="nav-links">
+        <a id="about">About</a>
+        <a id="credits">Credits</a>
+        <a id="uplog">Updates</a>
+        <a id="gamesug">Suggestions</a>
+      </div>
+    </nav>
+    <!-- Nav toggle button -->
+    <button id="nav-toggle" class="nav-toggle">
+      <img src="../images/navbutton.png" alt="nav-toggle" />
+    </button>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-L7856P3VNT');
+      </script><link rel="stylesheet" href="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/TemplateData/style.css">
+      <script src="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/TemplateData/UnityProgress.js"></script>
+      <script src="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/Build/UnityLoader.js"></script>
+      <script>
+          var gameInstance = UnityLoader.instantiate("gameContainer", "https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/Build/WebGL.json", {
+              onProgress: UnityProgress,
+              Module: {
+                  onRuntimeInitialized: function () {
+                      UnityProgress(gameInstance, "complete")
+                  }
+              }
+          });
+      </script>
+      <script src=""></script>
+      <div class="webgl-content" id="player">
+          <div id="gameContainer"></div>
+      </div>
+    <div>
+      <div class="controls">
+        <button id="fullscreen">Fullscreen</button>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
+  

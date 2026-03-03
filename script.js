@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const FNAF4 = document.getElementById("FNAF4");
   const FNAFPS = document.getElementById("FNAFPS");
   const FNAFSL = document.getElementById("FNAFSL");
+  const FNAFUCN = document.getElementById("FNAFUCN");
   const FNAFW = document.getElementById("FNAFW");
   const FNF = document.getElementById("fnf");
   const FNFMods = document.getElementById("fnfmods");
@@ -1179,6 +1180,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fnafsl.html";
     });
   }
+  if (FNAFUCN) {
+    FNAFUCN.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnafucn.html";
+    });
+  }
   if (FNAFW) {
     FNAFW.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnafw.html";
@@ -1311,7 +1317,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (UltraPlink) {
     UltraPlink.addEventListener("click", function () {
-      window.location.href = "../indie-bin/ultraplink.html";
+      window.location.href = "../indie-bin/uk.html";
     });
   }
   if (Undertaley) {
