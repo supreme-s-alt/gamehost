@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
-  <title>MegaNoLongerLiving</title>
+  <title>Binding of Issac: Wrath of the Lamb</title>
   <body>
     <!-- Navigation Bar -->
     <nav id="main-nav">
@@ -24,15 +24,16 @@
     <button id="nav-toggle" class="nav-toggle">
       <img src="../images/navbutton.png" alt="nav-toggle" />
     </button>
-    <iframe
-      id="player"
-      src="https://uk-hfuo798ho-lrfb-kjv-ewopug4.onrender.com"
-      scrolling="auto"
-    ></iframe>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <div>
-      <div class="controls">
-        <button id="fullscreen">Fullscreen</button>
-      </div>
+        <object id="player" type= "application/x-shockwave-flash">
+            <param name="movie" value="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/achievement.swf">
+            <embed src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/temporarygames/achievement.swf">
+            </embed>
+        </object>
+    </div>
+    <div class="controls">
+      <button id="fullscreen">Fullscreen</button>
     </div>
     <script src="../script.js"></script>
   </body>
