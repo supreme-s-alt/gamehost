@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Admin Access</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="dropdown">
+        <button class="nav-toggle" link="images/dropdown.png"></button>
+      </div>
+      <h1 id="home">Gamehost UBG</h1>
+      <div class="nav-links">
+        <a id="credits">Credits</a>
+        <a id="about">About</a>
+        <a id="uplog">Updates</a>
+        <a id="gamesug">Suggestions</a>
+      </div>
+    </nav>
+    <h1>Admin Access</h1>
+    <form>
+      <textarea id="username" resize="none" placeholder="Username"></textarea>
+    </form>
+    <form>
+      <textarea id="password" resize="none" placeholder="Password"></textarea>
+    </form>
+    <script src="../script.js"></script>
+    <script>
+      let password = document.getElementById("password");
+      let user = document.getElementById("username");
+      let Tuser = "UGxpbms=";
+      let Tpass = "UGx1aCE=";
+      let username = "joel";
+      let passing = "joel";
+      user.addEventListener("input", function () {
+        username = btoa(this.value);
+        console.log(username);
+        sysCheck();
+      });
+      password.addEventListener("input", function () {
+        passing = btoa(this.value);
+        console.log(passing);
+        sysCheck();
+      });
+      function sysCheck() {
+        if (username === Tuser && passing === Tpass) {
+          window.location.href = "../Chats&stuff/assChat.html";
+        } else {
+          console.log(false);
+        }
+      }
+    </script>
+  </body>
+</html>

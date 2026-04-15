@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
-  <title>Bad Time Simulator</title>
+  <title>Chat</title>
   <body>
     <!-- Navigation Bar -->
     <nav id="main-nav">
       <div class="dropdown">
         <button class="nav-toggle"><link src="../images/navbutton.png"></link></button>
       </div>
-      <h1 id="home">Gamehost UBG</h1>
+      <h1 id="home">Radio-A's Gamehost UBG</h1>
       <div class="nav-links">
         <a id="about">About</a>
         <a id="credits">Credits</a>
@@ -24,17 +24,16 @@
     <button id="nav-toggle" class="nav-toggle">
       <img src="../images/navbutton.png" alt="nav-toggle" />
     </button>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <iframe
-      id="player"
-      src="https://bad-time-simulator-9mj2.onrender.com"
-      frameborder="0"
-      scrolling="auto"
-    ></iframe>
-    <div>
-      <div class="controls">
-        <button id="fullscreen">Fullscreen</button>
-      </div>
+    <div class="player-container">
+      <iframe
+        id="player"
+        src="https://ahh-chat.onrender.com"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+    <div class="controls">
+      <button id="fullscreen">Fullscreen</button>
     </div>
     <script src="../script.js"></script>
   </body>
