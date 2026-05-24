@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const CatM = document.getElementById("catm");
   const Celeste = document.getElementById("celeste");
   const Chibi = document.getElementById("chibi");
+  const ChallengEdd = document.getElementById("challengedd");
   const Class09 = document.getElementById("class09");
   const Cookie = document.getElementById("cookie");
   const Cross = document.getElementById("cross");
@@ -83,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const FNAFUCN = document.getElementById("FNAFUCN");
   const FNAFW = document.getElementById("FNAFW");
   const FNF = document.getElementById("fnf");
+  const FNF2Hot = document.getElementById("fnf2hot");
+  const FNF2HotFreestyle = document.getElementById("fnf2hotfreestyle");
+  const FNFBaldi = document.getElementById("fnfbaldi");
   const FNFMods = document.getElementById("fnfmods");
   const FNFSonic = document.getElementById("fnfsonic");
   const Galaxy = document.getElementById("galaxy");
@@ -95,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Happy = document.getElementById("happy");
   const Hard = document.getElementById("hard");
   const Hit = document.getElementById("hit");
+  const Hotline = document.getElementById("hotline");
   const HSBTB = document.getElementById("hsbtb");
   const HSETP = document.getElementById("hsetp");
   const HSFTC = document.getElementById("hsftc");
@@ -120,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Knight = document.getElementById("knight");
   const Last = document.getElementById("last");
   const Level = document.getElementById("level");
+  const Lite = document.getElementById("lite");
   const LTFS = document.getElementById("LTFS");
   const LTF1 = document.getElementById("LTF1");
   const LTF2 = document.getElementById("LTF2");
@@ -149,10 +155,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const Papiz = document.getElementById("papiz");
   const Pat = document.getElementById("pat");
   const Path = document.getElementById("path");
+  const Phantasm = document.getElementById("phantasm");
   const Pibby = document.getElementById("pibby");
   const Pizza = document.getElementById("pizza");
   const Pls = document.getElementById("pls");
   const QT = document.getElementById("qt");
+  const QTRewired = document.getElementById("qtrewired");
   const Raft = document.getElementById("raft");
   const Repo = document.getElementById("repo");
   const Rewrite = document.getElementById("rewrite");
@@ -179,7 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const Shaggymatt = document.getElementById("shaggymatt");
   const Shell = document.getElementById("shell");
   const SHistory = document.getElementById("shistory");
+  const Shucks = document.getElementById("shucks");
   const Sky = document.getElementById("sky");
+  const SkyRedux = document.getElementById("skyredux");
   const SKitty = document.getElementById("skitty");
   const SKitty2 = document.getElementById("skitty2");
   const SKittyL = document.getElementById("skittyl");
@@ -191,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Smario = document.getElementById("smario");
   const Smash = document.getElementById("smash");
   const Smash2 = document.getElementById("smash2");
+  const Soft = document.getElementById("soft");
   const Sonic = document.getElementById("sonic");
   const SonicExe = document.getElementById("sonic-exe");
   const Soul = document.getElementById("souls");
@@ -212,6 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
   const Unfair = document.getElementById("unfair");
+  const Unloaded = document.getElementById("unloaded");
   const Vision = document.getElementById("vision");
   const Voiid = document.getElementById("voiid");
   const Vsfancy = document.getElementById("vsfancy");
@@ -219,8 +231,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const W1 = document.getElementById("w1");
   const W2 = document.getElementById("w2");
   const W3 = document.getElementById("w3");
+  const WhittyE = document.getElementById("whittye");
   const Wizard = document.getElementById("wizard");
   const Worst = document.getElementById("worst");
+  const Zardy = document.getElementById("zardy");
 
   // Other pages
   const About = document.getElementById("about");
@@ -378,6 +392,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/chibi.html";
     });
   }
+  if (ChallengEdd) {
+    ChallengEdd.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-challengedd.html";
+    });
+  }
   if (Cookie) {
     Cookie.addEventListener("click", function () {
       window.location.href = "../html-bin/cookie.html";
@@ -478,6 +497,21 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fridaynightfunkin.html";
     });
   }
+  if (FNF2Hot) {
+    FNF2Hot.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-2-hot.html";
+    });
+  }
+  if (FNF2HotFreestyle) {
+    FNF2HotFreestyle.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-2-hot-freestyle.html";
+    });
+  }
+  if (FNFBaldi) {
+    FNFBaldi.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-baldi.html";
+    });
+  }
   if (FNFMods) {
     FNFMods.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnfmods.html";
@@ -531,6 +565,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Hit) {
     Hit.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnf-hit.html";
+    });
+  }
+  if (Hotline) {
+    Hotline.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-hotline.html";
     });
   }
   if (HSBTB) {
@@ -621,6 +660,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Level) {
     Level.addEventListener("click", function () {
       window.location.href = "../html-bin/thisistheonlylevel.html";
+    });
+  }
+  if (Lite) {
+    Lite.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-lite.html";
     });
   }
   if (LTFS) {
@@ -753,6 +797,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/path.html";
     });
   }
+  if (Phantasm) {
+    Phantasm.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-phantasm.html";
+    });
+  }
   if (Pibby) {
     Pibby.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnf-pibby.html";
@@ -766,6 +815,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (QT) {
     QT.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnf-qt.html";
+    });
+  }
+  if (QTRewired) {
+    QTRewired.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-qt-rewired.html";
     });
   }
   if (Rewrite) {
@@ -878,9 +932,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fnf-shistory.html";
     });
   }
+  if (Shucks) {
+    Shucks.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-shucks.html";
+    });
+  }
   if (Sky) {
     Sky.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnf-sky.html";
+    });
+  }
+  if (SkyRedux) {
+    SkyRedux.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-sky-redux.html";
     });
   }
   if (SKitty) {
@@ -921,6 +985,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Smash2) {
     Smash2.addEventListener("click", function () {
       window.location.href = "../html-bin/smash2.html";
+    });
+  }
+  if (Soft) {
+    Soft.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-soft.html";
     });
   }
   if (Sonic) {
@@ -988,6 +1057,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/unfair.html";
     });
   }
+  if (Unloaded) {
+    Unloaded.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-unloaded.html";
+    });
+  }
   if (Vision) {
     Vision.addEventListener("click", function () {
       window.location.href = "../html-bin/vision.html";
@@ -1016,6 +1090,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (W3) {
     W3.addEventListener("click", function () {
       window.location.href = "../html-bin/w3.html";
+    });
+  }
+  if (WhittyE) {
+    WhittyE.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-whitty-erect.html";
     });
   }
   if (Wizard) {
@@ -1328,6 +1407,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Webfishing) {
     Webfishing.addEventListener("click", function () {
       window.location.href = "../indie-bin/webfishing.html";
+    });
+  }
+  if (Zardy) {
+    Zardy.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnf-zardy.html";
     });
   }
 
