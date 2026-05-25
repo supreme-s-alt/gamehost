@@ -472,7 +472,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (DSword) {
     DSword.addEventListener("click", function () {
-      window.location.href = "../html-bin/deepest-sword.html";
+      window.location.href = "../indie-bin/deepest-sword.html";
     });
   }
   if (Dusttale) {
@@ -498,16 +498,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Electric) {
     Electric.addEventListener("click", function () {
       window.location.href = "../html-bin/electricman2.html";
-    });
-  }
-  if (Endo) {
-    Endo.addEventListener("click", function () {
-      window.location.href = "../html-bin/endoparasitic.html";
-    });
-  }
-  if (Endo2) {
-    Endo2.addEventListener("click", function () {
-      window.location.href = "../html-bin/endoparasitic-2.html";
     });
   }
   if (Fancy) {
@@ -1310,6 +1300,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Deltatraveler) {
     Deltatraveler.addEventListener("click", function () {
       window.location.href = "../indie-bin/deltatraveler.html";
+    });
+  }
+  if (Endo) {
+    Endo.addEventListener("click", function () {
+      window.location.href = "../indie-bin/endoparasitic.html";
+    });
+  }
+  if (Endo2) {
+    Endo2.addEventListener("click", function () {
+      window.location.href = "../indie-bin/endoparasitic-2.html";
     });
   }
   if (Fathom) {
