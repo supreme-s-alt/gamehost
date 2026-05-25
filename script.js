@@ -2,8 +2,10 @@
 
 //Links function
 document.addEventListener("DOMContentLoaded", () => {
+  const ABlast = document.getElementById("ablast");
   const Achievement = document.getElementById("achievement");
   const Achievement2 = document.getElementById("achievement2");
+  const ADoFaI = document.getElementById("adofai");
   const Agoti = document.getElementById("agoti");
   const Amanda = document.getElementById("amanda");
   const Apple = document.getElementById("apple");
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Aow2 = document.getElementById("aow2");
   const Balatro = document.getElementById("balatro");
   const BalatroHandy = document.getElementById("balatrohandy");
+  const Baldi3 = document.getElementById("baldi3");
   const Baldic = document.getElementById("baldic");
   const Baldiplus = document.getElementById("baldiplus");
   const Balls = document.getElementById("balls");
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Cat = document.getElementById("cat");
   const CatM = document.getElementById("catm");
   const Celeste = document.getElementById("celeste");
+  const Champion = document.getElementById("champion");
   const Chibi = document.getElementById("chibi");
   const ChallengEdd = document.getElementById("challengedd");
   const Class09 = document.getElementById("class09");
@@ -61,12 +65,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const DLS = document.getElementById("dls");
   const Doodle = document.getElementById("doodle");
   const DSides = document.getElementById("dsides");
+  const DSword = document.getElementById("dsword");
   const Dusttale = document.getElementById("dusttale");
-  const Electric = document.getElementById("electric");
   const Earn1 = document.getElementById("earn1");
   const Earn2 = document.getElementById("earn2");
+  const Eggy = document.getElementById("eggy");
+  const Electric = document.getElementById("electric");
+  const Endo = document.getElementById("endo");
+  const Endo2 = document.getElementById("endo2");
   const Fancy = document.getElementById("fancy");
   const Fathom = document.getElementById("fathom");
+  const FGorilla = document.getElementById("fgorilla");
   const Firewater = document.getElementById("firewater");
   const Firewater1 = document.getElementById("firewater1");
   const Firewater2 = document.getElementById("firewater2");
@@ -74,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Firewater4 = document.getElementById("firewater4");
   const Flash = document.getElementById("flash");
   const Funkadelix = document.getElementById("funkadelix");
+  const FNAE = document.getElementById("fnae");
   const FNAF = document.getElementById("FNAF");
   const FNAF1 = document.getElementById("FNAF1");
   const FNAF2 = document.getElementById("FNAF2");
@@ -90,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const FNFMods = document.getElementById("fnfmods");
   const FNFSonic = document.getElementById("fnfsonic");
   const Galaxy = document.getElementById("galaxy");
+  const GameInside = document.getElementById("gameinside");
   const Garcello = document.getElementById("garcello");
   const G2048 = document.getElementById("g2048");
   const GKnight = document.getElementById("gknight");
@@ -98,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Hank = document.getElementById("hank");
   const Happy = document.getElementById("happy");
   const Hard = document.getElementById("hard");
+  const Helltaker = document.getElementById("helltaker");
   const Hit = document.getElementById("hit");
   const Hotline = document.getElementById("hotline");
   const HSBTB = document.getElementById("hsbtb");
@@ -108,11 +120,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const HSS = document.getElementById("hss");
   const HSSTD = document.getElementById("hsstd");
   const Hypno = document.getElementById("hypno");
+  const IdleB = document.getElementById("idleb");
   const IMP = document.getElementById("imposs");
   const Imposter = document.getElementById("imposter");
   const Indie = document.getElementById("indie");
   const IReady = document.getElementById("iready");
   const Jacksmith = document.getElementById("jacksmith");
+  const JSaB = document.getElementById("jsab");
   const Joyride = document.getElementById("joyride");
   const Karlson = document.getElementById("karlson");
   const Key1 = document.getElementById("key1");
@@ -144,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Neo = document.getElementById("neo");
   const Neon = document.getElementById("neon");
   const NGon = document.getElementById("ngon");
+  const NoGame = document.getElementById("nogame");
   const Omori = document.getElementById("omori");
   const Osu = document.getElementById("osu");
   const OsuM = document.getElementById("osum");
@@ -188,6 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Shell = document.getElementById("shell");
   const SHistory = document.getElementById("shistory");
   const Shucks = document.getElementById("shucks");
+  const Silksong = document.getElementById("silksong");
   const Sky = document.getElementById("sky");
   const SkyRedux = document.getElementById("skyredux");
   const SKitty = document.getElementById("skitty");
@@ -219,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const UltraPlink = document.getElementById("ultraplink");
   const Underfell = document.getElementById("underfell");
   const Undertale = document.getElementById("undertale");
+  const Undertale10 = document.getElementById("undertale10");
   const UndertaleMods = document.getElementById("undertalemods");
   const Undertaley = document.getElementById("undertaley");
   const Undyne = document.getElementById("undyne");
@@ -233,6 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const W3 = document.getElementById("w3");
   const WhittyE = document.getElementById("whittye");
   const Wizard = document.getElementById("wizard");
+  const Wordle = document.getElementById("wordle");
   const Worst = document.getElementById("worst");
   const Zardy = document.getElementById("zardy");
 
@@ -260,6 +278,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Achievement2) {
     Achievement2.addEventListener("click", function () {
       window.location.href = "../html-bin/achievement2.html";
+    });
+  }
+  if (ADoFaI) {
+    ADoFaI.addEventListener("click", function () {
+      window.location.href = "../html-bin/adofai.html";
     });
   }
   if (Agoti) {
@@ -387,6 +410,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/catm.html";
     });
   }
+  if (Champion) {
+    Champion.addEventListener("click", function () {
+      window.location.href = "../html-bin/champion.html";
+    });
+  }
   if (Chibi) {
     Chibi.addEventListener("click", function () {
       window.location.href = "../html-bin/chibi.html";
@@ -442,14 +470,14 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fnf-dsides.html";
     });
   }
+  if (DSword) {
+    DSword.addEventListener("click", function () {
+      window.location.href = "../html-bin/deepest-sword.html";
+    });
+  }
   if (Dusttale) {
     Dusttale.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnf-dusttale.html";
-    });
-  }
-  if (Electric) {
-    Electric.addEventListener("click", function () {
-      window.location.href = "../html-bin/electricman2.html";
     });
   }
   if (Earn1) {
@@ -462,9 +490,34 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/earn2.html";
     });
   }
+  if (Eggy) {
+    Eggy.addEventListener("click", function () {
+      window.location.href = "../html-bin/eggy.html";
+    });
+  }
+  if (Electric) {
+    Electric.addEventListener("click", function () {
+      window.location.href = "../html-bin/electricman2.html";
+    });
+  }
+  if (Endo) {
+    Endo.addEventListener("click", function () {
+      window.location.href = "../html-bin/endoparasitic.html";
+    });
+  }
+  if (Endo2) {
+    Endo2.addEventListener("click", function () {
+      window.location.href = "../html-bin/endoparasitic-2.html";
+    });
+  }
   if (Fancy) {
     Fancy.addEventListener("click", function () {
       window.location.href = "../html-bin/FPA.html";
+    });
+  }
+  if (FGorilla) {
+    FGorilla.addEventListener("click", function () {
+      window.location.href = "../html-bin/flying-gorilla.html";
     });
   }
   if (Firewater) {
@@ -530,6 +583,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Galaxy) {
     Galaxy.addEventListener("click", function () {
       window.location.href = "../html-bin/galaxy.html";
+    });
+  }
+  if (GameInside) {
+    GameInside.addEventListener("click", function () {
+      window.location.href = "../html-bin/game-inside.html";
     });
   }
   if (Garcello) {
@@ -607,6 +665,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fnf-hypno.html";
     });
   }
+  if (IdleB) {
+    IdleB.addEventListener("click", function () {
+      window.location.href = "../html-bin/idle-b.html";
+    });
+  }
   if (IMP) {
     IMP.addEventListener("click", function () {
       window.location.href = "../html-bin/imposs.html";
@@ -650,6 +713,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Jacksmith) {
     Jacksmith.addEventListener("click", function () {
       window.location.href = "../html-bin/jacksmith.html"; //Make Knight.html later
+    });
+  }
+  if (Joyride) {
+    Joyride.addEventListener("click", function () {
+      window.location.href = "../html-bin/joyride.html";
     });
   }
   if (Last) {
@@ -745,6 +813,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (NGon) {
     NGon.addEventListener("click", function () {
       window.location.href = "../html-bin/ngon.html";
+    });
+  }
+  if (NoGame) {
+    NoGame.addEventListener("click", function () {
+      window.location.href = "../html-bin/nogame.html";
     });
   }
   if (Osu) {
@@ -1042,6 +1115,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/undertale.html";
     });
   }
+  if (Undertale10) {
+    Undertale10.addEventListener("click", function () {
+      window.location.href = "../indie-bin/undertale-10.html";
+    });
+  }
   if (UndertaleMods) {
     UndertaleMods.addEventListener("click", function () {
       window.location.href = "../html-bin/undertalemods.html";
@@ -1102,6 +1180,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/wizard.html";
     });
   }
+  if (Wordle) {
+    Wordle.addEventListener("click", function () {
+      window.location.href = "../html-bin/wordle.html";
+    });
+  }
   if (Worst) {
     Worst.addEventListener("click", function () {
       window.location.href = "../html-bin/worst.html";
@@ -1114,6 +1197,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // New game click handlers (added, alphabetical)
+  if (ABlast) {
+    ABlast.addEventListener("click", function () {
+      window.location.href = "../indie-bin/ablast.html";
+    });
+  }
   if (Amanda) {
     Amanda.addEventListener("click", function () {
       window.location.href = "../indie-bin/amanda.html";
@@ -1132,6 +1220,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (BalatroHandy) {
     BalatroHandy.addEventListener("click", function () {
       window.location.href = "../indie-bin/balatrohandy.html";
+    });
+  }
+  if (Baldi3) {
+    Baldi3.addEventListener("click", function () {
+      window.location.href = "../indie-bin/baldi3.html";
     });
   }
   if (Baldic) {
@@ -1224,6 +1317,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/fathom.html";
     });
   }
+  if (FNAE) {
+    FNAE.addEventListener("click", function () {
+      window.location.href = "../indie-bin/fnae.html";
+    });
+  }
   if (FNAF) {
     FNAF.addEventListener("click", function () {
       window.location.href = "../indie-bin/fnaf.html";
@@ -1274,14 +1372,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../indie-bin/goi.html";
     });
   }
+  if (Helltaker) {
+    Helltaker.addEventListener("click", function () {
+      window.location.href = "../indie-bin/helltaker.html";
+    });
+  }
   if (Hollow) {
     Hollow.addEventListener("click", function () {
       window.location.href = "../indie-bin/hollow.html";
     });
   }
-  if (Joyride) {
-    Joyride.addEventListener("click", function () {
-      window.location.href = "../html-bin/joyride.html";
+  if (JSaB) {
+    JSaB.addEventListener("click", function () {
+      window.location.href = "../indie-bin/jsab.html";
     });
   }
   if (Karlson) {
@@ -1347,6 +1450,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Runaway) {
     Runaway.addEventListener("click", function () {
       window.location.href = "../indie-bin/runaway.html";
+    });
+  }
+  if (Silksong) {
+    Silksong.addEventListener("click", function () {
+      window.location.href = "../indie-bin/silksong.html";
     });
   }
   if (Slender) {
