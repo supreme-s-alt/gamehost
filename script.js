@@ -1780,8 +1780,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function switchContent() {
     toggleState();
-    //pageHeader.textContent = state === 0 ? "Games" : state === 1 ? "Media" : "console";
-    pageHeader.textContent = state === 0 ? "Games" : "Indie";
+    //pageHeader.textContent = state === 0 ? "Flash" : state === 1 ? "Media" : "console";
+    pageHeader.textContent = state === 0 ? "Flash" : "Indie";
     colorSwap();
     pageSwitch();
   }
