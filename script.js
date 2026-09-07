@@ -1537,7 +1537,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Gamesug) {
     Gamesug.addEventListener("click", function () {
       const currentURL = window.location.href;
-      window.location.href = "https://forms.gle/mLXdN75zJEWpp1jSA";
+      //window.alert(currentURL)
+      if (toString(currentURL) === ("https://gamehost-alt.onrender.com" || "gamehost-alt.onrender.com" || "https://gamehost-alt.onrender.com/" || "gamehost-alt.onrender.com/" || "https://gamehost-alt.onrender.com/index.html" || "gamehost-alt.onrender.com/index.html")) {
+          window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
+      } else {
+        window.location.href = "../html-bin/gamesug.html";
+      };
     });
   }
   if (Home) {
@@ -1608,7 +1613,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let state = 0; //0 is index, 1 is media, 2 is indie
   let direction = "box";
   let indie = document.getElementById("indie-box");
-  let console = document.getElementById("console-box");
+  let media = document.getElementById("fnf-box");
   let index = document.getElementById("index-box");
   let leftSwitch = document.getElementById("left-switch");
   let rightSwitch = document.getElementById("right-switch");
@@ -1620,15 +1625,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let gamesug = document.getElementById("gamesug");
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
-  /*
-    index.style.transform = "translateX(0%)";
-    alert("index's transform value is: " + index.style.transform);
-    if (index.style.transform === "translateX(0%)") {
-      alert("It worked");
-    } else {
-      alert("switch it to '==' maybe?");
-    }
-  */
+
   function colorSwap() {
     if (state === 0) {
       // Games
@@ -1638,13 +1635,11 @@ document.addEventListener("DOMContentLoaded", () => {
         button.style.backgroundColor = "#111";
       });
     } else if (state === 2) {
-      /*
       body.style.backgroundColor = "#0d001a";
       nav.style.backgroundColor = "#1a0030";
       navButtons.forEach((button) => {
         button.style.backgroundColor = "#1a0030";
       });
-      */
     } else if (state === 1) {
       // Indie
       body.style.backgroundColor = "#01001a";
@@ -1656,113 +1651,70 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function pageSwitch() {
-    if (direction === "R") {
-      /*
-        if (state === 1) {
-          index.style.visibility = "hidden";
-          media.style.visibility = "visible";
-          index.style.transform = "translateX(200%)";
-          indie.style.transform = "translateX(-200%)";
-          media.style.transform = "translateX(0)";
-        } else if (state === 0) {
-          index.style.visibility = "visible";
-          indie.style.visibility = "hidden";
-          index.style.transform = "translateX(0)";
-          indie.style.transform = "translateX(200%)";
-          media.style.transform = "translateX(-200%)";
-        } else if (state === 2) {
-          media.style.visibility = "hidden";
-          indie.style.visibility = "visible";
-          index.style.transform = "translateX(200%)";
-          indie.style.transform = "translateX(0%)";
-          media.style.transform = "translateX(-200%)";
-        }
-      */
-
-      if (state === 1) {
-        if (indie.style.transform === "translateX(200%)") {
-          indie.style.transform = "translateX(-200%)";
-          void indie.offsetHeight;
-        }
-        indie.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
-        indie.style.transform = "translateX(0%)";
-        index.style.visibility = "hidden";
-      } else {
-        if (index.style.transform === "translateX(200%)") {
-          index.style.transform = "translateX(-200%)";
-          void index.offsetHeight;
-        }
-        index.style.visibility = "visible";
-        index.style.transform = "translateX(0%)";
-        indie.style.transform = "translateX(-200%)";
-        indie.style.visibility = "hidden";
-      }
-    } else if (direction === "L") {
-      /*
-      if (state === 1) {
+    if (direction === "L") {
+      if (state === 2) { // 1 is indie
         index.style.visibility = "hidden";
         media.style.visibility = "visible";
         index.style.transform = "translateX(-200%)";
         indie.style.transform = "translateX(200%)";
         media.style.transform = "translateX(0)";
-      } else if (state === 0) {
+      } else if (state === 0) { // 0 is flash
         index.style.visibility = "visible";
         indie.style.visibility = "hidden";
         index.style.transform = "translateX(0)";
         indie.style.transform = "translateX(-200%)";
         media.style.transform = "translateX(200%)";
-      } else if (state === 2) {
+      } else if (state === 1) { // 2 is fnf
         media.style.visibility = "hidden";
         indie.style.visibility = "visible";
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
         media.style.transform = "translateX(-200%)";
-      }*/
-
+      }
+    } else if (direction === "R") {
       if (state === 1) {
-        if (indie.style.transform === "translateX(-200%)") {
-          indie.style.transform = "translateX(200%)";
-          void indie.offsetHeight;
-        }
+        index.style.visibility = "hidden";
         indie.style.visibility = "visible";
         index.style.transform = "translateX(200%)";
         indie.style.transform = "translateX(0%)";
-        index.style.visibility = "hidden";
-      } else {
-        if (index.style.transform === "translateX(-200%)") {
-          index.style.transform = "translateX(200%)";
-          void index.offsetHeight;
-        }
+        media.style.transform = "translateX(-200%)";
+      } else if (state === 0) {
         index.style.visibility = "visible";
-        index.style.transform = "translateX(0%)";
-        indie.style.transform = "translateX(200%)";
+        media.style.visibility = "hidden";
+        index.style.transform = "translateX(0)";
+        indie.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(200%)";
+      } else if (state === 2) {
         indie.style.visibility = "hidden";
+        media.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(0%)";
       }
     }
     //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
   }
 
   function toggleState() {
-    /*
-    if (direction === "R") {
+    
+    if (direction === "L") {
       state = (state + 2) % 3;
-    } else if (direction === "L") {
+    } else if (direction === "R") {
       // decrement with wrap-around
       state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
     }
-    */
+    /*
     if (state === 0) {
       state = 1;
     } else {
       state = 0;
     }
+    */
   }
 
   function switchContent() {
     toggleState();
-    //pageHeader.textContent = state === 0 ? "Flash" : state === 1 ? "Media" : "console";
-    pageHeader.textContent = state === 0 ? "Flash" : "Indie";
+    pageHeader.textContent = state === 0 ? "HTML5 Games" : state === 1 ? "Indie Games" : "FNF Mods";
     colorSwap();
     pageSwitch();
   }
