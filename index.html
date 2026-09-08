@@ -917,6 +917,63 @@
         </button> 
       </div>
     </div>
+         <img src="../images/fish.webp" id=kunami style="top: 10%; right: 34%; align-items: center; max-height: 75%; width: auto; visibility: hidden; position: fixed; border-radius: 0px;"></img>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="size: 25%; color:rgb(53, 53, 53)">This is all I got, press ↑ ↑ ↓ ↓ ← → ← → B A start</p>
+    <script>
+    let kunami = document.getElementById("kunami");
+    const arroay = ["up", "up", "down", "down", "left", "right", "left", "right", "b", "a", "enter"];
+    var arrow = [];
+    up = window.get
+    window.addEventListener('keydown', (event) => {
+      const keyMap = {
+        ArrowUp: "up",
+        ArrowDown: "down",
+        ArrowLeft: "left",
+        ArrowRight: "right",
+        a: "a",
+        b: "b",
+        Enter: "enter",
+      };
+
+      const key = keyMap[event.key] || keyMap[event.key.toLowerCase()];
+      if (!key) return;
+
+      arrow.push(key);
+      // keep only the last N presses, where N = code length
+      arrow = arrow.slice(-arroay.length);
+
+      if (arrow.join(',') === arroay.join(',')) {
+        kunami.style.visibility = "visible";
+        new Audio('fish.mp3').play();
+        setTimeout(() => {
+          window.location.href = "../html-bin/fih.html";
+        }, 650);
+        arrow = [];
+      }
+    });
+    </script>
     <script src="/script.js"></script>
   </body>
 </html>
