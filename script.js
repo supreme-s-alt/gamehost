@@ -1822,6 +1822,17 @@ document.addEventListener("DOMContentLoaded", () => {
             node.style.display = "none";
           }
         });
+        consolelist.forEach((node) => {
+          const gameName = node.textContent.toLowerCase();
+          if (gameName.includes(filter)) {
+            node.style.display = "block";
+            results += 1;
+          } else if (filter === "") {
+            node.style.display = "block";
+          } else {
+            node.style.display = "none";
+          }
+        });
       });
     }
   }
