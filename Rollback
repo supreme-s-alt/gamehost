@@ -3,8 +3,8 @@ git checkout <commit-hash> . //change <commit-hash> to the hash of the commit yo
 if the last one didn't work then use git reset --hard <commit-hash> .
 git commit -m "Roll back project state to commit <commit-hash>" //same with this one
 
-git checkout dd0ab017018c05bb0110ddeaa7e26cb5807f4812 .
-git commit -m "Roll back project state to commit dd0ab017018c05bb0110ddeaa7e26cb5807f4812"
+git checkout 2fa7260f2cae64a97b4da2cd6cbf056460fbcad4 .
+git commit -m "Roll back project state to commit 2fa7260f2cae64a97b4da2cd6cbf056460fbcad4"
 
 
 git reset --hard <dd0ab017018c05bb0110ddeaa7e26cb5807f4812> .

@@ -1625,127 +1625,128 @@ document.addEventListener("DOMContentLoaded", () => {
   let gamesug = document.getElementById("gamesug");
   let uplog = document.getElementById("uplog");
   let navButtons = [home, about, credits, gamesug, uplog];
-
-  function colorSwap() {
-    if (state === 0) {
-      // Games
-      body.style.backgroundColor = "#000000";
-      nav.style.backgroundColor = "#111";
-      navButtons.forEach((button) => {
-        button.style.backgroundColor = "#111";
-      });
-    } else if (state === 2) {
-      body.style.backgroundColor = "#0d001a";
-      nav.style.backgroundColor = "#1a0030";
-      navButtons.forEach((button) => {
-        button.style.backgroundColor = "#1a0030";
-      });
-    } else if (state === 1) {
-      // Indie
-      body.style.backgroundColor = "#01001a";
-      nav.style.backgroundColor = "#050030";
-      navButtons.forEach((button) => {
-        button.style.backgroundColor = "#050030";
-      });
-    }
-  }
-
-  function pageSwitch() {
-    if (direction === "L") {
-      if (state === 2) { // 1 is indie
-        index.style.visibility = "hidden";
-        media.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
-        indie.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(0)";
-      } else if (state === 0) { // 0 is flash
-        index.style.visibility = "visible";
-        indie.style.visibility = "hidden";
-        index.style.transform = "translateX(0)";
-        indie.style.transform = "translateX(-200%)";
-        media.style.transform = "translateX(200%)";
-      } else if (state === 1) { // 2 is fnf
-        media.style.visibility = "hidden";
-        indie.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
-        indie.style.transform = "translateX(0%)";
-        media.style.transform = "translateX(-200%)";
-      }
-    } else if (direction === "R") {
-      if (state === 1) {
-        index.style.visibility = "hidden";
-        indie.style.visibility = "visible";
-        index.style.transform = "translateX(200%)";
-        indie.style.transform = "translateX(0%)";
-        media.style.transform = "translateX(-200%)";
-      } else if (state === 0) {
-        index.style.visibility = "visible";
-        media.style.visibility = "hidden";
-        index.style.transform = "translateX(0)";
-        indie.style.transform = "translateX(-200%)";
-        media.style.transform = "translateX(200%)";
+  if (indie && media && index && leftSwitch && rightSwitch) {
+    function colorSwap() {
+      if (state === 0) {
+        // Games
+        body.style.backgroundColor = "#000000";
+        nav.style.backgroundColor = "#111";
+        navButtons.forEach((button) => {
+          button.style.backgroundColor = "#111";
+        });
       } else if (state === 2) {
-        indie.style.visibility = "hidden";
-        media.style.visibility = "visible";
-        index.style.transform = "translateX(-200%)";
-        indie.style.transform = "translateX(200%)";
-        media.style.transform = "translateX(0%)";
+        body.style.backgroundColor = "#0d001a";
+        nav.style.backgroundColor = "#1a0030";
+        navButtons.forEach((button) => {
+          button.style.backgroundColor = "#1a0030";
+        });
+      } else if (state === 1) {
+        // Indie
+        body.style.backgroundColor = "#01001a";
+        nav.style.backgroundColor = "#050030";
+        navButtons.forEach((button) => {
+          button.style.backgroundColor = "#050030";
+        });
       }
     }
-    //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
-  }
 
-  function toggleState() {
-    
-    if (direction === "L") {
-      state = (state + 2) % 3;
-    } else if (direction === "R") {
-      // decrement with wrap-around
-      state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
+    function pageSwitch() {
+      if (direction === "L") {
+        if (state === 2) { // 1 is indie
+          index.style.visibility = "hidden";
+          media.style.visibility = "visible";
+          index.style.transform = "translateX(-200%)";
+          indie.style.transform = "translateX(200%)";
+          media.style.transform = "translateX(0)";
+        } else if (state === 0) { // 0 is flash
+          index.style.visibility = "visible";
+          indie.style.visibility = "hidden";
+          index.style.transform = "translateX(0)";
+          indie.style.transform = "translateX(-200%)";
+          media.style.transform = "translateX(200%)";
+        } else if (state === 1) { // 2 is fnf
+          media.style.visibility = "hidden";
+          indie.style.visibility = "visible";
+          index.style.transform = "translateX(200%)";
+          indie.style.transform = "translateX(0%)";
+          media.style.transform = "translateX(-200%)";
+        }
+      } else if (direction === "R") {
+        if (state === 1) {
+          index.style.visibility = "hidden";
+          indie.style.visibility = "visible";
+          index.style.transform = "translateX(200%)";
+          indie.style.transform = "translateX(0%)";
+          media.style.transform = "translateX(-200%)";
+        } else if (state === 0) {
+          index.style.visibility = "visible";
+          media.style.visibility = "hidden";
+          index.style.transform = "translateX(0)";
+          indie.style.transform = "translateX(-200%)";
+          media.style.transform = "translateX(200%)";
+        } else if (state === 2) {
+          indie.style.visibility = "hidden";
+          media.style.visibility = "visible";
+          index.style.transform = "translateX(-200%)";
+          indie.style.transform = "translateX(200%)";
+          media.style.transform = "translateX(0%)";
+        }
+      }
+      //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
     }
-    /*
-    if (state === 0) {
-      state = 1;
-    } else {
-      state = 0;
+
+    function toggleState() {
+      
+      if (direction === "L") {
+        state = (state + 2) % 3;
+      } else if (direction === "R") {
+        // decrement with wrap-around
+        state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
+      }
+      /*
+      if (state === 0) {
+        state = 1;
+      } else {
+        state = 0;
+      }
+      */
     }
-    */
-  }
 
-  function switchContent() {
-    toggleState();
-    pageHeader.textContent = state === 0 ? "HTML5 Games" : state === 1 ? "Indie Games" : "FNF Mods";
-    colorSwap();
-    pageSwitch();
-  }
+    function switchContent() {
+      toggleState();
+      pageHeader.textContent = state === 0 ? "HTML5 Games" : state === 1 ? "Indie Games" : "FNF Mods";
+      colorSwap();
+      pageSwitch();
+    }
 
-  function disableTimer() {
-    setTimeout(() => {
-      leftSwitch.style.pointerEvents = "auto";
-      rightSwitch.style.pointerEvents = "auto";
-    }, 650);
-  }
+    function disableTimer() {
+      setTimeout(() => {
+        leftSwitch.style.pointerEvents = "auto";
+        rightSwitch.style.pointerEvents = "auto";
+      }, 650);
+    }
 
-  leftSwitch.addEventListener("click", () => {
-    direction = "L";
-    switchContent();
-    leftSwitch.style.pointerEvents = "none";
-    rightSwitch.style.pointerEvents = "none";
-    disableTimer();
-  });
-  rightSwitch.addEventListener("click", () => {
-    direction = "R";
-    switchContent();
-    leftSwitch.style.pointerEvents = "none";
-    rightSwitch.style.pointerEvents = "none";
-    disableTimer();
-  });
+    leftSwitch.addEventListener("click", () => {
+      direction = "L";
+      switchContent();
+      leftSwitch.style.pointerEvents = "none";
+      rightSwitch.style.pointerEvents = "none";
+      disableTimer();
+    });
+    rightSwitch.addEventListener("click", () => {
+      direction = "R";
+      switchContent();
+      leftSwitch.style.pointerEvents = "none";
+      rightSwitch.style.pointerEvents = "none";
+      disableTimer();
+    });
+  };
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
   const gamelist = document.querySelectorAll(".game-btn");
   const indielist = document.querySelectorAll(".indie-btn");
-  const consolelist = null;
+  const consolelist = document.querySelectorAll(".fnf-btn");
 
   let search = false;
   let leftSwitch = document.getElementById("left-switch");
@@ -1755,71 +1756,73 @@ document.addEventListener("DOMContentLoaded", () => {
   const textarea = document.getElementById("search-space");
 
   const indieBox = document.getElementById("indie-box");
-  const consoleBox = null;
+  const consoleBox = document.getElementById("fnf-box");;
   const indexBox = document.getElementById("index-box");
 
   function searchDisplay() {
-    if (search) {
-      searchExit.display = "inherit";
-    } else {
-      searchExit.display = "none";
-      gamelist.forEach((btn) => (btn.style.display = "initial"));
-      indielist.forEach((btn) => (btn.style.display = "initial"));
-      consolelist.forEach((btn) => (btn.style.display = "initial"));
+    if (indieBox && consoleBox && indexBox && searchExit && textarea ) {
+      if (search) {
+          searchExit.display = "inherit";
+        } else {
+          searchExit.display = "none";
+          gamelist.forEach((btn) => (btn.style.display = "initial"));
+          indielist.forEach((btn) => (btn.style.display = "initial"));
+          consolelist.forEach((btn) => (btn.style.display = "initial"));
+      }
+
+      // Exit search via button
+      searchExit.addEventListener("click", () => {
+        if (search) {
+          search = false;
+          searchDisplay();
+          alert("search has changed to: " + search);
+        }
+      });
+
+      // Exit search via Escape key
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && search) {
+          search = false;
+          searchDisplay();
+          alert("search has changed to: " + search);
+        }
+      });
+
+      // ENTER search when textarea gains focus
+      textarea.addEventListener("focus", () => {
+        if (!search) {
+          search = true;
+          searchDisplay();
+        }
+      });
+
+      // Filter buttons while typing
+      textarea.addEventListener("input", function () {
+        const filter = this.value.toLowerCase();
+        let results = 0;
+        gamelist.forEach((node) => {
+          const gameName = node.textContent.toLowerCase();
+          if (gameName.includes(filter)) {
+            node.style.display = "block";
+            results += 1;
+          } else if (filter === "") {
+            node.style.display = "block";
+          } else {
+            node.style.display = "none";
+          }
+        });
+        indielist.forEach((node) => {
+          const gameName = node.textContent.toLowerCase();
+          if (gameName.includes(filter)) {
+            node.style.display = "block";
+            results += 1;
+          } else if (filter === "") {
+            node.style.display = "block";
+          } else {
+            node.style.display = "none";
+          }
+        });
+      });
     }
   }
-
-  // Exit search via button
-  searchExit.addEventListener("click", () => {
-    if (search) {
-      search = false;
-      searchDisplay();
-      alert("search has changed to: " + search);
-    }
-  });
-
-  // Exit search via Escape key
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && search) {
-      search = false;
-      searchDisplay();
-      alert("search has changed to: " + search);
-    }
-  });
-
-  // ENTER search when textarea gains focus
-  textarea.addEventListener("focus", () => {
-    if (!search) {
-      search = true;
-      searchDisplay();
-    }
-  });
-
-  // Filter buttons while typing
-  textarea.addEventListener("input", function () {
-    const filter = this.value.toLowerCase();
-    let results = 0;
-    gamelist.forEach((node) => {
-      const gameName = node.textContent.toLowerCase();
-      if (gameName.includes(filter)) {
-        node.style.display = "block";
-        results += 1;
-      } else if (filter === "") {
-        node.style.display = "block";
-      } else {
-        node.style.display = "none";
-      }
-    });
-    indielist.forEach((node) => {
-      const gameName = node.textContent.toLowerCase();
-      if (gameName.includes(filter)) {
-        node.style.display = "block";
-        results += 1;
-      } else if (filter === "") {
-        node.style.display = "block";
-      } else {
-        node.style.display = "none";
-      }
-    });
-  });
 });
