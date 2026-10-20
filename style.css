@@ -94,18 +94,17 @@ nav {
 }
 
 /* Nav bar buttons on right */
-#credits,
-#about,
-#uplog,
-#gamesug,
-#render,
-#github,
-#g3000,
 #LME,
-#static {
+#main,
+#alt1,
+#alt2,
+#alt3,
+#alt4,
+#alt5,
+#alt6,
+#alt7 {
   user-select: none;
   position: relative;
-  left: -20px; /* negative value moves them left */
   padding: 10px 20px;
   font-size: 14px;
   background-color: #111;
@@ -117,16 +116,37 @@ nav {
   cursor: pointer;
 }
 
-#credits:hover,
-#about:hover,
-#uplog:hover,
-#gamesug:hover,
-#render:hover,
-#github:hover,
-#g3000:hover,
-#g50000:hover,
+#about,
+#credits,
+#cloak,
+#uplog {
+  user-select: none;
+  position: relative;
+  left: -20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #111;
+  max-width: 200px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
+  cursor: pointer;
+}
+
 #LME:hover,
-#static:hover {
+#main:hover,
+#alt1:hover,
+#alt2:hover,
+#alt3:hover,
+#alt4:hover,
+#alt5:hover,
+#alt6:hover,
+#alt7:hover,
+#about:hover,
+#credits:hover,
+#cloak:hover,
+#uplog:hover {
   transform: scale(1.15);
   filter: brightness(1.5);
 }

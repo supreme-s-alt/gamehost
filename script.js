@@ -257,14 +257,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Other pages
   const About = document.getElementById("about");
   const Credits = document.getElementById("credits");
-  const Gamesug = document.getElementById("gamesug");
+  const Cloak = document.getElementById("cloak");
   const Home = document.getElementById("home");
   const Uplog = document.getElementById("uplog");
   const render = document.getElementById("render");
-  const github = document.getElementById("github");
-  const CSB3000 = document.getElementById("3000");
-  const CSB50000 = document.getElementById("50000");
-  const LME = document.getElementById("LME");
 
   // Other variblaes
   // Front pages
@@ -1534,15 +1530,9 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html-bin/credits.html";
     });
   }
-  if (Gamesug) {
-    Gamesug.addEventListener("click", function () {
-      const currentURL = window.location.href;
-      //window.alert(currentURL)
-      if (toString(currentURL) === ("https://gamehost-alt.onrender.com" || "gamehost-alt.onrender.com" || "https://gamehost-alt.onrender.com/" || "gamehost-alt.onrender.com/" || "https://gamehost-alt.onrender.com/index.html" || "gamehost-alt.onrender.com/index.html")) {
-          window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
-      } else {
-        window.location.href = "../html-bin/gamesug.html";
-      };
+  if (Cloak) {
+    Cloak.addEventListener("click", function () {
+      window.location.href = "../cloak.html";
     });
   }
   if (Home) {

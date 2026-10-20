@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <title>Disguising...</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="dropdown">
+        <button class="nav-toggle" link="images/dropdown.png"></button>
+      </div>
+      <h1 id="home">Gamehost</h1>
+      <div class="nav-links">
+        <a id="credits">Credits</a>
+        <a id="about">About</a>
+        <a id="uplog">Updates</a>
+      </div>
+    </nav>
+    <h4>Main Alternate Links</h4>
+        <div align-content="center" align-items="center" align-self="center">
+            <a id="main" href="https://gamehoststatic.onrender.com">Main</a>
+            <a id="alt1" href="https://gamehoststatics.onrender.com">Alt 1</a>
+            <a id="alt2" href="https://stopbanchess.onrender.com">Alt 2</a>
+            <a id="alt3" href="https://rcsamh.onrender.com">Alt 3</a>
+            <a id="alt4" href="https://rivercityscience.onrender.com">Alt 4</a>
+            <a id="alt5" href="https://collegeboard-htoq.onrender.com">Alt 5</a>
+            <a id="alt6" href="https://Uh-summa-lumma-dooma-lumma.onrender.com">Alt 6</a>
+            <a id="alt7" href="https://idontwanttomakemorealts.onrender.com">Alt 7</a>
+            <h4>gamehost beta version</h4>
+            <a id="LME">Learn math easy</a>
+        </div>
+    <img src="../images/cloakimg.png" id=cloakimg style="top: 0%; right: 0%; max-height: 100vh; width: 100vw; visibility: visible; position: fixed; z-index: 101" ></img>
+  </body>
+  <script src="/script.js"></script>  
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        const cloakimg = document.getElementById("cloakimg")
+        let url = window.location.origin
+        let end = false
+        let favicon = "https://apstudents.collegeboard.org/themes/custom/apricot_theme/favicon.ico" 
+
+        if (!end) {
+            const win = window.open('about:blank', '_blank');
+            if (!win) {
+                alert("Please allow pop-ups for this site to work!");
+                return;
+            }
+
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+
+            const iframe = win.document.createElement('iframe');
+            
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+            iframe.style.margin = '0';
+            iframe.style.padding = '0';
+            iframe.style.overflow = 'hidden';
+            
+            iframe.src = url;
+
+            win.document.body.appendChild(iframe);
+            
+            end = true;
+
+            win.document.title = "Get the Most Out of AP – AP Students | College Board";
+            
+        }
+        
+        window.addEventListener('click', () => {
+            cloakimg.style.visibility = "hidden";
+
+            document.title = "Gamehost";
+
+            let link = document.querySelector("link[rel*='icon']");
+  
+            if (!link) {
+                link = document.createElement('link');
+                link.rel = 'icon';
+                document.head.appendChild(link);
+            }
+
+            link.href = "./images/favicon.ico";
+        });
+
+        window.addEventListener('blur', () => {
+            cloakimg.style.visibility = "visible";
+            
+            document.title = "Get the Most Out of AP – AP Students | College Board";
+
+            let link = document.querySelector("link[rel*='icon']");
+  
+            if (!link) {
+                link = document.createElement('link');
+                link.rel = 'icon';
+                document.head.appendChild(link);
+            }
+
+            link.href = favicon;
+        });
+    });
+  </script>
+</html>
