@@ -1704,7 +1704,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function switchContent() {
       toggleState();
-      pageHeader.textContent = state === 0 ? "HTML5 Games" : state === 1 ? "Indie Games" : "FNF Mods";
+      pageHeader.textContent = state === 0 ? "HTML5 Options" : state === 1 ? "Indie Options" : "FNF Mods";
       colorSwap();
       pageSwitch();
     }
