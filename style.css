@@ -211,7 +211,7 @@ nav {
 /* ======================= */
 /* Game Buttons   */
 /* ======================= */
-.game-grid {
+.inx-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
@@ -222,7 +222,7 @@ nav {
   margin: 0 auto;
 }
 
-.game-btn {
+.inx-btn {
   user-select: none;
   display: flex;
   flex-direction: column;
@@ -240,29 +240,29 @@ nav {
   transition: transform 0.2s, background-color 0.3s;
 }
 
-.game-btn .img-wrap {
+.inx-btn .img-wrap {
   width: 100%;
 }
 
-.game-btn .img-wrap img {
+.inx-btn .img-wrap img {
   display: block;
   width: 100%;
   height: auto; /* variable height, keeps aspect ratio */
   object-fit: contain;
 }
 
-.game-btn span {
+.inx-btn span {
   font-size: 1vw;
   text-align: center;
   width: 100%;
 }
 
-.game-btn:hover {
+.inx-btn:hover {
   transform: scale(1.15);
   background-color: #333333;
 }
 
-.indie-btn {
+.ind-btn {
   user-select: none;
   display: flex;
   flex-direction: column;
@@ -279,7 +279,7 @@ nav {
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
 }
-.indie-btn:hover {
+.ind-btn:hover {
   transform: scale(1.15);
   background-color: #0e0b5f;
 }
@@ -523,7 +523,7 @@ hr {
   margin: 20px 0;
 }
 
-#index-box {
+#inx-box {
   transform: translateX(0);
   padding-top: 60px;
   padding-left: 20px;
@@ -547,12 +547,11 @@ hr {
   align-self: center;
   align-items: center;
   position: absolute;
-  transform: translateX(200%);
   mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
 
-#indie-box {
+#ind-box {
   visibility: hidden;
   padding-left: 20px;
   padding-right: 20px;
@@ -563,7 +562,6 @@ hr {
   align-self: center;
   align-items: center;
   position: absolute;
-  transform: translateX(-200%);
   mask-composite: add;
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
 }
