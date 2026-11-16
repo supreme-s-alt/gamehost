@@ -153,7 +153,9 @@
       ];
       const leName = document.getElementById("leName");
       currentGames.forEach((node) => {
-        setTimeout(() => { leName.textContent = node; }, 1000);
+        setTimeout(() => {
+          leName.textContent = node;
+        }, (index + 1) * 500);
       });
     </script>
     <script src="/script.js"></script>
