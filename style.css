@@ -211,7 +211,7 @@ nav {
 /* ======================= */
 /* Game Buttons   */
 /* ======================= */
-.inx-grid {
+.game-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
