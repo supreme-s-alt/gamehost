@@ -537,7 +537,7 @@ hr {
 }
 
 #fnf-box {
-  visibility: hidden;
+  visibility: visible;
   padding-left: 20px;
   padding-right: 20px;
   top: 39vh;
@@ -552,7 +552,7 @@ hr {
 }
 
 #ind-box {
-  visibility: hidden;
+  visibility: visible;
   padding-left: 20px;
   padding-right: 20px;
   top: 39vh;
