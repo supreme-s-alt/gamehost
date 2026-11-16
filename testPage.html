@@ -152,9 +152,9 @@
         "Wordle +"
       ];
       const leName = document.getElementById("leName");
-      currentGames.forEach((node) => {
+      currentGames.forEach((game, index) => {
         setTimeout(() => {
-          leName.textContent = node;
+          leName.textContent = game;
         }, (index + 1) * 500);
       });
     </script>
