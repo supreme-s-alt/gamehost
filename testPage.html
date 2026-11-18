@@ -29,10 +29,6 @@
           <div class="img-wrap"><img id="Thumbnails" src="./images/favicon.ico" alt="Placeholder"></div>
           <span id="leName">Placeholder</span>
         </button> 
-        <button class="inx-btn">
-          <div class="img-wrap"><img id="Thumbnails" src="./images/favicon.ico" alt="Placeholder"></div>
-          <span id="laID">Placeholder</span>
-        </button> 
       </div>
     </div>
     <script>
@@ -155,36 +151,13 @@
         "Webfishing",
         "Wordle +"
       ];
-      const currentIDS = [
-        "achievement", "achievement2", "aow", "aow2", "arcane", "bics", "btds",
-        "bob", "burrito", "chibi", "cross", "doodle", "dls", "earn1", "earn2",
-        "eggy", "electric", "balls", "balls2", "fancy", "firewater", "mario",
-        "sonic", "fgorilla", "scratch", "gknight", "happy", "hss", "idleb",
-        "jacksmith", "joyride", "knight", "LTFS", "mad", "key1", "key2", "mike",
-        "moto", "moto2", "MVSL", "ngon", "osu", "osum", "pls", "rss", "rogue1",
-        "rogue2", "run", "shell", "kitty", "sm63", "sm64", "smario", "meat",
-        "smash", "souls", "imposs", "nogame", "level", "toss", "unfair", "g2048",
-        "second60", "adofai", "neon", "ablast", "apple", "amanda", "balatro", "balatrohandy",
-        "baldi3", "baldic", "baldiplus", "bendy", "block", "money", "roulette",
-        "celeste", "champion", "cuphead", "dsword", "deltarune", "deltatraveler",
-        "endo", "endo2", "fathom", "fnae", "FNAF", "gameinside", "GOI", "helltaker",
-        "hollow", "silksong", "jsab", "karlson", "kindergarten", "omori", "pizza",
-        "raft", "repo", "runaway", "slender", "slime", "sonic-exe", "SWI",
-        "tattletail", "terraria", "TNMN", "deadseat", "TMITW", "ultraplink",
-        "undertale", "undertalemods", "undertaley", "undertale10", "webfishing",
-        "wordle"
-      ];
       const leName = document.getElementById("leName");
-      const laID = document.getElementById("laID");
+      const laImage = document.getElementById("Thumbnails");
       currentGames.forEach((game, index) => {
         setTimeout(() => {
           leName.textContent = game;
-        }, (index + 1) * 1000);
-      });
-      currentIDS.forEach((games, indexs) => {
-        setTimeout(() => {
-          laID.textContent = games;
-        }, (indexs + 1) * 1000);
+          laImage.setAttribute("src", "https://raw.githubusercontent.com/supreme-s-alt/Gamehost-files/refs/heads/main/Thumbnails/" + game + ".png")
+        }, (index + 1) * 2000);
       });
     </script>
     <script src="/script.js"></script>
