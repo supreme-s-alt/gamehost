@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Other pages
   const About = document.getElementById("about");
   const Credits = document.getElementById("credits");
-  const Cloak = document.getElementById("alt");
+  const Cloak = document.getElementById("cloak");
   const Home = document.getElementById("home");
   const Uplog = document.getElementById("uplog");
   const render = document.getElementById("render");

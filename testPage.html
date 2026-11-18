@@ -18,7 +18,7 @@
       <div class="nav-links">
         <a id="about">About</a>
         <a id="credits">Credits</a>
-        <a id="alt">Links</a>
+        <a id="cloak">Links</a>
         <a id="uplog">Updates</a>
       </div>
     </nav>
@@ -26,8 +26,12 @@
     <div id="fnf-box">
       <div class="game-grid">
         <button class="fnf-btn">
-          <div class="img-wrap"><img id="Thumbnails" src="./favicon.ico" alt="FNF Zardy"></div>
+          <div class="img-wrap"><img id="Thumbnails" src="./images/favicon.ico" alt="Placeholder"></div>
           <span id="leName">Placeholder</span>
+        </button> 
+        <button class="inx-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="./images/favicon.ico" alt="Placeholder"></div>
+          <span id="laID">Placeholder</span>
         </button> 
       </div>
     </div>
@@ -151,11 +155,36 @@
         "Webfishing",
         "Wordle +"
       ];
+      const currentIDS = [
+        "achievement", "achievement2", "aow", "aow2", "arcane", "bics", "btds",
+        "bob", "burrito", "chibi", "cross", "doodle", "dls", "earn1", "earn2",
+        "eggy", "electric", "balls", "balls2", "fancy", "firewater", "mario",
+        "sonic", "fgorilla", "scratch", "gknight", "happy", "hss", "idleb",
+        "jacksmith", "joyride", "knight", "LTFS", "mad", "key1", "key2", "mike",
+        "moto", "moto2", "MVSL", "ngon", "osu", "osum", "pls", "rss", "rogue1",
+        "rogue2", "run", "shell", "kitty", "sm63", "sm64", "smario", "meat",
+        "smash", "souls", "imposs", "nogame", "level", "toss", "unfair", "g2048",
+        "second60", "adofai", "neon", "ablast", "apple", "amanda", "balatro", "balatrohandy",
+        "baldi3", "baldic", "baldiplus", "bendy", "block", "money", "roulette",
+        "celeste", "champion", "cuphead", "dsword", "deltarune", "deltatraveler",
+        "endo", "endo2", "fathom", "fnae", "FNAF", "gameinside", "GOI", "helltaker",
+        "hollow", "silksong", "jsab", "karlson", "kindergarten", "omori", "pizza",
+        "raft", "repo", "runaway", "slender", "slime", "sonic-exe", "SWI",
+        "tattletail", "terraria", "TNMN", "deadseat", "TMITW", "ultraplink",
+        "undertale", "undertalemods", "undertaley", "undertale10", "webfishing",
+        "wordle"
+      ];
       const leName = document.getElementById("leName");
+      const laID = document.getElementById("laID");
       currentGames.forEach((game, index) => {
         setTimeout(() => {
           leName.textContent = game;
-        }, (index + 1) * 500);
+        }, (index + 1) * 1000);
+      });
+      currentIDS.forEach((games, indexs) => {
+        setTimeout(() => {
+          laID.textContent = game;
+        }, (index + 1) * 1000);
       });
     </script>
     <script src="/script.js"></script>
